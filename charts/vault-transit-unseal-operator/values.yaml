@@ -26,7 +26,7 @@ controllerManager:
     requests:
       cpu: 10m
       memory: 64Mi
-  
+
   # Security context for the controller manager
   securityContext:
     allowPrivilegeEscalation: false
@@ -44,7 +44,7 @@ controllerManager:
       port: 8081
     initialDelaySeconds: 15
     periodSeconds: 20
-  
+
   readinessProbe:
     httpGet:
       path: /readyz
