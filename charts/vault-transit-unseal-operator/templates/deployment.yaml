@@ -1,0 +1,92 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "vault-transit-unseal-operator.fullname" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "vault-transit-unseal-operator.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "vault-transit-unseal-operator.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      annotations:
+        {{- with .Values.podAnnotations }}
+        {{- toYaml . | nindent 8 }}
+        {{- end }}
+      labels:
+        {{- include "vault-transit-unseal-operator.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "vault-transit-unseal-operator.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+      - name: manager
+        securityContext:
+          {{- toYaml .Values.controllerManager.securityContext | nindent 10 }}
+        image: {{ include "vault-transit-unseal-operator.image" . }}
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        args:
+          {{- toYaml .Values.controllerManager.manager.args | nindent 8 }}
+        env:
+        - name: WATCH_NAMESPACE
+          value: ""  # Watch all namespaces
+        {{- with .Values.extraEnvVars }}
+        {{- toYaml . | nindent 8 }}
+        {{- end }}
+        ports:
+        - containerPort: 8080
+          name: metrics
+          protocol: TCP
+        - containerPort: 8081
+          name: health
+          protocol: TCP
+        livenessProbe:
+          {{- toYaml .Values.controllerManager.livenessProbe | nindent 10 }}
+        readinessProbe:
+          {{- toYaml .Values.controllerManager.readinessProbe | nindent 10 }}
+        resources:
+          {{- toYaml .Values.controllerManager.resources | nindent 10 }}
+        {{- with .Values.extraVolumeMounts }}
+        volumeMounts:
+        {{- toYaml . | nindent 8 }}
+        {{- end }}
+      {{- if .Values.kubeRbacProxy.enabled }}
+      - name: kube-rbac-proxy
+        securityContext:
+          {{- toYaml .Values.kubeRbacProxy.securityContext | nindent 10 }}
+        image: {{ include "vault-transit-unseal-operator.kubeRbacProxyImage" . }}
+        args:
+          {{- toYaml .Values.kubeRbacProxy.args | nindent 8 }}
+        ports:
+        - containerPort: 8443
+          protocol: TCP
+          name: https
+        resources:
+          {{- toYaml .Values.kubeRbacProxy.resources | nindent 10 }}
+      {{- end }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.priorityClassName }}
+      priorityClassName: {{ . }}
+      {{- end }}
+      {{- with .Values.extraVolumes }}
+      volumes:
+      {{- toYaml . | nindent 6 }}
+      {{- end }}

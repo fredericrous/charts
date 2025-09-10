@@ -1,0 +1,298 @@
+name: Release Helm Chart
+
+on:
+  push:
+    # Trigger on tags that match chart-name-v1.2.3 pattern
+    tags:
+      - '*-v*.*.*'
+  workflow_dispatch:
+    inputs:
+      chart:
+        description: 'Chart name to release'
+        required: true
+        type: string
+      version:
+        description: 'Version to release (e.g., v0.1.0)'
+        required: true
+        type: string
+
+env:
+  # This repository URL
+  CHARTS_URL: https://fredericrous.github.io/charts
+
+jobs:
+  prepare:
+    name: Prepare Release
+    runs-on: ubuntu-latest
+    outputs:
+      chart_name: ${{ steps.chart.outputs.name }}
+      version: ${{ steps.version.outputs.version }}
+      version_number: ${{ steps.version.outputs.version_number }}
+    steps:
+      - name: Determine chart and version
+        id: chart
+        run: |
+          if [ "${{ github.event_name }}" == "push" ]; then
+            # Extract from tag: chartname-v1.2.3
+            TAG="${GITHUB_REF#refs/tags/}"
+            CHART_NAME="${TAG%-v*}"
+            VERSION="${TAG#*-}"
+          else
+            # From workflow dispatch
+            CHART_NAME="${{ github.event.inputs.chart }}"
+            VERSION="${{ github.event.inputs.version }}"
+          fi
+
+          echo "name=$CHART_NAME" >> $GITHUB_OUTPUT
+          echo "Chart: $CHART_NAME"
+
+      - name: Determine version
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" == "push" ]; then
+            TAG="${GITHUB_REF#refs/tags/}"
+            VERSION="${TAG#*-}"
+          else
+            VERSION="${{ github.event.inputs.version }}"
+          fi
+
+          VERSION_NUMBER="${VERSION#v}"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "version_number=$VERSION_NUMBER" >> $GITHUB_OUTPUT
+          echo "Version: $VERSION ($VERSION_NUMBER)"
+
+  validate-and-test:
+    name: Validate and Test Chart
+    needs: prepare
+    runs-on: ubuntu-latest
+    env:
+      CHART_NAME: ${{ needs.prepare.outputs.chart_name }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify chart exists
+        run: |
+          if [ ! -d "./charts/${{ env.CHART_NAME }}" ]; then
+            echo "ERROR: Chart directory ./charts/${{ env.CHART_NAME }} does not exist!"
+            exit 1
+          fi
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: 'v3.13.3'
+
+      - name: Set up chart-testing
+        uses: helm/chart-testing-action@v2.6.1
+
+      - name: Lint chart
+        run: |
+          ct lint --charts ./charts/${{ env.CHART_NAME }} \
+            --validate-maintainers=false \
+            --check-version-increment=false
+
+      - name: Validate chart version matches tag
+        if: github.event_name == 'push'
+        run: |
+          EXPECTED_VERSION="${{ needs.prepare.outputs.version_number }}"
+          CHART_VERSION=$(yq '.version' ./charts/${{ env.CHART_NAME }}/Chart.yaml)
+          if [ "$EXPECTED_VERSION" != "$CHART_VERSION" ]; then
+            echo "ERROR: Expected version ($EXPECTED_VERSION) does not match Chart version ($CHART_VERSION)"
+            echo "For tag: ${{ github.ref }}"
+            exit 1
+          fi
+
+      - name: Template chart with various values
+        run: |
+          # Test default values
+          helm template ${{ env.CHART_NAME }} ./charts/${{ env.CHART_NAME }} > /tmp/default.yaml
+          echo "✅ Default values templated successfully"
+
+          # Test with common configurations if values exist
+          if grep -q "serviceMonitor:" ./charts/${{ env.CHART_NAME }}/values.yaml 2>/dev/null; then
+            helm template ${{ env.CHART_NAME }} ./charts/${{ env.CHART_NAME }} \
+              --set serviceMonitor.enabled=true > /tmp/monitoring.yaml
+            echo "✅ Monitoring configuration templated successfully"
+          fi
+
+          if grep -q "replicaCount:" ./charts/${{ env.CHART_NAME }}/values.yaml 2>/dev/null; then
+            helm template ${{ env.CHART_NAME }} ./charts/${{ env.CHART_NAME }} \
+              --set replicaCount=3 > /tmp/ha.yaml
+            echo "✅ HA configuration templated successfully"
+          fi
+
+      - name: Run Kubeconform validation
+        run: |
+          # Install kubeconform
+          curl -L https://github.com/yannh/kubeconform/releases/latest/download/kubeconform-linux-amd64.tar.gz | tar xz
+          sudo mv kubeconform /usr/local/bin
+
+          # Validate all templated manifests
+          for file in /tmp/*.yaml; do
+            if [ -f "$file" ]; then
+              echo "Validating $file..."
+              kubeconform -summary -exit-on-error < "$file"
+            fi
+          done
+
+      # Test installation if CRDs exist
+      - name: Check for CRDs
+        id: check_crds
+        run: |
+          if [ -d "./charts/${{ env.CHART_NAME }}/crds" ] && [ "$(ls -A ./charts/${{ env.CHART_NAME }}/crds)" ]; then
+            echo "has_crds=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_crds=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create kind cluster
+        if: steps.check_crds.outputs.has_crds == 'true'
+        uses: helm/kind-action@v1.10.0
+        with:
+          cluster_name: chart-testing
+
+      - name: Install CRDs
+        if: steps.check_crds.outputs.has_crds == 'true'
+        run: |
+          kubectl apply -f ./charts/${{ env.CHART_NAME }}/crds/
+
+      - name: Test chart installation
+        if: steps.check_crds.outputs.has_crds == 'true'
+        run: |
+          helm install ${{ env.CHART_NAME }}-test ./charts/${{ env.CHART_NAME }} \
+            --namespace test-namespace \
+            --create-namespace \
+            --wait \
+            --timeout 5m
+
+  release-chart:
+    name: Package and Publish Chart
+    needs: [prepare, validate-and-test]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event.inputs.version != ''
+    env:
+      CHART_NAME: ${{ needs.prepare.outputs.chart_name }}
+      VERSION: ${{ needs.prepare.outputs.version }}
+      VERSION_NUMBER: ${{ needs.prepare.outputs.version_number }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: 'v3.13.3'
+
+      - name: Update Chart versions
+        run: |
+          # Update Chart.yaml version
+          yq -i ".version = \"${{ env.VERSION_NUMBER }}\"" ./charts/${{ env.CHART_NAME }}/Chart.yaml
+
+          # Update appVersion if it's a main application chart
+          if grep -q "appVersion:" ./charts/${{ env.CHART_NAME }}/Chart.yaml; then
+            yq -i ".appVersion = \"${{ env.VERSION_NUMBER }}\"" ./charts/${{ env.CHART_NAME }}/Chart.yaml
+          fi
+
+          echo "Updated Chart.yaml:"
+          cat ./charts/${{ env.CHART_NAME }}/Chart.yaml
+
+      - name: Package Helm chart
+        run: |
+          mkdir -p packages
+          helm package ./charts/${{ env.CHART_NAME }} -d ./packages
+
+          echo "Packaged chart:"
+          ls -la packages/
+
+      - name: Update repository index
+        run: |
+          # Download current index if it exists
+          curl -sfL ${{ env.CHARTS_URL }}/index.yaml -o ./index.yaml || echo "No existing index.yaml"
+
+          # Update index with new chart
+          helm repo index . --url ${{ env.CHARTS_URL }} --merge ./index.yaml
+
+          echo "Updated index.yaml entries:"
+          yq ".entries.${{ env.CHART_NAME }}" ./index.yaml
+
+      - name: Create release commit
+        run: |
+          # Add files
+          git add ./charts/${{ env.CHART_NAME }}/Chart.yaml
+          git add ./packages/*.tgz
+          git add ./index.yaml
+
+          # Commit
+          git commit -m "Release ${{ env.CHART_NAME }} ${{ env.VERSION }}"
+
+      - name: Push to GitHub Pages branch
+        run: |
+          # This assumes the repository uses GitHub Pages from main branch
+          git push origin main
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.CHART_NAME }}-${{ env.VERSION }}
+          name: ${{ env.CHART_NAME }} ${{ env.VERSION }}
+          body: |
+            ## Helm Chart Release: ${{ env.CHART_NAME }}
+
+            ### Installation
+
+            ```bash
+            helm repo add charts ${{ env.CHARTS_URL }}
+            helm repo update
+            helm install ${{ env.CHART_NAME }} charts/${{ env.CHART_NAME }}
+            ```
+
+            ### Upgrade
+
+            ```bash
+            helm repo update
+            helm upgrade ${{ env.CHART_NAME }} charts/${{ env.CHART_NAME }}
+            ```
+
+            ### Changes
+
+            See [CHANGELOG.md](charts/${{ env.CHART_NAME }}/CHANGELOG.md) for details.
+          files: |
+            ./packages/*.tgz
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  verify-release:
+    name: Verify Release
+    needs: [prepare, release-chart]
+    runs-on: ubuntu-latest
+    env:
+      CHART_NAME: ${{ needs.prepare.outputs.chart_name }}
+    steps:
+      - name: Wait for GitHub Pages
+        run: sleep 60
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: 'v3.13.3'
+
+      - name: Verify chart is available
+        run: |
+          # Add repository
+          helm repo add charts ${{ env.CHARTS_URL }}
+          helm repo update
+
+          echo "Searching for chart..."
+          helm search repo charts/${{ env.CHART_NAME }} --versions
+
+          echo "Showing latest chart info..."
+          helm show chart charts/${{ env.CHART_NAME }}

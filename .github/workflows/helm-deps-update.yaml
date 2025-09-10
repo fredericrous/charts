@@ -1,0 +1,165 @@
+name: Update Helm Dependencies
+
+on:
+  schedule:
+    # Run weekly on Mondays at 3 AM UTC
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update-deps:
+    name: Update Chart Dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: 'v3.13.3'
+
+      - name: Find all charts
+        id: find-charts
+        run: |
+          # Find all Chart.yaml files in charts directory
+          charts=$(find ./charts -name Chart.yaml -not -path "./.*" | sed 's|/Chart.yaml||' | sort)
+          echo "Charts found:"
+          echo "$charts"
+          
+          # Convert to JSON array for matrix
+          charts_json=$(echo "$charts" | jq -R -s -c 'split("\n")[:-1]')
+          echo "charts=$charts_json" >> $GITHUB_OUTPUT
+
+      - name: Check for image updates
+        id: check-updates
+        run: |
+          UPDATES_NEEDED=false
+          UPDATE_SUMMARY=""
+          
+          # Common images to check across all charts
+          declare -A COMMON_IMAGES=(
+            ["kube-rbac-proxy"]="gcr.io/kubebuilder/kube-rbac-proxy"
+            ["nginx"]="nginx"
+            ["busybox"]="busybox"
+          )
+          
+          charts='${{ steps.find-charts.outputs.charts }}'
+          for chart_path in $(echo "$charts" | jq -r '.[]'); do
+            echo "Checking $chart_path..."
+            
+            if [ ! -f "$chart_path/values.yaml" ]; then
+              continue
+            fi
+            
+            CHART_UPDATES=""
+            
+            # Check for kube-rbac-proxy in values
+            if grep -q "kubeRbacProxy:" "$chart_path/values.yaml"; then
+              CURRENT_VERSION=$(yq '.kubeRbacProxy.image.tag // ""' "$chart_path/values.yaml")
+              if [ -n "$CURRENT_VERSION" ]; then
+                # Check latest release from GitHub
+                LATEST_VERSION=$(curl -s https://api.github.com/repos/brancz/kube-rbac-proxy/releases/latest | jq -r .tag_name)
+                
+                if [[ "$CURRENT_VERSION" != "$LATEST_VERSION" && -n "$LATEST_VERSION" ]]; then
+                  CHART_UPDATES="${CHART_UPDATES}\n  - kube-rbac-proxy: $CURRENT_VERSION → $LATEST_VERSION"
+                  yq -i ".kubeRbacProxy.image.tag = \"$LATEST_VERSION\"" "$chart_path/values.yaml"
+                fi
+              fi
+            fi
+            
+            # Check for other common images
+            for image_key in "${!COMMON_IMAGES[@]}"; do
+              IMAGE="${COMMON_IMAGES[$image_key]}"
+              
+              # Skip if not in values
+              if ! grep -q "$image_key" "$chart_path/values.yaml"; then
+                continue
+              fi
+              
+              # Add more image-specific update logic here
+            done
+            
+            # If this chart had updates, increment its version
+            if [ -n "$CHART_UPDATES" ]; then
+              UPDATES_NEEDED=true
+              UPDATE_SUMMARY="${UPDATE_SUMMARY}\n\n### $chart_path${CHART_UPDATES}"
+              
+              # Increment patch version
+              CURRENT_VERSION=$(yq '.version' "$chart_path/Chart.yaml")
+              IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT_VERSION"
+              NEW_VERSION="$MAJOR.$MINOR.$((PATCH + 1))"
+              
+              yq -i ".version = \"$NEW_VERSION\"" "$chart_path/Chart.yaml"
+              
+              echo "Updated $chart_path version: $CURRENT_VERSION → $NEW_VERSION"
+            fi
+          done
+          
+          if [[ "$UPDATES_NEEDED" == "true" ]]; then
+            echo "updates_needed=true" >> $GITHUB_OUTPUT
+            echo "update_summary<<EOF" >> $GITHUB_OUTPUT
+            echo -e "$UPDATE_SUMMARY" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          else
+            echo "updates_needed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run chart tests
+        if: steps.check-updates.outputs.updates_needed == 'true'
+        run: |
+          # Test all updated charts
+          charts='${{ steps.find-charts.outputs.charts }}'
+          for chart_path in $(echo "$charts" | jq -r '.[]'); do
+            if git diff --name-only | grep -q "$chart_path/"; then
+              echo "Testing $chart_path..."
+              
+              # Template the chart to ensure it still works
+              helm template test "$chart_path" > /tmp/test.yaml
+              
+              # Basic validation
+              if ! grep -q "kind:" /tmp/test.yaml; then
+                echo "ERROR: Chart template doesn't contain expected resources"
+                exit 1
+              fi
+            fi
+          done
+
+      - name: Create Pull Request
+        if: steps.check-updates.outputs.updates_needed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(deps): update Helm chart dependencies"
+          title: "chore(deps): update Helm chart dependencies"
+          body: |
+            ## Automated Dependency Updates
+            
+            This PR updates the following dependencies in Helm charts:
+            ${{ steps.check-updates.outputs.update_summary }}
+            
+            ### Checklist
+            - [ ] Charts template successfully
+            - [ ] Versions bumped appropriately
+            - [ ] No breaking changes introduced
+            
+            ### Testing
+            Run the following to test the changes:
+            ```bash
+            # Test all charts
+            for chart in */Chart.yaml; do
+              dir=$(dirname "$chart")
+              echo "Testing $dir..."
+              helm lint "$dir"
+              helm template test "$dir" > /dev/null
+            done
+            ```
+            
+            ---
+            *This PR was automatically generated by the dependency update workflow.*
+          branch: helm-deps-update
+          base: main
+          labels: |
+            dependencies
+            helm
+            automated
