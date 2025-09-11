@@ -3,6 +3,19 @@
 # Create the namespace if it doesn't exist
 createNamespace: false
 
+# Namespace to watch for Vault pods (empty string means all namespaces)
+watchNamespace: ""
+
+# Operator features
+skipCrdInstall: false
+enableLeaderElection: false
+
+# Operator configuration
+maxConcurrentReconciles: 3
+reconcileTimeout: 5m
+vaultTimeout: 30s
+vaultTlsValidation: true
+
 # Operator deployment configuration
 replicaCount: 1
 
@@ -54,8 +67,12 @@ controllerManager:
 
   # Manager configuration
   manager:
-    args: []
-    # The operator only supports -config and -kubeconfig flags
+    args:
+    - --health-probe-bind-address=:8081
+    - --metrics-bind-address=127.0.0.1:8080
+    - --zap-log-level=info
+    - --zap-stacktrace-level=error
+    - --zap-time-encoding=iso8601
 
 # Kube-rbac-proxy configuration (for metrics)
 kubeRbacProxy:
