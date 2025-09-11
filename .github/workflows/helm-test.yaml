@@ -46,8 +46,8 @@ jobs:
           if [[ -n "$changed" ]]; then
             echo "Changed charts:"
             echo "$changed"
-            # Convert to JSON array and prepend charts/ directory
-            charts_json=$(echo "$changed" | sed 's|^|charts/|' | jq -R -s -c 'split("\n")[:-1]')
+            # Convert to JSON array (ct already returns full paths)
+            charts_json=$(echo "$changed" | jq -R -s -c 'split("\n")[:-1]')
             echo "charts=$charts_json" >> $GITHUB_OUTPUT
             echo "has_changes=true" >> $GITHUB_OUTPUT
           else
