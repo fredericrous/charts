@@ -33,28 +33,30 @@ spec:
         image: {{ include "vault-transit-unseal-operator.image" . }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         args:
-          {{- toYaml .Values.controllerManager.manager.args | nindent 8 }}
-          {{- if .Values.watchNamespace }}
-          - --namespace={{ .Values.watchNamespace }}
-          {{- end }}
-          {{- if .Values.skipCrdInstall }}
-          - --skip-crd-install
-          {{- end }}
-          {{- if .Values.enableLeaderElection }}
-          - --leader-elect
-          {{- end }}
-          {{- if ne .Values.maxConcurrentReconciles 3 }}
-          - --max-concurrent-reconciles={{ .Values.maxConcurrentReconciles }}
-          {{- end }}
-          {{- if ne .Values.reconcileTimeout "5m" }}
-          - --reconcile-timeout={{ .Values.reconcileTimeout }}
-          {{- end }}
-          {{- if ne .Values.vaultTimeout "30s" }}
-          - --vault-timeout={{ .Values.vaultTimeout }}
-          {{- end }}
-          {{- if not .Values.vaultTlsValidation }}
-          - --vault-tls-validation=false
-          {{- end }}
+        {{- with .Values.controllerManager.manager.args }}
+          {{- toYaml . | nindent 8 }}
+        {{- end }}
+        {{- if .Values.watchNamespace }}
+        - --namespace={{ .Values.watchNamespace }}
+        {{- end }}
+        {{- if .Values.skipCrdInstall }}
+        - --skip-crd-install
+        {{- end }}
+        {{- if .Values.enableLeaderElection }}
+        - --leader-elect
+        {{- end }}
+        {{- if ne (int .Values.maxConcurrentReconciles) 3 }}
+        - --max-concurrent-reconciles={{ .Values.maxConcurrentReconciles }}
+        {{- end }}
+        {{- if ne .Values.reconcileTimeout "5m" }}
+        - --reconcile-timeout={{ .Values.reconcileTimeout }}
+        {{- end }}
+        {{- if ne .Values.vaultTimeout "30s" }}
+        - --vault-timeout={{ .Values.vaultTimeout }}
+        {{- end }}
+        {{- if not .Values.vaultTlsValidation }}
+        - --vault-tls-validation=false
+        {{- end }}
         env:
         {{- with .Values.extraEnvVars }}
         {{- toYaml . | nindent 8 }}
