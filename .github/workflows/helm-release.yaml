@@ -134,7 +134,8 @@ jobs:
           for file in /tmp/*.yaml; do
             if [ -f "$file" ]; then
               echo "Validating $file..."
-              kubeconform -summary -exit-on-error < "$file"
+              # Skip CRD validation since kubeconform doesn't know about custom resources
+              kubeconform -summary -exit-on-error -skip ServiceMonitor,VaultTransitUnseal < "$file"
             fi
           done
 
