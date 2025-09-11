@@ -77,7 +77,7 @@ jobs:
               
               # Create a minimal test values file if it doesn't exist
               if [ ! -f "$chart/ci/test-values.yaml" ]; then
-                cat > "$chart/ci/test-values.yaml" << EOF
+                cat > "$chart/ci/test-values.yaml" << 'EOF'
 # Minimal test values for CI
 replicaCount: 1
 
