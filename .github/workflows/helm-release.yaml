@@ -35,12 +35,11 @@ jobs:
           if [ "${{ github.event_name }}" == "push" ]; then
             # Extract from tag: chartname-v1.2.3
             TAG="${GITHUB_REF#refs/tags/}"
+            # Everything before the last -v is the chart name
             CHART_NAME="${TAG%-v*}"
-            VERSION="${TAG#*-}"
           else
             # From workflow dispatch
             CHART_NAME="${{ github.event.inputs.chart }}"
-            VERSION="${{ github.event.inputs.version }}"
           fi
 
           echo "name=$CHART_NAME" >> $GITHUB_OUTPUT
@@ -51,7 +50,8 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" == "push" ]; then
             TAG="${GITHUB_REF#refs/tags/}"
-            VERSION="${TAG#*-}"
+            # Extract version after the last -v (e.g., chart-name-v1.2.3 -> v1.2.3)
+            VERSION="${TAG##*-}"
           else
             VERSION="${{ github.event.inputs.version }}"
           fi
