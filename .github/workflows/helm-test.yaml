@@ -77,25 +77,26 @@ jobs:
               
               # Create a minimal test values file if it doesn't exist
               if [ ! -f "$chart/ci/test-values.yaml" ]; then
-                cat > "$chart/ci/test-values.yaml" << 'EOF'
-# Minimal test values for CI
-replicaCount: 1
-
-resources:
-  requests:
-    memory: "64Mi"
-    cpu: "10m"
-  limits:
-    memory: "128Mi"
-    cpu: "100m"
-
-# Disable features that require external dependencies
-serviceMonitor:
-  enabled: false
-  
-networkPolicy:
-  enabled: false
-EOF
+                echo "Creating test values file for $chart"
+                printf '%s\n' \
+                  '# Minimal test values for CI' \
+                  'replicaCount: 1' \
+                  '' \
+                  'resources:' \
+                  '  requests:' \
+                  '    memory: "64Mi"' \
+                  '    cpu: "10m"' \
+                  '  limits:' \
+                  '    memory: "128Mi"' \
+                  '    cpu: "100m"' \
+                  '' \
+                  '# Disable features that require external dependencies' \
+                  'serviceMonitor:' \
+                  '  enabled: false' \
+                  '' \
+                  'networkPolicy:' \
+                  '  enabled: false' \
+                  > "$chart/ci/test-values.yaml"
               fi
             fi
           done < /tmp/changed-charts.txt
