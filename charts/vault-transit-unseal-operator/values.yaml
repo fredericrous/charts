@@ -3,6 +3,19 @@
 # Create the namespace if it doesn't exist
 createNamespace: false
 
+# Namespace to watch for Vault pods (empty string means all namespaces)
+watchNamespace: ""
+
+# Operator features
+skipCrdInstall: true  # Helm manages CRDs via crds/ directory
+enableLeaderElection: false
+
+# Operator configuration
+maxConcurrentReconciles: 3
+reconcileTimeout: 5m
+vaultTimeout: 30s
+vaultTlsValidation: true
+
 # Operator deployment configuration
 replicaCount: 1
 
@@ -55,7 +68,6 @@ controllerManager:
   # Manager configuration
   manager:
     args:
-    - --leader-elect
     - --health-probe-bind-address=:8081
     - --metrics-bind-address=127.0.0.1:8080
     - --zap-log-level=info
