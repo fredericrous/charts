@@ -39,30 +39,31 @@ jobs:
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.6.1
 
-      - name: List changed charts
-        id: list-changed
+      - name: List changed charts and set matrix
+        id: set-matrix
         run: |
           changed=$(ct list-changed --target-branch ${{ github.event.repository.default_branch }} --config .github/ct.yaml)
           if [[ -n "$changed" ]]; then
-            echo "Changed charts:"
+            echo "Changed charts detected:"
             echo "$changed"
-            # Convert to JSON array (ct already returns full paths)
-            charts_json=$(echo "$changed" | jq -R -s -c 'split("\n")[:-1]')
-            echo "charts=$charts_json" >> $GITHUB_OUTPUT
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-          else
-            echo "No chart changes detected"
-            echo "charts=[]" >> $GITHUB_OUTPUT
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Set matrix
-        id: set-matrix
-        run: |
-          if [[ "${{ steps.list-changed.outputs.has_changes }}" == "true" ]]; then
-            echo "matrix={\"chart\":${{ steps.list-changed.outputs.charts }}}" >> $GITHUB_OUTPUT
+            
+            # Convert to JSON array
+            charts_array=()
+            while IFS= read -r chart; do
+              if [[ -n "$chart" ]]; then
+                charts_array+=("\"$chart\"")
+              fi
+            done <<< "$changed"
+            
+            # Create matrix JSON
+            charts_json=$(IFS=','; echo "[${charts_array[*]}]")
+            matrix_json="{\"chart\":$charts_json}"
+            
+            echo "Matrix JSON: $matrix_json"
+            echo "matrix=$matrix_json" >> $GITHUB_OUTPUT
             echo "changed=true" >> $GITHUB_OUTPUT
           else
+            echo "No chart changes detected"
             echo "matrix={\"chart\":[]}" >> $GITHUB_OUTPUT
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
