@@ -54,12 +54,8 @@ controllerManager:
 
   # Manager configuration
   manager:
-    args:
-    - --health-probe-bind-address=:8081
-    - --metrics-bind-address=127.0.0.1:8080
-    - --zap-log-level=info
-    - --zap-stacktrace-level=error
-    - --zap-time-encoding=iso8601
+    args: []
+    # The operator only supports -config and -kubeconfig flags
 
 # Kube-rbac-proxy configuration (for metrics)
 kubeRbacProxy:
