@@ -27,7 +27,21 @@ This is a multi-chart repository that can host multiple Helm charts. The structu
 
 ## Workflows
 
-### 1. Release Helm Chart (`helm-release.yaml`)
+### 1. Auto Tag on Merge (`auto-tag-on-merge.yaml`)
+
+**Trigger**: When a PR with `chart-update` label is merged
+
+**Purpose**: Automatically creates release tags for chart updates
+
+**Features**:
+- Detects chart name and version from PR branch name (format: `update-<chart>-<version>`)
+- Creates appropriate git tag (format: `<chart>-v<version>`)
+- Posts confirmation comment on the merged PR
+- Triggers the helm-release workflow automatically
+
+**Note**: This workflow ensures the charts repository is fully automated - no manual tagging required!
+
+### 2. Release Helm Chart (`helm-release.yaml`)
 
 **Trigger**: 
 - Git tags matching `chartname-v*.*.*` pattern (e.g., `vault-transit-unseal-operator-v0.1.0`)
@@ -146,7 +160,18 @@ Enable the following:
 
 ## Releasing a Chart
 
-### Automatic Release (Recommended)
+### Fully Automated Release (via External PR)
+
+When a PR is created by external automation (e.g., from operator releases) with the `chart-update` label:
+
+1. The PR is automatically tested via `helm-test.yaml`
+2. Once merged, `auto-tag-on-merge.yaml` automatically:
+   - Creates the appropriate release tag
+   - Triggers `helm-release.yaml` to publish the chart
+
+No manual intervention required!
+
+### Manual Release
 
 1. Update the chart version in `Chart.yaml`:
    ```yaml
@@ -173,7 +198,7 @@ Enable the following:
    - Update the repository index
    - Create a GitHub release
 
-### Manual Release
+### Manual Release via Workflow Dispatch
 
 Use the workflow dispatch feature:
 
