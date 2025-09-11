@@ -229,7 +229,7 @@ jobs:
         run: |
           # Add files
           git add ./charts/${{ env.CHART_NAME }}/Chart.yaml
-          git add ./packages/*.tgz
+          git add -f ./packages/*.tgz  # Force add since packages are in .gitignore
           git add ./index.yaml
 
           # Commit
