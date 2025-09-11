@@ -183,6 +183,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: main
 
       - name: Configure Git
         run: |
@@ -238,7 +239,7 @@ jobs:
 
       - name: Push to GitHub Pages branch
         run: |
-          # This assumes the repository uses GitHub Pages from main branch
+          # We're already on main branch, just push
           git push origin main
 
       - name: Create GitHub Release
