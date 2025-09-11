@@ -1,0 +1,50 @@
+apiVersion: v1
+entries:
+  argocd-envsubst-plugin:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-09-11T21:34:44.122778983Z"
+    description: ArgoCD Config Management Plugin for environment variable substitution
+    digest: 2e2b03dc926b412b2a7aa38fdaf815331ffe6b8922fb949b1d4d6805f50ecb33
+    home: https://github.com/fredericrous/argocd-envsubst-plugin
+    icon: https://raw.githubusercontent.com/argoproj/argo-cd/master/docs/assets/logo.png
+    keywords:
+    - argocd
+    - envsubst
+    - gitops
+    - kustomize
+    maintainers:
+    - email: fredericrous@users.noreply.github.com
+      name: fredericrous
+    name: argocd-envsubst-plugin
+    sources:
+    - https://github.com/fredericrous/argocd-envsubst-plugin
+    type: application
+    urls:
+    - https://fredericrous.github.io/charts/packages/argocd-envsubst-plugin-1.0.0.tgz
+    version: 1.0.0
+  vault-transit-unseal-operator:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-09-11T21:34:44.123537125Z"
+    description: A Kubernetes operator that automatically manages HashiCorp Vault
+      initialization and unsealing using transit unseal
+    digest: 9970d6603a7e1c7dcaed8821bee32f20602cf7b5984d6ca18f2b642e9c371168
+    home: https://github.com/fredericrous/vault-transit-unseal-operator
+    icon: https://raw.githubusercontent.com/hashicorp/vault/main/ui/public/favicon.png
+    keywords:
+    - vault
+    - transit
+    - unseal
+    - operator
+    - kubernetes
+    maintainers:
+    - name: fredericrous
+    name: vault-transit-unseal-operator
+    sources:
+    - https://github.com/fredericrous/vault-transit-unseal-operator
+    type: application
+    urls:
+    - https://fredericrous.github.io/charts/packages/vault-transit-unseal-operator-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-09-11T21:34:44.12226049Z"
