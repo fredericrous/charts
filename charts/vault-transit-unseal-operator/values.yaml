@@ -7,7 +7,7 @@ createNamespace: false
 watchNamespace: ""
 
 # Operator features
-skipCrdInstall: false
+skipCrdInstall: true  # Helm manages CRDs via crds/ directory
 enableLeaderElection: false
 
 # Operator configuration
