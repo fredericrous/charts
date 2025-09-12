@@ -1,9 +1,9 @@
-{{- if .Values.metrics.enabled }}
+{{- if and .Values.metrics.enabled (not .Values.testMode) }}
 apiVersion: v1
 kind: Service
 metadata:
   name: {{ include "argocd-envsubst-plugin.fullname" . }}-metrics
-  namespace: argocd
+  namespace: {{ .Release.Namespace }}
   labels:
     {{- include "argocd-envsubst-plugin.labels" . | nindent 4 }}
     app.kubernetes.io/component: metrics

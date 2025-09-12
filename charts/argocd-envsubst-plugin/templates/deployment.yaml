@@ -1,8 +1,9 @@
+{{- if not .Values.testMode }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "argocd-envsubst-plugin.fullname" . }}
-  namespace: argocd
+  namespace: {{ .Release.Namespace }}
   labels:
     {{- include "argocd-envsubst-plugin.labels" . | nindent 4 }}
 spec:
@@ -70,3 +71,4 @@ spec:
         emptyDir: {}
       - name: tmp
         emptyDir: {}
+{{- end }}

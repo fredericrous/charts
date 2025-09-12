@@ -1,6 +1,10 @@
 # Default values for argocd-envsubst-plugin
 replicaCount: 1
 
+# Test mode - skip deployment creation (for chart testing only)
+# The plugin requires ArgoCD CMP server which isn't available in standalone tests
+testMode: false
+
 image:
   repository: ghcr.io/fredericrous/argocd-envsubst-plugin
   pullPolicy: IfNotPresent
@@ -24,7 +28,7 @@ plugin:
     find:
       # Look for kustomization.yaml files
       glob: "**/kustomization.yaml"
-  
+
 resources:
   limits:
     memory: 256Mi

@@ -44,6 +44,7 @@ The following table lists the configurable parameters of the ArgoCD envsubst plu
 | Parameter | Description | Default |
 |-----------|-------------|---------|
 | `replicaCount` | Number of replicas | `1` |
+| `testMode` | Enable test mode (skips deployment for chart testing) | `false` |
 | `image.repository` | Image repository | `ghcr.io/fredericrous/argocd-plugin-envsubst` |
 | `image.tag` | Image tag (defaults to chart appVersion) | `""` |
 | `image.pullPolicy` | Image pull policy | `IfNotPresent` |
