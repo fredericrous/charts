@@ -24,7 +24,7 @@ plugin:
     find:
       # Look for kustomization.yaml files
       glob: "**/kustomization.yaml"
-  
+
 resources:
   limits:
     memory: 256Mi
