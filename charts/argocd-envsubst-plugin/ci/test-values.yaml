@@ -1,6 +1,10 @@
 # Test values for chart installation
 # This file is used by the ct install test
 
+# Enable test mode to skip deployment
+# The plugin container requires ArgoCD CMP server which isn't available in tests
+testMode: true
+
 # Basic configuration that should work in any namespace
 replicaCount: 1
 

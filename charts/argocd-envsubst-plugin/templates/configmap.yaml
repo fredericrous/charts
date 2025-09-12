@@ -1,0 +1,15 @@
+{{- if .Values.testMode }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "argocd-envsubst-plugin.fullname" . }}-test
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "argocd-envsubst-plugin.labels" . | nindent 4 }}
+data:
+  test-mode: "enabled"
+  info: |
+    This ConfigMap is created in test mode to verify the chart installs successfully.
+    In production, this chart provides the argocd-envsubst-plugin configuration
+    which should be integrated into ArgoCD's repo-server deployment.
+{{- end }}
