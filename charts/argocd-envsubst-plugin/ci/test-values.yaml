@@ -1,0 +1,26 @@
+# Test values for chart installation
+# This file is used by the ct install test
+
+# Basic configuration that should work in any namespace
+replicaCount: 1
+
+# Minimal resources for testing
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi
+
+# Test with metrics enabled
+metrics:
+  enabled: true
+  service:
+    type: ClusterIP
+    port: 9090
+
+# Test with some environment variables
+env:
+  TEST_VAR: "test-value"
+  CLUSTER_NAME: "test-cluster"
