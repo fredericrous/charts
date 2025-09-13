@@ -82,6 +82,9 @@ jobs:
           git tag -a "$TAG_NAME" -F tag_message.txt
           rm -f tag_message.txt
           
+          # Configure git to use the token for authentication
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          
           git push origin "$TAG_NAME"
           
           echo "✅ Created tag: $TAG_NAME"
