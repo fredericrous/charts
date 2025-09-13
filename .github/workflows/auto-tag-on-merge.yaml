@@ -12,6 +12,8 @@ jobs:
       github.event.pull_request.merged == true &&
       contains(github.event.pull_request.labels.*.name, 'chart-update')
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to push tags
     
     steps:
       - name: Checkout code
@@ -59,12 +61,15 @@ jobs:
           fi
           
           # Create and push tag
-          git tag -a "$TAG_NAME" -m "Release ${{ steps.extract.outputs.chart_name }} v${{ steps.extract.outputs.chart_version }}
-
-Chart version: ${{ steps.extract.outputs.chart_version }}
-App version: ${{ steps.extract.outputs.app_version }}
-
-Automated release from PR #${{ github.event.pull_request.number }}"
+          echo "Release ${{ steps.extract.outputs.chart_name }} v${{ steps.extract.outputs.chart_version }}" > tag_message.txt
+          echo "" >> tag_message.txt
+          echo "Chart version: ${{ steps.extract.outputs.chart_version }}" >> tag_message.txt
+          echo "App version: ${{ steps.extract.outputs.app_version }}" >> tag_message.txt
+          echo "" >> tag_message.txt
+          echo "Automated release from PR #${{ github.event.pull_request.number }}" >> tag_message.txt
+          
+          git tag -a "$TAG_NAME" -F tag_message.txt
+          rm -f tag_message.txt
           
           git push origin "$TAG_NAME"
           

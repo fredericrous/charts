@@ -230,12 +230,32 @@ jobs:
           echo "Updated index.yaml entries:"
           yq ".entries.${{ env.CHART_NAME }}" ./index.yaml
 
+      - name: Update README with new chart version
+        run: |
+          # Get chart info from Chart.yaml
+          DESCRIPTION=$(yq '.description' ./charts/${{ env.CHART_NAME }}/Chart.yaml)
+          APP_VERSION=$(yq '.appVersion' ./charts/${{ env.CHART_NAME }}/Chart.yaml)
+          
+          # Update the README.md table
+          # First, remove the old entry for this chart if it exists
+          sed -i "/^| \[${{ env.CHART_NAME }}\]/d" README.md
+          
+          # Find the line number after the table header
+          LINE_NUM=$(grep -n "^|-------|---------|-------------|-------------|" README.md | cut -d: -f1)
+          
+          # Insert the new entry after the header separator
+          sed -i "$((LINE_NUM+1))i| [${{ env.CHART_NAME }}](charts/${{ env.CHART_NAME }}/) | ${{ env.VERSION_NUMBER }} | $APP_VERSION | $DESCRIPTION |" README.md
+          
+          echo "Updated README.md with ${{ env.CHART_NAME }} version ${{ env.VERSION_NUMBER }}"
+          cat README.md | grep -A5 "Available Charts"
+
       - name: Create release commit
         run: |
           # Add files
           git add ./charts/${{ env.CHART_NAME }}/Chart.yaml
           git add -f ./packages/*.tgz  # Force add since packages are in .gitignore
           git add ./index.yaml
+          git add ./README.md
 
           # Commit
           git commit -m "Release ${{ env.CHART_NAME }} ${{ env.VERSION }}"
