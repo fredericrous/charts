@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 1.0.2 | 1.0.7 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
+| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 1.0.2 | 1.0.2 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [argocd-envsubst-plugin](charts/argocd-envsubst-plugin/) | 3.0.1 | 3.0.1 | ArgoCD Config Management Plugin for environment variable substitution |
 
 ## Installing a Chart
