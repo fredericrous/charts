@@ -3,7 +3,7 @@ name: argocd-envsubst-plugin
 description: ArgoCD Config Management Plugin for environment variable substitution
 type: application
 version: 3.0.1
-appVersion: "3.0.2"
+appVersion: "3.0.1"
 keywords:
   - argocd
   - envsubst

@@ -2,8 +2,30 @@ apiVersion: v1
 entries:
   argocd-envsubst-plugin:
   - apiVersion: v2
+    appVersion: 3.0.1
+    created: "2025-09-13T01:28:21.954107563Z"
+    description: ArgoCD Config Management Plugin for environment variable substitution
+    digest: 77f9fc24a9bbe2aa0ebdf7497949566fdf2a475a24b4c0620899cd59a2a94d1f
+    home: https://github.com/fredericrous/argocd-envsubst-plugin
+    icon: https://raw.githubusercontent.com/argoproj/argo-cd/master/docs/assets/logo.png
+    keywords:
+    - argocd
+    - envsubst
+    - gitops
+    - kustomize
+    maintainers:
+    - email: fredericrous@users.noreply.github.com
+      name: fredericrous
+    name: argocd-envsubst-plugin
+    sources:
+    - https://github.com/fredericrous/argocd-envsubst-plugin
+    type: application
+    urls:
+    - https://fredericrous.github.io/charts/packages/argocd-envsubst-plugin-3.0.1.tgz
+    version: 3.0.1
+  - apiVersion: v2
     appVersion: 2.0.1
-    created: "2025-09-11T22:41:35.480422034Z"
+    created: "2025-09-13T01:28:21.95369063Z"
     description: ArgoCD Config Management Plugin for environment variable substitution
     digest: 0aa891a65fa623740325a3e955f14ce7d5ed0002cbf839cbdb3969d62f106963
     home: https://github.com/fredericrous/argocd-envsubst-plugin
@@ -25,7 +47,7 @@ entries:
     version: 2.0.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2025-09-11T22:41:35.480090883Z"
+    created: "2025-09-13T01:28:21.953388592Z"
     description: ArgoCD Config Management Plugin for environment variable substitution
     digest: e22d9a310f87869d5f7bc3b7b42eb0b5d26b6d666af95758ce15a98e657ff165
     home: https://github.com/fredericrous/argocd-envsubst-plugin
@@ -47,7 +69,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-11T22:41:35.479810757Z"
+    created: "2025-09-13T01:28:21.953071606Z"
     description: ArgoCD Config Management Plugin for environment variable substitution
     digest: cfa998f16213eeabe96c515bf57151ed0730c372a57ac06859d9646817f78bd3
     home: https://github.com/fredericrous/argocd-envsubst-plugin
@@ -70,7 +92,7 @@ entries:
   vault-transit-unseal-operator:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-11T22:41:35.481282229Z"
+    created: "2025-09-13T01:28:21.954842575Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 9970d6603a7e1c7dcaed8821bee32f20602cf7b5984d6ca18f2b642e9c371168
@@ -91,4 +113,4 @@ entries:
     urls:
     - https://fredericrous.github.io/charts/packages/vault-transit-unseal-operator-1.0.0.tgz
     version: 1.0.0
-generated: "2025-09-11T22:41:35.479374117Z"
+generated: "2025-09-13T01:28:21.952581635Z"
