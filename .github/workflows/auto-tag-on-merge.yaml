@@ -50,14 +50,22 @@ jobs:
           
       - name: Create and push tag
         env:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+          WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+          DEFAULT_TOKEN: ${{ github.token }}
         run: |
+          # Debug: Check which tokens are available
+          echo "::debug::WORKFLOW_TOKEN length: ${#WORKFLOW_TOKEN}"
+          echo "::debug::DEFAULT_TOKEN length: ${#DEFAULT_TOKEN}"
+          
           # Check if WORKFLOW_TOKEN is available
-          if [ -z "$GITHUB_TOKEN" ]; then
+          if [ -z "$WORKFLOW_TOKEN" ]; then
             echo "::warning::WORKFLOW_TOKEN not set. Tag will be created but won't trigger workflows."
             echo "::warning::To enable workflow triggering, create a PAT with 'workflow' scope and add it as WORKFLOW_TOKEN secret."
             # Use default GITHUB_TOKEN
-            export GITHUB_TOKEN=${{ github.token }}
+            GITHUB_TOKEN="$DEFAULT_TOKEN"
+          else
+            echo "::notice::Using WORKFLOW_TOKEN for authentication"
+            GITHUB_TOKEN="$WORKFLOW_TOKEN"
           fi
           
           git config --global user.name "github-actions[bot]"
@@ -83,7 +91,7 @@ jobs:
           rm -f tag_message.txt
           
           # Configure git to use the token for authentication
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
           
           git push origin "$TAG_NAME"
           
