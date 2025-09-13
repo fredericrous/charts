@@ -203,10 +203,8 @@ jobs:
           # Update Chart.yaml version
           yq -i ".version = \"${{ env.VERSION_NUMBER }}\"" ./charts/${{ env.CHART_NAME }}/Chart.yaml
 
-          # Update appVersion if it's a main application chart
-          if grep -q "appVersion:" ./charts/${{ env.CHART_NAME }}/Chart.yaml; then
-            yq -i ".appVersion = \"${{ env.VERSION_NUMBER }}\"" ./charts/${{ env.CHART_NAME }}/Chart.yaml
-          fi
+          # NOTE: appVersion should NOT be updated here - it's already set correctly by the PR
+          # The appVersion represents the application version, not the chart version
 
           echo "Updated Chart.yaml:"
           cat ./charts/${{ env.CHART_NAME }}/Chart.yaml
