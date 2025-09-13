@@ -3,7 +3,7 @@ entries:
   argocd-envsubst-plugin:
   - apiVersion: v2
     appVersion: 3.0.1
-    created: "2025-09-13T09:07:05.170649791Z"
+    created: "2025-09-13T16:19:51.650550856Z"
     description: ArgoCD Config Management Plugin for environment variable substitution
     digest: 77f9fc24a9bbe2aa0ebdf7497949566fdf2a475a24b4c0620899cd59a2a94d1f
     home: https://github.com/fredericrous/argocd-envsubst-plugin
@@ -25,7 +25,7 @@ entries:
     version: 3.0.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2025-09-13T09:07:05.170272788Z"
+    created: "2025-09-13T16:19:51.65015349Z"
     description: ArgoCD Config Management Plugin for environment variable substitution
     digest: 0aa891a65fa623740325a3e955f14ce7d5ed0002cbf839cbdb3969d62f106963
     home: https://github.com/fredericrous/argocd-envsubst-plugin
@@ -47,7 +47,7 @@ entries:
     version: 2.0.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2025-09-13T09:07:05.169945358Z"
+    created: "2025-09-13T16:19:51.64985536Z"
     description: ArgoCD Config Management Plugin for environment variable substitution
     digest: e22d9a310f87869d5f7bc3b7b42eb0b5d26b6d666af95758ce15a98e657ff165
     home: https://github.com/fredericrous/argocd-envsubst-plugin
@@ -69,7 +69,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-13T09:07:05.169618339Z"
+    created: "2025-09-13T16:19:51.649520201Z"
     description: ArgoCD Config Management Plugin for environment variable substitution
     digest: cfa998f16213eeabe96c515bf57151ed0730c372a57ac06859d9646817f78bd3
     home: https://github.com/fredericrous/argocd-envsubst-plugin
@@ -91,11 +91,11 @@ entries:
     version: 1.0.0
   vault-transit-unseal-operator:
   - apiVersion: v2
-    appVersion: 1.0.4
-    created: "2025-09-13T09:07:05.173650551Z"
+    appVersion: 1.0.9
+    created: "2025-09-13T16:19:51.653557872Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
-    digest: b8adfbcdde7da7e0e44e10edd9c472e3789f446dea3ba47d80ebb90689fb877c
+    digest: bf618379ac3696bf2126269022ccbaa42d0215b20b6aa336058472966d0ed5e5
     home: https://github.com/fredericrous/vault-transit-unseal-operator
     icon: https://raw.githubusercontent.com/hashicorp/vault/main/ui/public/favicon.png
     keywords:
@@ -115,7 +115,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2025-09-13T09:07:05.17289854Z"
+    created: "2025-09-13T16:19:51.652813605Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 30d91179ef7281d961be994981124ce8380eeaddf2a322b37c4d39f35c905b2d
@@ -138,7 +138,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2025-09-13T09:07:05.172176044Z"
+    created: "2025-09-13T16:19:51.652056213Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: db6d3aa0a1ebe4bf60db3a4551f63f613547fe5a4f94e16c4f73a024fe863256
@@ -161,7 +161,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-13T09:07:05.171438961Z"
+    created: "2025-09-13T16:19:51.65129858Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 9970d6603a7e1c7dcaed8821bee32f20602cf7b5984d6ca18f2b642e9c371168
@@ -182,4 +182,4 @@ entries:
     urls:
     - https://fredericrous.github.io/charts/packages/vault-transit-unseal-operator-1.0.0.tgz
     version: 1.0.0
-generated: "2025-09-13T09:07:05.169150748Z"
+generated: "2025-09-13T16:19:51.648662492Z"
