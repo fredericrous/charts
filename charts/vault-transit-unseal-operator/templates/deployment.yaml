@@ -39,7 +39,7 @@ spec:
         {{- if .Values.watchNamespace }}
         - --namespace={{ .Values.watchNamespace }}
         {{- end }}
-        {{- if .Values.skipCrdInstall }}
+        {{- if not .Values.crds.install }}
         - --skip-crd-install
         {{- end }}
         {{- if .Values.enableLeaderElection }}
