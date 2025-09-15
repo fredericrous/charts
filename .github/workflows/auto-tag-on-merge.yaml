@@ -96,21 +96,5 @@ jobs:
           git push origin "$TAG_NAME"
           
           echo "✅ Created tag: $TAG_NAME"
-          
-      - name: Comment on PR
-        if: success()
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ github.event.pull_request.number }}
-          body: |
-            🎉 **Chart Release Tag Created!**
-            
-            Tag: `${{ steps.extract.outputs.chart_name }}-v${{ steps.extract.outputs.chart_version }}`
-            
-            The Helm chart release workflow will now automatically:
-            - Package the chart
-            - Update the repository index
-            - Create a GitHub release
-            - Publish to https://fredericrous.github.io/charts/
             
             Monitor progress: [Release Workflow](https://github.com/fredericrous/charts/actions/workflows/helm-release.yaml)
