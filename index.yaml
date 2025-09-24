@@ -2,8 +2,31 @@ apiVersion: v1
 entries:
   vault-transit-unseal-operator:
   - apiVersion: v2
+    appVersion: 1.0.10
+    created: "2025-09-24T10:40:22.499423431Z"
+    description: A Kubernetes operator that automatically manages HashiCorp Vault
+      initialization and unsealing using transit unseal
+    digest: 860a9157ee71f7ff4b8b674392eae50a7885d6d333f8710e160db9ab6ec408dc
+    home: https://github.com/fredericrous/vault-transit-unseal-operator
+    icon: https://raw.githubusercontent.com/hashicorp/vault/main/ui/public/favicon.png
+    keywords:
+    - vault
+    - transit
+    - unseal
+    - operator
+    - kubernetes
+    maintainers:
+    - name: fredericrous
+    name: vault-transit-unseal-operator
+    sources:
+    - https://github.com/fredericrous/vault-transit-unseal-operator
+    type: application
+    urls:
+    - https://fredericrous.github.io/charts/packages/vault-transit-unseal-operator-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v2
     appVersion: 1.0.9
-    created: "2025-09-14T18:10:43.802079595Z"
+    created: "2025-09-24T10:40:22.498657465Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 60d8f8222875ed7c57c82a772734905e02fbe5268fa86056a66b0a121c75bc53
@@ -26,7 +49,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.0.9
-    created: "2025-09-14T18:10:43.801324125Z"
+    created: "2025-09-24T10:40:22.497887401Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: bf618379ac3696bf2126269022ccbaa42d0215b20b6aa336058472966d0ed5e5
@@ -49,7 +72,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2025-09-14T18:10:43.800431327Z"
+    created: "2025-09-24T10:40:22.497126555Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 30d91179ef7281d961be994981124ce8380eeaddf2a322b37c4d39f35c905b2d
@@ -72,7 +95,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2025-09-14T18:10:43.799687198Z"
+    created: "2025-09-24T10:40:22.496383441Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: db6d3aa0a1ebe4bf60db3a4551f63f613547fe5a4f94e16c4f73a024fe863256
@@ -95,7 +118,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-14T18:10:43.79894326Z"
+    created: "2025-09-24T10:40:22.495567882Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 9970d6603a7e1c7dcaed8821bee32f20602cf7b5984d6ca18f2b642e9c371168
@@ -116,4 +139,4 @@ entries:
     urls:
     - https://fredericrous.github.io/charts/packages/vault-transit-unseal-operator-1.0.0.tgz
     version: 1.0.0
-generated: "2025-09-14T18:10:43.794928385Z"
+generated: "2025-09-24T10:40:22.493857007Z"
