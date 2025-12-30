@@ -14,20 +14,20 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write  # Required to push tags
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.WORKFLOW_TOKEN }}
-          
+
       - name: Extract chart info from PR
         id: extract
         run: |
           PR_TITLE="${{ github.event.pull_request.title }}"
           PR_BRANCH="${{ github.event.pull_request.head.ref }}"
-          
+
           # Extract chart name and version from branch name
           # Format: update-vault-transit-unseal-operator-1.0.5
           if [[ "$PR_BRANCH" =~ ^update-([a-zA-Z0-9-]+)-([0-9]+\.[0-9]+\.[0-9]+)$ ]]; then
@@ -35,11 +35,11 @@ jobs:
             APP_VERSION="${BASH_REMATCH[2]}"
             echo "chart_name=$CHART_NAME" >> $GITHUB_OUTPUT
             echo "app_version=$APP_VERSION" >> $GITHUB_OUTPUT
-            
+
             # Get the chart version from Chart.yaml
             CHART_VERSION=$(yq '.version' "./charts/$CHART_NAME/Chart.yaml")
             echo "chart_version=$CHART_VERSION" >> $GITHUB_OUTPUT
-            
+
             echo "Chart: $CHART_NAME"
             echo "Chart Version: $CHART_VERSION"
             echo "App Version: $APP_VERSION"
@@ -47,7 +47,7 @@ jobs:
             echo "ERROR: Could not parse chart info from PR branch: $PR_BRANCH"
             exit 1
           fi
-          
+
       - name: Create and push tag
         env:
           WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
@@ -56,7 +56,7 @@ jobs:
           # Debug: Check which tokens are available
           echo "::debug::WORKFLOW_TOKEN length: ${#WORKFLOW_TOKEN}"
           echo "::debug::DEFAULT_TOKEN length: ${#DEFAULT_TOKEN}"
-          
+
           # Check if WORKFLOW_TOKEN is available
           if [ -z "$WORKFLOW_TOKEN" ]; then
             echo "::warning::WORKFLOW_TOKEN not set. Tag will be created but won't trigger workflows."
@@ -67,18 +67,18 @@ jobs:
             echo "::notice::Using WORKFLOW_TOKEN for authentication"
             GITHUB_TOKEN="$WORKFLOW_TOKEN"
           fi
-          
+
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           TAG_NAME="${{ steps.extract.outputs.chart_name }}-v${{ steps.extract.outputs.chart_version }}"
-          
+
           # Check if tag already exists
           if git rev-parse "$TAG_NAME" >/dev/null 2>&1; then
             echo "Tag $TAG_NAME already exists, skipping..."
             exit 0
           fi
-          
+
           # Create and push tag
           echo "Release ${{ steps.extract.outputs.chart_name }} v${{ steps.extract.outputs.chart_version }}" > tag_message.txt
           echo "" >> tag_message.txt
@@ -86,15 +86,15 @@ jobs:
           echo "App version: ${{ steps.extract.outputs.app_version }}" >> tag_message.txt
           echo "" >> tag_message.txt
           echo "Automated release from PR #${{ github.event.pull_request.number }}" >> tag_message.txt
-          
+
           git tag -a "$TAG_NAME" -F tag_message.txt
           rm -f tag_message.txt
-          
+
           # Configure git to use the token for authentication
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
-          
+
           git push origin "$TAG_NAME"
-          
+
           echo "✅ Created tag: $TAG_NAME"
-            
-            Monitor progress: [Release Workflow](https://github.com/fredericrous/charts/actions/workflows/helm-release.yaml)
+          echo ""
+          echo "Monitor progress: [Release Workflow](https://github.com/fredericrous/charts/actions/workflows/helm-release.yaml)"
