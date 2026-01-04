@@ -3,8 +3,8 @@ apiVersion: v2
 name: vault-transit-unseal-operator
 description: A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal
 type: application
-version: 1.6.0
-appVersion: "1.6.0"
+version: 2.0.0
+appVersion: "2.0.0"
 keywords:
   - vault
   - transit
