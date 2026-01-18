@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.1.7 | 2.1.7 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
+| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.1.8 | 2.1.8 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 
 ## Installing a Chart
 
