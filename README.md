@@ -13,6 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.0 | 0.1.0 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.1.8 | 2.1.8 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 
 ## Installing a Chart
@@ -41,6 +42,7 @@ helm install my-release fredericrous/<chart-name> -f my-values.yaml
 ├── README.md          # This file
 ├── index.yaml         # Helm repository index (auto-generated)
 ├── charts/            # Chart sources
+│   ├── authelia-oidc-operator/
 │   └── vault-transit-unseal-operator/
 └── packages/          # Packaged charts (*.tgz)
 ```
