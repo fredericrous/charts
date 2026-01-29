@@ -64,6 +64,8 @@ config:
   logEncoder: json
   # Enable leader election (for HA deployments)
   leaderElect: false
+  # Maximum concurrent reconciles (use 1 for stability)
+  maxConcurrentReconciles: 1
 
 # Metrics configuration
 metrics:

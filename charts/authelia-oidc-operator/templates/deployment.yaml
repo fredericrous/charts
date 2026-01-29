@@ -39,6 +39,7 @@ spec:
             - --zap-log-level={{ .Values.config.logLevel }}
             - --zap-encoder={{ .Values.config.logEncoder }}
             - --leader-elect={{ .Values.config.leaderElect }}
+            - --max-concurrent-reconciles={{ .Values.config.maxConcurrentReconciles }}
             - --metrics-bind-address=:{{ .Values.metrics.port }}
             - --health-probe-bind-address=:{{ .Values.health.port }}
           ports:
