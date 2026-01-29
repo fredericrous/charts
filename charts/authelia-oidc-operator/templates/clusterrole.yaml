@@ -5,28 +5,35 @@ metadata:
   labels:
     {{- include "authelia-oidc-operator.labels" . | nindent 4 }}
 rules:
-  # OIDCClient resources
   - apiGroups:
-      - security.homelab.io
+      - ""
     resources:
-      - oidcclients
+      - configmaps
+      - secrets
     verbs:
+      - create
+      - delete
       - get
       - list
+      - patch
+      - update
       - watch
-      - create
-      - update
-      - patch
-      - delete
   - apiGroups:
-      - security.homelab.io
+      - ""
     resources:
-      - oidcclients/status
+      - events
     verbs:
-      - get
-      - update
+      - create
       - patch
-  # ClaimsPolicy and UserAttribute resources (read-only)
+  - apiGroups:
+      - coordination.k8s.io
+    resources:
+      - leases
+    verbs:
+      - create
+      - get
+      - list
+      - update
   - apiGroups:
       - security.homelab.io
     resources:
@@ -36,47 +43,23 @@ rules:
       - get
       - list
       - watch
-  # Secrets
   - apiGroups:
-      - ""
+      - security.homelab.io
     resources:
-      - secrets
+      - oidcclients
     verbs:
-      - get
-      - list
-      - watch
       - create
-      - update
-      - patch
       - delete
-  # ConfigMaps
-  - apiGroups:
-      - ""
-    resources:
-      - configmaps
-    verbs:
       - get
       - list
-      - watch
-      - create
+      - patch
       - update
-      - patch
-      - delete
-  # Events
+      - watch
   - apiGroups:
-      - ""
+      - security.homelab.io
     resources:
-      - events
-    verbs:
-      - create
-      - patch
-  # Leases (for leader election)
-  - apiGroups:
-      - coordination.k8s.io
-    resources:
-      - leases
+      - oidcclients/status
     verbs:
       - get
-      - list
-      - create
+      - patch
       - update
