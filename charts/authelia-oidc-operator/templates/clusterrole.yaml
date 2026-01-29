@@ -26,6 +26,16 @@ rules:
       - get
       - update
       - patch
+  # ClaimsPolicy and UserAttribute resources (read-only)
+  - apiGroups:
+      - security.homelab.io
+    resources:
+      - claimspolicies
+      - userattributes
+    verbs:
+      - get
+      - list
+      - watch
   # Secrets
   - apiGroups:
       - ""
