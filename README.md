@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.11 | 0.1.13 | A Kubernetes operator that manages OIDC client configurations for Authelia |
+| [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.12 | 0.1.15 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.1.8 | 2.1.8 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 
 ## Installing a Chart
