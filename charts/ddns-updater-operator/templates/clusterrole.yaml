@@ -5,7 +5,6 @@ metadata:
   labels:
     {{- include "ddns-updater-operator.labels" . | nindent 4 }}
 rules:
-  # ConfigMaps
   - apiGroups:
       - ""
     resources:
@@ -18,7 +17,6 @@ rules:
       - patch
       - update
       - watch
-  # Events
   - apiGroups:
       - ""
     resources:
@@ -26,7 +24,6 @@ rules:
     verbs:
       - create
       - patch
-  # Secrets
   - apiGroups:
       - ""
     resources:
@@ -35,7 +32,6 @@ rules:
       - get
       - list
       - watch
-  # DDNSRecords
   - apiGroups:
       - connectivity.homelab.io
     resources:
@@ -56,7 +52,6 @@ rules:
       - get
       - patch
       - update
-  # Leases (for leader election)
   - apiGroups:
       - coordination.k8s.io
     resources:
