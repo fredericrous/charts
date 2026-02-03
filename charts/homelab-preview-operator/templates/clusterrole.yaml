@@ -5,51 +5,40 @@ metadata:
   labels:
     {{- include "homelab-preview-operator.labels" . | nindent 4 }}
 rules:
-  # Core resources
   - apiGroups:
       - ""
     resources:
+      - configmaps
       - namespaces
       - secrets
-      - configmaps
       - services
     verbs:
+      - create
       - get
       - list
+      - patch
+      - update
       - watch
-      - create
-      - update
-      - patch
   - apiGroups:
-      - ""
+      - apps
     resources:
-      - persistentvolumeclaims
+      - deployments
     verbs:
       - get
       - list
+      - patch
+      - update
       - watch
-      - create
-      - update
-      - patch
-      - delete
   - apiGroups:
-      - ""
+      - helm.toolkit.fluxcd.io
     resources:
-      - events
+      - helmreleases
     verbs:
-      - create
-      - patch
-  # Leader election
-  - apiGroups:
-      - coordination.k8s.io
-    resources:
-      - leases
-    verbs:
-      - create
       - get
       - list
+      - patch
       - update
-  # Flux Kustomizations (watch for preview triggers)
+      - watch
   - apiGroups:
       - kustomize.toolkit.fluxcd.io
     resources:
@@ -58,7 +47,51 @@ rules:
       - get
       - list
       - watch
-  # Flux GitRepositories
+  - apiGroups:
+      - postgresql.cnpg.io
+    resources:
+      - clusters
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  - apiGroups:
+      - redis.redis.opstreelabs.in
+    resources:
+      - redis
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  - apiGroups:
+      - security.homelab.io
+    resources:
+      - oidcclients
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+  - apiGroups:
+      - snapshot.storage.k8s.io
+    resources:
+      - volumesnapshots
+    verbs:
+      - create
+      - get
+      - list
+      - watch
   - apiGroups:
       - source.toolkit.fluxcd.io
     resources:
@@ -67,90 +100,3 @@ rules:
       - get
       - list
       - watch
-  # Flux HelmReleases (for patching)
-  - apiGroups:
-      - helm.toolkit.fluxcd.io
-    resources:
-      - helmreleases
-    verbs:
-      - get
-      - list
-      - watch
-      - update
-      - patch
-  # OIDC Clients
-  - apiGroups:
-      - security.homelab.io
-    resources:
-      - oidcclients
-    verbs:
-      - get
-      - list
-      - watch
-      - create
-      - update
-      - patch
-      - delete
-  # CNPG Clusters (for database cloning)
-  - apiGroups:
-      - postgresql.cnpg.io
-    resources:
-      - clusters
-    verbs:
-      - get
-      - list
-      - watch
-      - create
-      - update
-      - patch
-      - delete
-  # Redis (opstree operator)
-  - apiGroups:
-      - redis.redis.opstreelabs.in
-    resources:
-      - redis
-    verbs:
-      - get
-      - list
-      - watch
-      - create
-      - update
-      - patch
-      - delete
-  # Deployments (for patching)
-  - apiGroups:
-      - apps
-    resources:
-      - deployments
-    verbs:
-      - get
-      - list
-      - watch
-      - update
-      - patch
-  # VolumeSnapshots
-  - apiGroups:
-      - snapshot.storage.k8s.io
-    resources:
-      - volumesnapshots
-    verbs:
-      - get
-      - list
-      - watch
-      - create
-      - update
-      - patch
-      - delete
-  # VolumeSnapshotContents (cluster-scoped)
-  - apiGroups:
-      - snapshot.storage.k8s.io
-    resources:
-      - volumesnapshotcontents
-    verbs:
-      - get
-      - list
-      - watch
-      - create
-      - update
-      - patch
-      - delete
