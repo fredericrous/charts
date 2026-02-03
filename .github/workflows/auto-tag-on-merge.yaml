@@ -7,17 +7,20 @@ on:
 
 jobs:
   trigger-release:
-    name: Trigger Chart Release
+    name: Tag and Release Chart
     if: |
       github.event.pull_request.merged == true &&
       contains(github.event.pull_request.labels.*.name, 'chart-update')
     runs-on: ubuntu-latest
     permissions:
-      actions: write  # Required to dispatch workflow_dispatch
+      contents: write  # Required to push tags
+      actions: write   # Required to dispatch workflow_dispatch
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Extract chart info from PR
         id: extract
@@ -50,6 +53,27 @@ jobs:
           fi
           echo "Chart.yaml version matches: $CHART_VERSION"
 
+      - name: Create release tag
+        run: |
+          TAG_NAME="${{ steps.extract.outputs.chart_name }}-v${{ steps.extract.outputs.version }}"
+
+          if git rev-parse "$TAG_NAME" >/dev/null 2>&1; then
+            echo "Tag $TAG_NAME already exists, skipping tag creation"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+
+            git tag -a "$TAG_NAME" -m "Release ${{ steps.extract.outputs.chart_name }} v${{ steps.extract.outputs.version }}
+
+          Chart version: ${{ steps.extract.outputs.version }}
+          Automated release from PR #${{ github.event.pull_request.number }}"
+
+            # Push with GITHUB_TOKEN — tag won't trigger other workflows,
+            # but that's fine since we dispatch helm-release.yaml explicitly below.
+            git push origin "$TAG_NAME"
+            echo "Created tag: $TAG_NAME"
+          fi
+
       - name: Trigger chart release workflow
         env:
           GH_TOKEN: ${{ github.token }}
@@ -62,5 +86,5 @@ jobs:
             --field chart="$CHART" \
             --field version="$VERSION"
 
-          echo "✅ Dispatched release workflow for $CHART $VERSION"
+          echo "Dispatched release workflow for $CHART $VERSION"
           echo "Monitor: https://github.com/${{ github.repository }}/actions/workflows/helm-release.yaml"
