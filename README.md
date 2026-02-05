@@ -15,7 +15,7 @@ helm repo update
 |-------|---------|-------------|-------------|
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.3.0 | 0.3.0 | A Kubernetes operator that automatically configures preview environments for applications |
 | [ddns-updater-operator](charts/ddns-updater-operator/) | 0.3.0 | 0.3.0 | A Kubernetes operator that manages DDNS records for ddns-updater |
-| [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.22 | 0.1.22 | A Kubernetes operator that manages OIDC client configurations for Authelia |
+| [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.23 | 0.1.23 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.1.8 | 2.1.8 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 
 ## Installing a Chart
