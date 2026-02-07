@@ -46,6 +46,8 @@ rules:
     verbs:
       - get
       - list
+      - patch
+      - update
       - watch
   - apiGroups:
       - postgresql.cnpg.io
@@ -89,6 +91,14 @@ rules:
       - volumesnapshots
     verbs:
       - create
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - preview.homelab.io
+    resources:
+      - previewconfigs
+    verbs:
       - get
       - list
       - watch
