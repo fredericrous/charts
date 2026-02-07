@@ -3,7 +3,7 @@ entries:
   authelia-oidc-operator:
   - apiVersion: v2
     appVersion: 0.1.23
-    created: "2026-02-07T16:03:01.889449449Z"
+    created: "2026-02-07T16:09:26.161657519Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: a253b14041779923ea5a47b61f707aa41a4d365ec3bbfcd0f876519f34140cdd
@@ -27,7 +27,7 @@ entries:
     version: 0.1.23
   - apiVersion: v2
     appVersion: 0.1.22
-    created: "2026-02-07T16:03:01.888964363Z"
+    created: "2026-02-07T16:09:26.160716484Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 3b02dfa254a1b55a43dfa8dd4da3b5c0ce3d7d2411703696f6a42bdb62e334f7
@@ -51,7 +51,7 @@ entries:
     version: 0.1.22
   - apiVersion: v2
     appVersion: 0.1.21
-    created: "2026-02-07T16:03:01.888492433Z"
+    created: "2026-02-07T16:09:26.159693047Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 0aab6d0e459961407c4c95368036a3d022e162570d089447299d5ecf98f588a9
@@ -75,7 +75,7 @@ entries:
     version: 0.1.21
   - apiVersion: v2
     appVersion: 0.1.20
-    created: "2026-02-07T16:03:01.887889157Z"
+    created: "2026-02-07T16:09:26.159235133Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 0524ec98606a181248bc6d26a437b8ab34f4b7a918ec4a662191787e2ae2a9ce
@@ -99,7 +99,7 @@ entries:
     version: 0.1.20
   - apiVersion: v2
     appVersion: 0.1.19
-    created: "2026-02-07T16:03:01.887394634Z"
+    created: "2026-02-07T16:09:26.158726816Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 87ad3a378dd95808893073a14c5743bf1fefa70a24120eca62111515b67dea12
@@ -123,7 +123,7 @@ entries:
     version: 0.1.19
   - apiVersion: v2
     appVersion: 0.1.18
-    created: "2026-02-07T16:03:01.88690469Z"
+    created: "2026-02-07T16:09:26.158277098Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 5b9c2beafed940694777e2dfdcb1642e38cd5c0e5e9826293e80ec603f2e888d
@@ -147,7 +147,7 @@ entries:
     version: 0.1.18
   - apiVersion: v2
     appVersion: 0.1.17
-    created: "2026-02-07T16:03:01.886411029Z"
+    created: "2026-02-07T16:09:26.157800931Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: c529ac95f07a9a6ae5ab6b2c052a5aa560cf1e40f47e0a2feca04de1cae72de3
@@ -171,7 +171,7 @@ entries:
     version: 0.1.17
   - apiVersion: v2
     appVersion: 0.1.16
-    created: "2026-02-07T16:03:01.885500326Z"
+    created: "2026-02-07T16:09:26.157378864Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 8ea5e74a6bdde94ec57dfc15664289a4b03a486eb698b404688c39a45629a0b2
@@ -195,7 +195,7 @@ entries:
     version: 0.1.16
   - apiVersion: v2
     appVersion: 0.1.15
-    created: "2026-02-07T16:03:01.884657784Z"
+    created: "2026-02-07T16:09:26.156932282Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 2d7f88626d37dcbd1f58b70e9d9601d11289426127354174059e194d08bd75c2
@@ -219,7 +219,7 @@ entries:
     version: 0.1.12
   - apiVersion: v2
     appVersion: 0.1.13
-    created: "2026-02-07T16:03:01.883911772Z"
+    created: "2026-02-07T16:09:26.156478646Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: c734539b675e79ebef481e2f1ba3d9bcc891cce365e90b6e0073dc7d03ef96a4
@@ -243,7 +243,7 @@ entries:
     version: 0.1.11
   - apiVersion: v2
     appVersion: 0.1.12
-    created: "2026-02-07T16:03:01.883341588Z"
+    created: "2026-02-07T16:09:26.156045199Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 4eac80d573138f9b055916858e458ddaf36ebb2711444ff41a51a85dbb7fe5f0
@@ -267,7 +267,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: 0.1.12
-    created: "2026-02-07T16:03:01.893493983Z"
+    created: "2026-02-07T16:09:26.164557664Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: c0ed57d8c25b9f51b74f0e04bec906745d48a1587299b89043d7ec5606328443
@@ -291,7 +291,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: 0.1.9
-    created: "2026-02-07T16:03:01.89304198Z"
+    created: "2026-02-07T16:09:26.164167177Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 41c420085c1a91e85bf1898db53856f035902b98bafdcef41d132740389041b2
@@ -315,7 +315,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 0.1.8
-    created: "2026-02-07T16:03:01.891562532Z"
+    created: "2026-02-07T16:09:26.16371857Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 273e9beb0078a2d3a5332041180344da5fa65f117e4ab70c0b72e2002c2e7067
@@ -339,7 +339,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 0.1.7
-    created: "2026-02-07T16:03:01.891142287Z"
+    created: "2026-02-07T16:09:26.163331489Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 7032be6a5ff845effb8f4a0d4c0d100d0c863e1bb4007b659b7edc21339f2cd5
@@ -363,7 +363,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 0.1.6
-    created: "2026-02-07T16:03:01.890714439Z"
+    created: "2026-02-07T16:09:26.162939629Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 04b7161d198214bf33ea6ac5ff42afeccd63ddb56876185dde329d387fbfbecf
@@ -387,7 +387,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.5
-    created: "2026-02-07T16:03:01.89029671Z"
+    created: "2026-02-07T16:09:26.162501883Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 605943075cc703809a58c72ee15ece2a93b9b0d3fd0c2a692e3fffc8aa2c8fd5
@@ -411,7 +411,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2026-02-07T16:03:01.889850036Z"
+    created: "2026-02-07T16:09:26.162104893Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 29eda77a614b8c3c43cf25aa0bb4acc4b98a9e00fd6e0178ad599b5001d740e8
@@ -435,7 +435,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-02-07T16:03:01.882729606Z"
+    created: "2026-02-07T16:09:26.155579651Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: e5a6fdebaafb12f2f43c3cb7e248beb754bd6068d1bce354cdaae5271388bd5e
@@ -460,7 +460,7 @@ entries:
   ddns-updater-operator:
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-02-07T16:03:01.894666341Z"
+    created: "2026-02-07T16:09:26.165784751Z"
     description: A Kubernetes operator that manages DDNS records for ddns-updater
     digest: 0522620e0b8189c2cdd8451cb1da38d4b47ce9a5ef8d64a0902f6e647f2bb69b
     home: https://github.com/fredericrous/ddns-updater-operator
@@ -483,7 +483,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-02-07T16:03:01.894248461Z"
+    created: "2026-02-07T16:09:26.165394885Z"
     description: A Kubernetes operator that manages DDNS records for ddns-updater
     digest: d71ae48c6efe3e5b158b394dc4af326a9edd83a5ca6efc80d934a205eafafa34
     home: https://github.com/fredericrous/ddns-updater-operator
@@ -506,7 +506,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-02-07T16:03:01.893874082Z"
+    created: "2026-02-07T16:09:26.164953803Z"
     description: A Kubernetes operator that manages DDNS records for ddns-updater
     digest: 0962758eb9a9a20c3a724133401e578200af3e16d66d32ae7f9b0fcdcd491c93
     home: https://github.com/fredericrous/ddns-updater-operator
@@ -529,8 +529,32 @@ entries:
     version: 0.1.0
   homelab-preview-operator:
   - apiVersion: v2
+    appVersion: 0.5.9
+    created: "2026-02-07T16:09:26.173200189Z"
+    description: A Kubernetes operator that automatically configures preview environments
+      for applications
+    digest: 276dc2634ff5a4be4057e8bbefa812c17a9bf2aa4dd162544d1dc04600734457
+    home: https://github.com/fredericrous/homelab-preview-operator
+    keywords:
+    - preview
+    - operator
+    - kubernetes
+    - flux
+    - gitops
+    kubeVersion: '>=1.28.0-0'
+    maintainers:
+    - name: fredericrous
+      url: https://github.com/fredericrous
+    name: homelab-preview-operator
+    sources:
+    - https://github.com/fredericrous/homelab-preview-operator
+    type: application
+    urls:
+    - https://fredericrous.github.io/charts/packages/homelab-preview-operator-0.5.9.tgz
+    version: 0.5.9
+  - apiVersion: v2
     appVersion: 0.5.8
-    created: "2026-02-07T16:03:01.901184624Z"
+    created: "2026-02-07T16:09:26.172797648Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: cb2f7ccf6d7e92db29ccb82fecc84aa38c4b98d1e2ed62e84954fb5300b56770
@@ -554,7 +578,7 @@ entries:
     version: 0.5.8
   - apiVersion: v2
     appVersion: 0.5.7
-    created: "2026-02-07T16:03:01.900139685Z"
+    created: "2026-02-07T16:09:26.17240163Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: d13abcc5d9fd2068868fd11c79e7b739e2c564d5f254d89134c897f8ac9c8ff0
@@ -578,7 +602,7 @@ entries:
     version: 0.5.7
   - apiVersion: v2
     appVersion: 0.5.6
-    created: "2026-02-07T16:03:01.899508697Z"
+    created: "2026-02-07T16:09:26.172027233Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: a77c5872cbc7c41b7d5b1a9bf2e7d63fc57b65e6b70379909880dfe9594321dc
@@ -602,7 +626,7 @@ entries:
     version: 0.5.6
   - apiVersion: v2
     appVersion: 0.5.4
-    created: "2026-02-07T16:03:01.899041135Z"
+    created: "2026-02-07T16:09:26.171595879Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 2ca9a48338fe7ecc2b93c756cbfda5a0626601314ce6f4cf691185bf72c04bbc
@@ -626,7 +650,7 @@ entries:
     version: 0.5.4
   - apiVersion: v2
     appVersion: 0.5.3
-    created: "2026-02-07T16:03:01.89857252Z"
+    created: "2026-02-07T16:09:26.171213416Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 917f0bddd0eec5720e3b43c7bbe127975633779c0d9148600f464002c5b947c3
@@ -650,7 +674,7 @@ entries:
     version: 0.5.3
   - apiVersion: v2
     appVersion: 0.5.2
-    created: "2026-02-07T16:03:01.897873836Z"
+    created: "2026-02-07T16:09:26.170789957Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 6f8ea6c896d6e0c1c34f1e58416e13cf66f82c3a3ee084c36e2b60e40a84f019
@@ -674,7 +698,7 @@ entries:
     version: 0.5.2
   - apiVersion: v2
     appVersion: 0.5.1
-    created: "2026-02-07T16:03:01.897323399Z"
+    created: "2026-02-07T16:09:26.170377037Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: eeb90b0c49b02a5e9d76ca61e6d9905511c37eb86a91efa890db9c39c6e8ca47
@@ -698,7 +722,7 @@ entries:
     version: 0.5.1
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2026-02-07T16:03:01.89692724Z"
+    created: "2026-02-07T16:09:26.169449761Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 0251664002b29c9327707c098a153c76b17f3062b61cbd83b18ce4e039489a58
@@ -722,7 +746,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.3
-    created: "2026-02-07T16:03:01.896560035Z"
+    created: "2026-02-07T16:09:26.168626607Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: b68397a58814b0e5583cac0671b2a83cbd62154dbb655aeb4d7563552048f362
@@ -746,7 +770,7 @@ entries:
     version: 0.4.3
   - apiVersion: v2
     appVersion: 0.4.2
-    created: "2026-02-07T16:03:01.896172882Z"
+    created: "2026-02-07T16:09:26.168240087Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 9d4df27de86383881aeb696bfc25a3b3c3a4c789878edf9ed7dd8194025dab71
@@ -770,7 +794,7 @@ entries:
     version: 0.4.2
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2026-02-07T16:03:01.895794636Z"
+    created: "2026-02-07T16:09:26.167779759Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: e89379cd0deba254362fc6cd60617fd19b16a4265dbaaf2d16282a3496db014b
@@ -794,7 +818,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-02-07T16:03:01.895427972Z"
+    created: "2026-02-07T16:09:26.167101374Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: e54abb4ea98725e17e9f1bf710739ae1f7f6c427c344554a3ff2107848164fa4
@@ -818,7 +842,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-02-07T16:03:01.89504118Z"
+    created: "2026-02-07T16:09:26.166441785Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 0583d9d4df607d92458ae3d1ce1f83dce7e8cd6ddc226c48ab5de36a0047c51a
@@ -843,7 +867,7 @@ entries:
   vault-transit-unseal-operator:
   - apiVersion: v2
     appVersion: 2.1.8
-    created: "2026-02-07T16:03:01.926076795Z"
+    created: "2026-02-07T16:09:26.208772574Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: d4a64d492afebb12aa2f9c67b6c7c5d13dd1c0220f14c5173c20515e8049a74e
@@ -866,7 +890,7 @@ entries:
     version: 2.1.8
   - apiVersion: v2
     appVersion: 2.1.7
-    created: "2026-02-07T16:03:01.925250393Z"
+    created: "2026-02-07T16:09:26.207977062Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 0a4ba2bfc5731910a76c59f1b404ec7e3c4889112d7ef619556371b0500eb9b6
@@ -889,7 +913,7 @@ entries:
     version: 2.1.7
   - apiVersion: v2
     appVersion: 2.1.6
-    created: "2026-02-07T16:03:01.924488442Z"
+    created: "2026-02-07T16:09:26.207101009Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 17e6c45c3ad57e65048256a0bc4701ce27015e1f1bb5d07f86c6eb32237a5da3
@@ -912,7 +936,7 @@ entries:
     version: 2.1.6
   - apiVersion: v2
     appVersion: 2.1.5
-    created: "2026-02-07T16:03:01.923713485Z"
+    created: "2026-02-07T16:09:26.20560579Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: cfb61fb2fbcbd04f2fda48ef97c23b21f80ea1eb06966538a111a87b84d61ecc
@@ -935,7 +959,7 @@ entries:
     version: 2.1.5
   - apiVersion: v2
     appVersion: 2.1.4
-    created: "2026-02-07T16:03:01.922897292Z"
+    created: "2026-02-07T16:09:26.20480627Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 135595e74845baeb8affc46d996f495f96e3c5d52ce005e0f92f282b959ff579
@@ -958,7 +982,7 @@ entries:
     version: 2.1.4
   - apiVersion: v2
     appVersion: 2.1.3
-    created: "2026-02-07T16:03:01.922112909Z"
+    created: "2026-02-07T16:09:26.203796118Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 58847ca8042a2addc31e9f3644e638a3ba6984d5ab8a7690ff7f645fe5cb7aa4
@@ -981,7 +1005,7 @@ entries:
     version: 2.1.3
   - apiVersion: v2
     appVersion: 2.1.2
-    created: "2026-02-07T16:03:01.921326872Z"
+    created: "2026-02-07T16:09:26.202399244Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: f049db121b4aaedb54e1748a3f15b4858ef5b59e1d73f283d7a8557f08e310ae
@@ -1004,7 +1028,7 @@ entries:
     version: 2.1.2
   - apiVersion: v2
     appVersion: 2.1.1
-    created: "2026-02-07T16:03:01.920466266Z"
+    created: "2026-02-07T16:09:26.201036264Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 8a801c4cf5e34c99873224b87ea7f158d010827c2b1ff66e935773047de22886
@@ -1027,7 +1051,7 @@ entries:
     version: 2.1.1
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2026-02-07T16:03:01.919534226Z"
+    created: "2026-02-07T16:09:26.199733016Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 2ee84eb4d2c770879f915c14dd4352ec65eab55f805aefc7c14b7a174d653065
@@ -1050,7 +1074,7 @@ entries:
     version: 2.1.0
   - apiVersion: v2
     appVersion: 2.0.2
-    created: "2026-02-07T16:03:01.917700745Z"
+    created: "2026-02-07T16:09:26.198448632Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: ddf0da0661585af9449c9f5e8c6c2670714391f6f2828c5b109f71186bf7f8c9
@@ -1073,7 +1097,7 @@ entries:
     version: 2.0.2
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2026-02-07T16:03:01.916911703Z"
+    created: "2026-02-07T16:09:26.197117671Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 7377011dea53c47fdfec078210c3ed5619263ab7ad7c0bdf4b2e3edb5bb0b8dc
@@ -1096,7 +1120,7 @@ entries:
     version: 2.0.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2026-02-07T16:03:01.916118102Z"
+    created: "2026-02-07T16:09:26.195898269Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: de14eb3846eb2f4d1d06da45babbc224a87763de365630930711130dfc79543b
@@ -1119,7 +1143,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2026-02-07T16:03:01.915355669Z"
+    created: "2026-02-07T16:09:26.194524389Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: fb479af7cf00cfc9732c6ac674f62420a5088b3bfab6a7df036c78199834c6d6
@@ -1142,7 +1166,7 @@ entries:
     version: 1.6.0
   - apiVersion: v2
     appVersion: 1.5.4
-    created: "2026-02-07T16:03:01.914601652Z"
+    created: "2026-02-07T16:09:26.192688567Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: f4a451d528cc24a3a6ad6107ba2e6cd46c36afb6e0efade5ec4462a74d2b82a3
@@ -1165,7 +1189,7 @@ entries:
     version: 1.5.4
   - apiVersion: v2
     appVersion: 1.5.3
-    created: "2026-02-07T16:03:01.913820474Z"
+    created: "2026-02-07T16:09:26.191709192Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 5c427c5c3cd343235ae0c0ca2f88074319a8ab2ed73c75d8677b71964c17bd89
@@ -1188,7 +1212,7 @@ entries:
     version: 1.5.3
   - apiVersion: v2
     appVersion: 1.5.2
-    created: "2026-02-07T16:03:01.913027535Z"
+    created: "2026-02-07T16:09:26.190241747Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: c07a5105f0ecd34e611645b0b7e425e8b4cdb19e49e0f144c1b9cad18c5d02cf
@@ -1211,7 +1235,7 @@ entries:
     version: 1.5.2
   - apiVersion: v2
     appVersion: 1.5.1
-    created: "2026-02-07T16:03:01.912214086Z"
+    created: "2026-02-07T16:09:26.188785734Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: bb4f6a6f910120c8bb3b313d16a08cbdcc1eb8a7906886ba0d8899a31761aee5
@@ -1234,7 +1258,7 @@ entries:
     version: 1.5.1
   - apiVersion: v2
     appVersion: 1.5.0
-    created: "2026-02-07T16:03:01.911457434Z"
+    created: "2026-02-07T16:09:26.187354527Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: bc6fdab72d287838cda05d2d9caa8a87fc4638a13d57ae71ce3eb336afdb843f
@@ -1257,7 +1281,7 @@ entries:
     version: 1.5.0
   - apiVersion: v2
     appVersion: 1.4.0
-    created: "2026-02-07T16:03:01.910659966Z"
+    created: "2026-02-07T16:09:26.186005392Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 4feba50e8e8495287b3caecc91593914450ad80b77c161f0987afb96d11f2133
@@ -1280,7 +1304,7 @@ entries:
     version: 1.4.0
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2026-02-07T16:03:01.908817739Z"
+    created: "2026-02-07T16:09:26.184643685Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: e21a6b1edc32346bd6eb3ecf7f79619917150ce2f18b53fa1f96a6607cf60f68
@@ -1303,7 +1327,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2026-02-07T16:03:01.908051108Z"
+    created: "2026-02-07T16:09:26.183336549Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 1d8f805a466a3dadfcb3d398de33de6031aaf4d50a38c31c05d6929d538583fb
@@ -1326,7 +1350,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 1.1.1
-    created: "2026-02-07T16:03:01.907317268Z"
+    created: "2026-02-07T16:09:26.18194751Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 3299682fb02cd11dd48d0b60d1b308bce8fd069275286c9824b5923b3b0e5adc
@@ -1349,7 +1373,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2026-02-07T16:03:01.906578991Z"
+    created: "2026-02-07T16:09:26.18053064Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 0a949fa2d60d06cadcd0bcd4a71947ed849fba9f0aa35397f59b7f6fff4c5953
@@ -1372,7 +1396,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.0.10
-    created: "2026-02-07T16:03:01.905838599Z"
+    created: "2026-02-07T16:09:26.179024122Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 860a9157ee71f7ff4b8b674392eae50a7885d6d333f8710e160db9ab6ec408dc
@@ -1395,7 +1419,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 1.0.9
-    created: "2026-02-07T16:03:01.905085073Z"
+    created: "2026-02-07T16:09:26.176917887Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 60d8f8222875ed7c57c82a772734905e02fbe5268fa86056a66b0a121c75bc53
@@ -1418,7 +1442,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.0.9
-    created: "2026-02-07T16:03:01.904367624Z"
+    created: "2026-02-07T16:09:26.176131802Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: bf618379ac3696bf2126269022ccbaa42d0215b20b6aa336058472966d0ed5e5
@@ -1441,7 +1465,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2026-02-07T16:03:01.903632011Z"
+    created: "2026-02-07T16:09:26.175386002Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 30d91179ef7281d961be994981124ce8380eeaddf2a322b37c4d39f35c905b2d
@@ -1464,7 +1488,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2026-02-07T16:03:01.902874017Z"
+    created: "2026-02-07T16:09:26.174639852Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: db6d3aa0a1ebe4bf60db3a4551f63f613547fe5a4f94e16c4f73a024fe863256
@@ -1487,7 +1511,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-02-07T16:03:01.902109681Z"
+    created: "2026-02-07T16:09:26.173932594Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 9970d6603a7e1c7dcaed8821bee32f20602cf7b5984d6ca18f2b642e9c371168
@@ -1508,4 +1532,4 @@ entries:
     urls:
     - https://fredericrous.github.io/charts/packages/vault-transit-unseal-operator-1.0.0.tgz
     version: 1.0.0
-generated: "2026-02-07T16:03:01.881730411Z"
+generated: "2026-02-07T16:09:26.154944648Z"
