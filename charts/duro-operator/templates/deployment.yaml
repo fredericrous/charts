@@ -54,17 +54,23 @@ spec:
               containerPort: {{ .Values.health.port }}
               protocol: TCP
           livenessProbe:
-            httpGet:
-              path: /healthz
-              port: health
+            exec:
+              command:
+                - wget
+                - -qO-
+                - http://localhost:{{ .Values.health.port }}/healthz
             initialDelaySeconds: 15
             periodSeconds: 20
+            timeoutSeconds: 5
           readinessProbe:
-            httpGet:
-              path: /readyz
-              port: health
+            exec:
+              command:
+                - wget
+                - -qO-
+                - http://localhost:{{ .Values.health.port }}/readyz
             initialDelaySeconds: 5
             periodSeconds: 10
+            timeoutSeconds: 5
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
