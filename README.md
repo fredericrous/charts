@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [duro-operator](charts/duro-operator/) | 0.1.1 | 0.1.1 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
+| [duro-operator](charts/duro-operator/) | 0.1.2 | 0.1.2 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.5.13 | 0.5.13 | A Kubernetes operator that automatically configures preview environments for applications |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.23 | 0.1.23 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [ddns-updater-operator](charts/ddns-updater-operator/) | 0.3.0 | 0.3.0 | A Kubernetes operator that manages DDNS records for ddns-updater |
