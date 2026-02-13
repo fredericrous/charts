@@ -13,10 +13,10 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [ddns-updater-operator](charts/ddns-updater-operator/) | 0.3.0 | 0.3.0 | A Kubernetes operator that manages DDNS records for ddns-updater |
 | [duro-operator](charts/duro-operator/) | 0.1.3 | 0.1.2 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.5.13 | 0.5.13 | A Kubernetes operator that automatically configures preview environments for applications |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.23 | 0.1.23 | A Kubernetes operator that manages OIDC client configurations for Authelia |
-| [ddns-updater-operator](charts/ddns-updater-operator/) | 0.3.0 | 0.3.0 | A Kubernetes operator that manages DDNS records for ddns-updater |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.1.8 | 2.1.8 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 
 ## Installing a Chart
