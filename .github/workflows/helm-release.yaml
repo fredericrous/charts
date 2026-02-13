@@ -217,6 +217,11 @@ jobs:
           echo "Packaged chart:"
           ls -la packages/
 
+      - name: Push to GHCR (OCI)
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | helm registry login ghcr.io -u ${{ github.actor }} --password-stdin
+          helm push ./packages/${{ env.CHART_NAME }}-${{ env.VERSION_NUMBER }}.tgz oci://ghcr.io/fredericrous/charts
+
       - name: Update repository index
         run: |
           # Download current index if it exists
