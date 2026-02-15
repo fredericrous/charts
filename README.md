@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [cluster-vision](charts/cluster-vision/) | 0.1.4 | 0.1.4 | Auto-generated infrastructure diagrams from live Kubernetes state |
+| [cluster-vision](charts/cluster-vision/) | 0.1.5 | 0.1.5 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.5.13 | 0.5.13 | A Kubernetes operator that automatically configures preview environments for applications |
 | [ddns-updater-operator](charts/ddns-updater-operator/) | 0.3.0 | 0.3.0 | A Kubernetes operator that manages DDNS records for ddns-updater |
 | [duro-operator](charts/duro-operator/) | 0.1.3 | 0.1.2 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
