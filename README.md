@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [duro-app](charts/duro-app/) | 1.6.2 | 1.6.2 | A household management dashboard with invite system |
+| [duro-app](charts/duro-app/) | 1.6.3 | 1.6.3 | A household management dashboard with invite system |
 | [cluster-vision](charts/cluster-vision/) | 0.7.11 | 0.7.11 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [duro-operator](charts/duro-operator/) | 0.1.4 | 0.1.4 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.1.8 | 2.1.8 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
