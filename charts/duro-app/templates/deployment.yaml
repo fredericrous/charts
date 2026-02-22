@@ -140,9 +140,4 @@ spec:
           secret:
             secretName: {{ .Values.internalCA.secretName }}
             optional: true
-            {{- if .Values.internalCA.key }}
-            items:
-              - key: {{ .Values.internalCA.key }}
-                path: internal-ca.pem
-            {{- end }}
         {{- end }}

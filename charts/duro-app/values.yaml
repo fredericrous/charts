@@ -94,7 +94,6 @@ persistence:
 internalCA:
   enabled: true
   secretName: "duro-internal-ca"
-  key: ""  # If set, project this key as internal-ca.pem
 
 nodeSelector: {}
 tolerations: []
