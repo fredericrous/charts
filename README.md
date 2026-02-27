@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [cluster-vision](charts/cluster-vision/) | 0.14.0 | 0.14.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
+| [cluster-vision](charts/cluster-vision/) | 0.15.0 | 0.15.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [duro-app](charts/duro-app/) | 1.10.1 | 1.10.1 | A household management dashboard with invite system |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.24 | 0.1.24 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [duro-operator](charts/duro-operator/) | 0.1.4 | 0.1.4 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
