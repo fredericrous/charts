@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [homelab-preview-operator](charts/homelab-preview-operator/) | 0.5.14 | 0.5.14 | A Kubernetes operator that automatically configures preview environments for applications |
+| [homelab-preview-operator](charts/homelab-preview-operator/) | 0.5.15 | 0.5.15 | A Kubernetes operator that automatically configures preview environments for applications |
 | [cluster-vision](charts/cluster-vision/) | 0.17.0 | 0.17.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [duro-app](charts/duro-app/) | 1.10.1 | 1.10.1 | A household management dashboard with invite system |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.24 | 0.1.24 | A Kubernetes operator that manages OIDC client configurations for Authelia |
