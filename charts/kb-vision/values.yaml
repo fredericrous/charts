@@ -1,0 +1,45 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/fredericrous/kb-vision
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 3000
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "100m"
+  limits:
+    memory: "512Mi"
+    cpu: "500m"
+
+persistence:
+  enabled: true
+  size: 1Gi
+  storageClass: ""
+  accessMode: ReadWriteOnce
+
+env:
+  KB_DB_PATH: /db/kb-vision.sqlite
+  SESSION_SECRET: ""
+  OIDC_ISSUER_URL: ""
+  OIDC_CLIENT_ID: ""
+  OIDC_CLIENT_SECRET: ""
+  OIDC_REDIRECT_URI: ""
+  LITELLM_BASE_URL: ""
+  LITELLM_API_KEY: ""
+  LITELLM_EMBEDDING_MODEL: "ollama/nomic-embed-text"
+  QDRANT_URL: ""
+  QDRANT_API_KEY: ""
+  QDRANT_COLLECTION: "kb-articles"
+  VECTOR_DIMENSION: "768"
+
+ingress:
+  enabled: false
+  className: ""
+  host: kb.example.com
+  tls: false
