@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [kb-vision](charts/kb-vision/) | 0.1.1 | 0.1.1 | Knowledge Base for Homelab |
+| [kb-vision](charts/kb-vision/) | 0.1.2 | 0.1.2 | Knowledge Base for Homelab |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.5.15 | 0.5.15 | A Kubernetes operator that automatically configures preview environments for applications |
 | [cluster-vision](charts/cluster-vision/) | 0.17.0 | 0.17.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [duro-app](charts/duro-app/) | 1.10.1 | 1.10.1 | A household management dashboard with invite system |
