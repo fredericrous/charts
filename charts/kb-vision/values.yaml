@@ -17,6 +17,9 @@ resources:
     memory: "512Mi"
     cpu: "500m"
 
+podSecurityContext:
+  fsGroup: 1001
+
 persistence:
   enabled: true
   size: 1Gi
