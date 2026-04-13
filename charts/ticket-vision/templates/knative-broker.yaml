@@ -1,0 +1,9 @@
+{{- if .Values.knative.broker.enabled }}
+apiVersion: eventing.knative.dev/v1
+kind: Broker
+metadata:
+  name: {{ .Values.knative.broker.name }}
+  annotations:
+    eventing.knative.dev/broker.class: MTChannelBasedBroker
+spec: {}
+{{- end }}
