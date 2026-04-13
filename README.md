@@ -13,22 +13,15 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [ticket-vision](charts/ticket-vision/) | 0.1.0 | 0.1.0 | Fully automated ITSM for homelab |
 | [duro-app](charts/duro-app/) | 1.33.5 | 1.33.5 | A household management dashboard with invite system |
-| [ticket-vision](charts/ticket-vision/) | 0.1.0 | 0.1.0 | Fully automated ITSM for homelab |
 | [kb-vision](charts/kb-vision/) | 0.3.3 | 0.3.3 | Knowledge Base for Homelab |
-| [ticket-vision](charts/ticket-vision/) | 0.1.0 | 0.1.0 | Fully automated ITSM for homelab |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.25 | 0.1.25 | A Kubernetes operator that manages OIDC client configurations for Authelia |
-| [ticket-vision](charts/ticket-vision/) | 0.1.0 | 0.1.0 | Fully automated ITSM for homelab |
 | [cluster-vision](charts/cluster-vision/) | 0.18.7 | 0.18.7 | Auto-generated infrastructure diagrams from live Kubernetes state |
-| [ticket-vision](charts/ticket-vision/) | 0.1.0 | 0.1.0 | Fully automated ITSM for homelab |
 | [duro-operator](charts/duro-operator/) | 0.1.3 | 0.1.3 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
-| [ticket-vision](charts/ticket-vision/) | 0.1.0 | 0.1.0 | Fully automated ITSM for homelab |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.1.9 | 2.1.9 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
-| [ticket-vision](charts/ticket-vision/) | 0.1.0 | 0.1.0 | Fully automated ITSM for homelab |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.5.15 | 0.5.15 | A Kubernetes operator that automatically configures preview environments for applications |
-| [ticket-vision](charts/ticket-vision/) | 0.1.0 | 0.1.0 | Fully automated ITSM for homelab |
 | [ddns-updater-operator](charts/ddns-updater-operator/) | 0.3.0 | 0.3.0 | A Kubernetes operator that manages DDNS records for ddns-updater |
-| [ticket-vision](charts/ticket-vision/) | 0.1.0 | 0.1.0 | Fully automated ITSM for homelab |
 
 ## Installing a Chart
 
