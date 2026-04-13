@@ -1,0 +1,49 @@
+replicaCount: 1
+workerReplicaCount: 1
+
+image:
+  repository: ghcr.io/fredericrous/ticket-vision
+  tag: latest
+  pullPolicy: IfNotPresent
+
+web:
+  port: 3000
+  resources:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      memory: 512Mi
+
+worker:
+  resources:
+    requests:
+      cpu: 50m
+      memory: 128Mi
+    limits:
+      memory: 256Mi
+
+persistence:
+  enabled: true
+  size: 1Gi
+  storageClass: ""
+
+env:
+  SESSION_SECRET: ""
+  OIDC_ISSUER_URL: ""
+  OIDC_CLIENT_ID: ""
+  OIDC_CLIENT_SECRET: ""
+  OIDC_REDIRECT_URI: ""
+  OTEL_EXPORTER_OTLP_ENDPOINT: "http://alloy.monitoring.svc.cluster.local.:4318"
+  KNATIVE_BROKER_URL: ""
+
+ingress:
+  enabled: false
+  className: ""
+  host: ticket-vision.daddyshome.fr
+  tls: false
+
+knative:
+  broker:
+    enabled: false
+    name: ticket-vision
