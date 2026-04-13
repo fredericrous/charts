@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [ticket-vision](charts/ticket-vision/) | 0.1.0 | 0.1.0 | Fully automated ITSM for homelab |
+| [ticket-vision](charts/ticket-vision/) | 0.1.1 | 0.1.1 | Fully automated ITSM for homelab |
 | [duro-app](charts/duro-app/) | 1.33.5 | 1.33.5 | A household management dashboard with invite system |
 | [kb-vision](charts/kb-vision/) | 0.3.3 | 0.3.3 | Knowledge Base for Homelab |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.25 | 0.1.25 | A Kubernetes operator that manages OIDC client configurations for Authelia |
