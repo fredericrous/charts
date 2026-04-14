@@ -1,0 +1,66 @@
+# External Helm charts mirrored to oci://ghcr.io/fredericrous/charts
+#
+# Why: upstream HTTPS chart sites (github.io pages, vendor domains) are a
+# reliability wart — DNS/TLS hiccups cascade into Flux Kustomization failures.
+# Mirroring once lets our cluster pull through the local Zot OCI proxy at
+# 192.168.1.43:5000, decoupling reconciliation from upstream availability.
+#
+# Flow: edit an entry here → push → CI `helm pull` from upstream → `helm push`
+# to oci://ghcr.io/fredericrous/charts → cluster HelmRelease picks up next
+# reconcile. Idempotent: existing versions are skipped.
+#
+# Adding a chart: add to `mirrors` with the upstream repo URL + version.
+# Bumping a chart: edit the `version` field. Nothing else needs changing.
+
+mirrors:
+  - chart: chaos-mesh
+    repo: https://charts.chaos-mesh.org
+    version: "2.7.1"
+
+  - chart: tetragon
+    repo: https://helm.cilium.io
+    version: "1.3.0"
+
+  - chart: alloy
+    repo: https://grafana.github.io/helm-charts
+    version: "1.6.0"
+
+  - chart: knative-operator
+    repo: https://knative.github.io/operator
+    version: "1.19.0"
+
+  - chart: vault
+    repo: https://helm.releases.hashicorp.com
+    version: "0.28.1"
+
+  - chart: nextcloud
+    repo: https://nextcloud.github.io/helm/
+    version: "8.9.0"
+
+  - chart: redis-operator
+    repo: https://ot-container-kit.github.io/helm-charts/
+    version: "0.21.2"
+
+  - chart: n8n
+    repo: https://community-charts.github.io/helm-charts
+    version: "1.16.29"
+
+  - chart: vault-config-operator
+    repo: https://redhat-cop.github.io/vault-config-operator
+    version: "0.8.34"
+
+  - chart: dkim-manager
+    repo: https://hsn723.github.io/dkim-manager
+    version: "0.1.12"
+
+  - chart: cert-manager-webhook-ovh
+    repo: https://aureq.github.io/cert-manager-webhook-ovh/
+    version: "0.8.0"
+
+  - chart: openclaw
+    repo: https://serhanekicii.github.io/openclaw-helm/
+    version: "1.3.9"
+
+  - chart: plex-media-server
+    repo: https://raw.githubusercontent.com/plexinc/pms-docker/gh-pages
+    version: "1.1.2"

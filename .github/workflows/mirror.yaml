@@ -1,0 +1,94 @@
+name: Mirror External Helm Charts
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - mirrors.yaml
+      - .github/workflows/mirror.yaml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  mirror:
+    name: Pull from upstream, push to OCI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: v3.13.3
+
+      - name: Install yq
+        run: |
+          sudo curl -sfL https://github.com/mikefarah/yq/releases/download/v4.44.3/yq_linux_amd64 -o /usr/local/bin/yq
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Log in to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | helm registry login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Mirror charts
+        run: |
+          set -euo pipefail
+
+          workdir=$(mktemp -d)
+          target="oci://ghcr.io/${{ github.repository_owner }}/charts"
+          total=$(yq '.mirrors | length' mirrors.yaml)
+          mirrored=0
+          skipped=0
+          failed=0
+
+          for i in $(seq 0 $((total - 1))); do
+            chart=$(yq -r ".mirrors[$i].chart" mirrors.yaml)
+            repo=$(yq -r ".mirrors[$i].repo" mirrors.yaml)
+            version=$(yq -r ".mirrors[$i].version" mirrors.yaml)
+
+            echo "::group::${chart}@${version}"
+            echo "  upstream: ${repo}"
+
+            # Skip if this version already exists in the target OCI registry.
+            # `helm show chart` on the OCI ref succeeds only if the artifact is present.
+            if helm show chart "${target}/${chart}" --version "${version}" >/dev/null 2>&1; then
+              echo "  already mirrored — skipping"
+              skipped=$((skipped + 1))
+              echo "::endgroup::"
+              continue
+            fi
+
+            if ! helm pull "${chart}" --repo "${repo}" --version "${version}" --destination "${workdir}"; then
+              echo "  ::error::helm pull failed for ${chart}@${version} from ${repo}"
+              failed=$((failed + 1))
+              echo "::endgroup::"
+              continue
+            fi
+
+            tgz="${workdir}/${chart}-${version}.tgz"
+            if [ ! -f "${tgz}" ]; then
+              echo "  ::error::expected tgz ${tgz} not found after pull"
+              failed=$((failed + 1))
+              echo "::endgroup::"
+              continue
+            fi
+
+            if ! helm push "${tgz}" "${target}"; then
+              echo "  ::error::helm push failed for ${chart}@${version}"
+              failed=$((failed + 1))
+              echo "::endgroup::"
+              continue
+            fi
+
+            echo "  mirrored → ${target}/${chart}:${version}"
+            mirrored=$((mirrored + 1))
+            echo "::endgroup::"
+          done
+
+          echo ""
+          echo "Summary: ${mirrored} mirrored, ${skipped} skipped, ${failed} failed (of ${total})"
+          if [ "${failed}" -gt 0 ]; then
+            exit 1
+          fi
