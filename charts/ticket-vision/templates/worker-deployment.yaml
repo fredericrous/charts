@@ -40,6 +40,29 @@ spec:
               mountPath: /db
           resources:
             {{- toYaml .Values.worker.resources | nindent 12 }}
+          # Liveness: heartbeat file refreshed every 10s by worker main loop
+          # If the loop hangs for >60s, restart the pod
+          livenessProbe:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - "test $(($(date +%s) - $(stat -c %Y /tmp/ticket-vision-worker.heartbeat 2>/dev/null || echo 0))) -lt 60"
+            initialDelaySeconds: 30
+            periodSeconds: 30
+            timeoutSeconds: 5
+            failureThreshold: 3
+          # Startup: give up to 2 minutes for migrations to complete
+          startupProbe:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - "test -f /tmp/ticket-vision-worker.heartbeat"
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 12
       volumes:
         - name: data
           {{- if .Values.persistence.enabled }}

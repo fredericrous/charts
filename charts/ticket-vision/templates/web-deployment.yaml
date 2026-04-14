@@ -38,17 +38,24 @@ spec:
               mountPath: /db
           resources:
             {{- toYaml .Values.web.resources | nindent 12 }}
-          readinessProbe:
+          # Startup: give up to 2 minutes for migrations to complete
+          startupProbe:
             httpGet:
               path: /health
               port: http
             initialDelaySeconds: 5
             periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 12
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: http
+            periodSeconds: 10
           livenessProbe:
             httpGet:
               path: /health
               port: http
-            initialDelaySeconds: 10
             periodSeconds: 30
       volumes:
         - name: data
