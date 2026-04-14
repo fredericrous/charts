@@ -60,16 +60,24 @@ jobs:
               continue
             fi
 
-            if ! helm pull "${chart}" --repo "${repo}" --version "${version}" --destination "${workdir}"; then
+            # Pull into a per-chart directory so we don't confuse the next glob
+            # when multiple versions of similarly-named charts land side by side.
+            pulldir="${workdir}/${chart}-${version}"
+            mkdir -p "${pulldir}"
+
+            if ! helm pull "${chart}" --repo "${repo}" --version "${version}" --destination "${pulldir}"; then
               echo "  ::error::helm pull failed for ${chart}@${version} from ${repo}"
               failed=$((failed + 1))
               echo "::endgroup::"
               continue
             fi
 
-            tgz="${workdir}/${chart}-${version}.tgz"
-            if [ ! -f "${tgz}" ]; then
-              echo "  ::error::expected tgz ${tgz} not found after pull"
+            # Some charts publish versions as `v1.2.3` (leading `v`), which makes
+            # the tgz filename `<chart>-v1.2.3.tgz` rather than `<chart>-1.2.3.tgz`.
+            # Glob-match so both conventions work.
+            tgz=$(ls "${pulldir}"/${chart}-*.tgz 2>/dev/null | head -1 || true)
+            if [ -z "${tgz}" ] || [ ! -f "${tgz}" ]; then
+              echo "  ::error::no tgz found in ${pulldir} after pull (expected ${chart}-*.tgz)"
               failed=$((failed + 1))
               echo "::endgroup::"
               continue
