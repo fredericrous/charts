@@ -13,9 +13,9 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [duro-app](charts/duro-app/) | 1.36.0 | 1.36.0 | A household management dashboard with invite system |
 | [kb-vision](charts/kb-vision/) | 0.4.0 | 0.4.0 | Knowledge Base for Homelab |
 | [ticket-vision](charts/ticket-vision/) | 0.7.0 | 0.7.0 | Fully automated ITSM for homelab |
-| [duro-app](charts/duro-app/) | 1.36.0 | 1.36.0 | A household management dashboard with invite system |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.26 | 0.1.26 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [cluster-vision](charts/cluster-vision/) | 0.18.7 | 0.18.7 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [duro-operator](charts/duro-operator/) | 0.1.3 | 0.1.3 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
