@@ -18,7 +18,7 @@ helm repo update
 | [ticket-vision](charts/ticket-vision/) | 0.7.0 | 0.7.0 | Fully automated ITSM for homelab |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.26 | 0.1.26 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [cluster-vision](charts/cluster-vision/) | 0.18.7 | 0.18.7 | Auto-generated infrastructure diagrams from live Kubernetes state |
-| [duro-operator](charts/duro-operator/) | 0.1.3 | 0.1.3 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
+| [duro-operator](charts/duro-operator/) | 0.1.5 | 0.1.5 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.1.9 | 2.1.9 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.5.15 | 0.5.15 | A Kubernetes operator that automatically configures preview environments for applications |
 | [ddns-updater-operator](charts/ddns-updater-operator/) | 0.4.1 | 0.4.1 | A Kubernetes operator that manages DDNS records for ddns-updater |
