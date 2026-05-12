@@ -40,10 +40,14 @@ spec:
             periodSeconds: 30
           readinessProbe:
             httpGet:
-              path: /health
+              path: /health/ready
               port: 3000
             initialDelaySeconds: 5
             periodSeconds: 10
+            # /health/ready pings DB; allow a few transient failures
+            # before dropping the pod from Service endpoints.
+            failureThreshold: 3
+            timeoutSeconds: 5
           volumeMounts:
             {{- if .Values.persistence.enabled }}
             - name: data
