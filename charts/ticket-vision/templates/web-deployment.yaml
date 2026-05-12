@@ -52,9 +52,15 @@ spec:
               path: /health
               port: http
             periodSeconds: 10
+            # /health pings DB; allow a few transient failures before
+            # dropping the pod from Service endpoints.
+            failureThreshold: 3
+          # Liveness on /health/live (cheap, process-only) so a transient
+          # postgres blip drops the pod from the Service via readiness
+          # without also tripping liveness and restarting it in a loop.
           livenessProbe:
             httpGet:
-              path: /health
+              path: /health/live
               port: http
             periodSeconds: 30
       volumes:
