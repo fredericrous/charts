@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [kb-vision](charts/kb-vision/) | 0.10.10 | 0.10.10 | Knowledge Base for Homelab |
+| [kb-vision](charts/kb-vision/) | 0.10.11 | 0.10.11 | Knowledge Base for Homelab |
 | [ticket-vision](charts/ticket-vision/) | 0.7.2 | 0.7.2 | Fully automated ITSM for homelab |
 | [cluster-vision](charts/cluster-vision/) | 0.20.1 | 0.20.1 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [duro-app](charts/duro-app/) | 1.41.10 | 1.41.10 | A household management dashboard with invite system |
