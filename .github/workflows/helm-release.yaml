@@ -213,11 +213,15 @@ jobs:
 
       - name: Update repository index
         run: |
-          # Download current index if it exists
-          curl -sfL ${{ env.CHARTS_URL }}/index.yaml -o ./index.yaml || echo "No existing index.yaml"
-
-          # Update index with new chart
-          helm repo index . --url ${{ env.CHARTS_URL }} --merge ./index.yaml
+          # Rebuild from scratch from packages/ — single source of truth.
+          # No --merge: --merge only appends, so a .tgz deleted from
+          # packages/ would silently linger as an orphan entry in
+          # index.yaml. That bit us once: kb-vision was published as
+          # 0.19.x then the source repo reset its versioning back to
+          # 0.4.0; the 0.19.x entries stayed in the index and
+          # `helm install` picked them as SemVer-highest. See cleanup
+          # commit 3f70401.
+          helm repo index . --url ${{ env.CHARTS_URL }}
 
           echo "Updated index.yaml entries:"
           yq ".entries.${{ env.CHART_NAME }}" ./index.yaml
