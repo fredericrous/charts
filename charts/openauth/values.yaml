@@ -1,9 +1,11 @@
 image:
   repository: ghcr.io/fredericrous/openauth
-  tag: "" # set by release workflow / values override
+  # Tag is set by the release workflow (or per-release values override).
+  tag: ""
   pullPolicy: IfNotPresent
 
-replicaCount: 1 # v1 single-pod; MemoryStorage state is persisted to a PVC
+# v1 single-pod; MemoryStorage state is persisted to a PVC.
+replicaCount: 1
 
 http:
   port: 3000
@@ -19,7 +21,8 @@ env:
 persistence:
   enabled: true
   size: 1Gi
-  storageClass: "" # use the cluster default (or set explicitly)
+  # Empty = use the cluster default (or set explicitly).
+  storageClass: ""
   accessMode: ReadWriteOnce
   mountPath: /data
 
