@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [openauth](charts/openauth/) | 0.0.3 | 0.0.3 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
+| [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
 | [kb-vision](charts/kb-vision/) | 0.10.13 | 0.10.13 | Knowledge Base for Homelab |
 | [ticket-vision](charts/ticket-vision/) | 0.7.2 | 0.7.2 | Fully automated ITSM for homelab |
 | [cluster-vision](charts/cluster-vision/) | 0.20.1 | 0.20.1 | Auto-generated infrastructure diagrams from live Kubernetes state |
