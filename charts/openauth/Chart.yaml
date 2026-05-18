@@ -1,9 +1,6 @@
 apiVersion: v2
 name: openauth
-description: |
-  OIDC issuer for the website-builder, separate from homelab Authelia.
-  Wraps @openauthjs/openauth with the password provider + default UI.
-  Single-pod v1; persists refresh tokens + password hashes to a PVC.
+description: OIDC issuer for the website-builder (wraps @openauthjs/openauth)
 type: application
 version: 0.0.2
 appVersion: 0.0.2
