@@ -2,8 +2,8 @@ apiVersion: v2
 name: openauth
 description: OIDC issuer for the website-builder (wraps @openauthjs/openauth)
 type: application
-version: 0.0.3
-appVersion: 0.0.3
+version: 0.0.4
+appVersion: 0.0.4
 maintainers:
   - name: frederic.rous
 icon: https://github.githubassets.com/images/icons/emoji/lock_with_ink_pen.png
