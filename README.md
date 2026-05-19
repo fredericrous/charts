@@ -13,6 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [builder-api](charts/builder-api/) | 0.0.1 | 0.0.1 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
 | [kb-vision](charts/kb-vision/) | 0.10.13 | 0.10.13 | Knowledge Base for Homelab |
 | [ticket-vision](charts/ticket-vision/) | 0.7.2 | 0.7.2 | Fully automated ITSM for homelab |
