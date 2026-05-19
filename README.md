@@ -13,6 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [workerd-runtime](charts/workerd-runtime/) | 0.0.1 | 0.0.1 | serves materialised HTML from garage, slug→site_id from Postgres |
 | [builder-api](charts/builder-api/) | 0.0.1 | 0.0.1 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
 | [kb-vision](charts/kb-vision/) | 0.10.13 | 0.10.13 | Knowledge Base for Homelab |
