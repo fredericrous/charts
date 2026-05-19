@@ -1,0 +1,49 @@
+image:
+  repository: ghcr.io/fredericrous/workerd-runtime
+  tag: ""
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+http:
+  port: 8080
+
+env:
+  PORT: "8080"
+  # DATABASE_URL, S3_*, BUILDER_PUBLIC_HOST_SUFFIX come from the
+  # HelmRelease postRenderer in homelab.
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: 1000m
+    memory: 1Gi
+
+livenessProbe:
+  httpGet:
+    path: /healthz
+    port: http
+  initialDelaySeconds: 5
+  periodSeconds: 30
+readinessProbe:
+  httpGet:
+    path: /healthz
+    port: http
+  initialDelaySeconds: 2
+  periodSeconds: 10
+
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 1000
+  fsGroup: 1000
+securityContext:
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop: ["ALL"]
+  readOnlyRootFilesystem: false
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
