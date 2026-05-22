@@ -13,8 +13,8 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [builder-webapp](charts/builder-webapp/) | 0.0.15 | 0.0.15 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [builder-api](charts/builder-api/) | 0.0.2 | 0.0.2 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
-| [builder-webapp](charts/builder-webapp/) | 0.0.14 | 0.0.14 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [workerd-runtime](charts/workerd-runtime/) | 0.0.1 | 0.0.1 | serves materialised HTML from garage, slug→site_id from Postgres |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
 | [kb-vision](charts/kb-vision/) | 0.10.13 | 0.10.13 | Knowledge Base for Homelab |
