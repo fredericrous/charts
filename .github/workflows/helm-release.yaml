@@ -228,20 +228,37 @@ jobs:
 
       - name: Update README with new chart version
         run: |
-          # Get chart info from Chart.yaml
-          DESCRIPTION=$(yq '.description' ./charts/${{ env.CHART_NAME }}/Chart.yaml)
-          APP_VERSION=$(yq '.appVersion' ./charts/${{ env.CHART_NAME }}/Chart.yaml)
-          
+          # Get chart info from Chart.yaml. `yq -r` raw-prints scalars
+          # without the surrounding YAML quoting/escaping; the pipeline
+          # then normalises the description to a single line so the
+          # table-row sed call below doesn't ingest embedded newlines.
+          #
+          # Why this matters: when Chart.yaml declares description as a
+          # `|` block scalar (multi-line literal), an unsanitised
+          # `sed Ni TEXT` breaks at the first newline in TEXT and parses
+          # the next line as a new sed command, e.g.
+          #     sed: -e expression #1, char 125: unknown command: `f'
+          # (the `f' was the first letter of the second description line).
+          # Sync-bridge 0.0.1 hit this and the workflow consistently
+          # failed at this step — chart already pushed to OCI, but the
+          # job exited 1, leaving no GitHub Release and no README bump.
+          # Pipes also need escaping so they don't open a new table cell.
+          DESCRIPTION=$(yq -r '.description' ./charts/${{ env.CHART_NAME }}/Chart.yaml \
+            | tr '\n' ' ' \
+            | tr -s ' ' \
+            | sed -e 's/^ //' -e 's/ $//' -e 's/|/\\|/g')
+          APP_VERSION=$(yq -r '.appVersion' ./charts/${{ env.CHART_NAME }}/Chart.yaml)
+
           # Update the README.md table
           # First, remove the old entry for this chart if it exists
           sed -i "/^| \[${{ env.CHART_NAME }}\]/d" README.md
-          
+
           # Find the line number after the table header
           LINE_NUM=$(grep -n "^|-------|---------|-------------|-------------|" README.md | cut -d: -f1)
-          
+
           # Insert the new entry after the header separator
           sed -i "$((LINE_NUM+1))i| [${{ env.CHART_NAME }}](charts/${{ env.CHART_NAME }}/) | ${{ env.VERSION_NUMBER }} | $APP_VERSION | $DESCRIPTION |" README.md
-          
+
           echo "Updated README.md with ${{ env.CHART_NAME }} version ${{ env.VERSION_NUMBER }}"
           cat README.md | grep -A5 "Available Charts"
 
