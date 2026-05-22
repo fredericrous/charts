@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [builder-webapp](charts/builder-webapp/) | 0.0.16 | 0.0.16 | website-builder SPA + auth backend (openauth client + session cookie) |
+| [builder-webapp](charts/builder-webapp/) | 0.0.17 | 0.0.17 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [builder-api](charts/builder-api/) | 0.0.2 | 0.0.2 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
 | [workerd-runtime](charts/workerd-runtime/) | 0.0.1 | 0.0.1 | serves materialised HTML from garage, slug→site_id from Postgres |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
