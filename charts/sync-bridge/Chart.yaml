@@ -9,8 +9,8 @@ description: |
   deployments use `hostNetwork: true` or a NodePort with UDP forwarding
   — see values.yaml.
 type: application
-version: 0.0.4
-appVersion: 0.0.4
+version: 0.0.5
+appVersion: 0.0.5
 maintainers:
   - name: frederic.rous
 icon: https://github.githubassets.com/images/icons/emoji/satellite.png
