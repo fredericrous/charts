@@ -1,9 +1,11 @@
 image:
   repository: ghcr.io/fredericrous/sync-bridge
-  tag: ""  # set by release workflow
+  # Set by the release workflow.
+  tag: ""
   pullPolicy: IfNotPresent
 
-replicaCount: 1  # single-pod for v1 per PLAN.md scaling posture
+# Single-pod for v1 per PLAN.md scaling posture.
+replicaCount: 1
 
 # UDP / Hyperswarm requirements
 #   The DHT does UDP hole-punching, so a plain ClusterIP isn't enough.
