@@ -13,6 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [sync-bridge](charts/sync-bridge/) | 0.0.2 | 0.0.2 | Node service that bridges browser WebSocket clients to Hyperswarm for Yjs document sync in the website-builder. Single-pod for v1 (per PLAN.md "v1 scaling posture"). The Hyperswarm DHT layer requires UDP egress for hole-punching, so production deployments use `hostNetwork: true` or a NodePort with UDP forwarding — see values.yaml. |
 | [builder-webapp](charts/builder-webapp/) | 0.0.19 | 0.0.19 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [builder-api](charts/builder-api/) | 0.0.2 | 0.0.2 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
 | [workerd-runtime](charts/workerd-runtime/) | 0.0.1 | 0.0.1 | serves materialised HTML from garage, slug→site_id from Postgres |
