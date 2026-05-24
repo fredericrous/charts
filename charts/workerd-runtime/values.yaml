@@ -35,13 +35,21 @@ readinessProbe:
   periodSeconds: 10
 
 podSecurityContext:
+  # 65532 = the nonroot UID baked into gcr.io/distroless/nodejs24:nonroot.
+  # If you switch back to the alpine Dockerfile (which creates UID 1000),
+  # update these to 1000. Don't override at HelmRelease values — the
+  # numbers must match what the image actually has, or the kubelet
+  # SecurityContext check fails container start.
   runAsNonRoot: true
-  runAsUser: 1000
-  fsGroup: 1000
+  runAsUser: 65532
+  fsGroup: 65532
 securityContext:
   allowPrivilegeEscalation: false
   capabilities:
     drop: ["ALL"]
+  # Distroless filesystem is read-only-safe; flip on once we confirm
+  # nothing writes to /app at runtime. Currently false to avoid
+  # surprises with /tmp usage by node modules.
   readOnlyRootFilesystem: false
 
 nodeSelector: {}
