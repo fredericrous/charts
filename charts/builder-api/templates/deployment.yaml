@@ -32,6 +32,16 @@ spec:
             - name: {{ $key }}
               value: {{ $value | quote }}
             {{- end }}
+          {{- with .Values.envFrom }}
+          envFrom:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
+          {{- if .Values.internalCA.enabled }}
+          volumeMounts:
+            - name: internal-ca
+              mountPath: /certs
+              readOnly: true
+          {{- end }}
           livenessProbe:
             {{- toYaml .Values.livenessProbe | nindent 12 }}
           readinessProbe:
@@ -40,6 +50,16 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
+      {{- if .Values.internalCA.enabled }}
+      volumes:
+        - name: internal-ca
+          secret:
+            secretName: {{ .Values.internalCA.secretName }}
+            items:
+              - key: {{ .Values.internalCA.key | default "ca.crt" }}
+                path: ca.crt
+            optional: true
+      {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

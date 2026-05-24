@@ -12,7 +12,24 @@ env:
   BUILDER_API_PORT: "4000"
   # DATABASE_URL, OIDC_*, S3_*, BUILDER_PUBLIC_HOST come from the
   # HelmRelease postRenderer in homelab (Vault + reflected secrets +
-  # inline configs).
+  # inline configs). SMTP_HOST/PORT/USER/FROM also come from the
+  # HelmRelease envs; SMTP_PASS is injected via envFrom referencing
+  # an ExternalSecret-backed Secret (so it never lives in plaintext
+  # YAML).
+
+# Extra envs from Secrets / ConfigMaps. Used by homelab to inject
+# SMTP_PASS via an ExternalSecret-backed Secret. Empty list in the
+# chart default — every entry has to come from the consumer.
+envFrom: []
+
+# Mounts the homelab's internal CA cert at /certs/ca.crt so the SMTP
+# transport can verify stalwart's TLS without disabling cert checks.
+# Disabled by default; homelab enables + reflects vault-internal-ca
+# into the builder namespace via internal-ca-reflector.yaml.
+internalCA:
+  enabled: false
+  secretName: vault-internal-ca
+  key: tls.crt
 
 resources:
   requests:
