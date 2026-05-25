@@ -1,0 +1,16 @@
+apiVersion: v2
+name: social-planner
+description: Self-hosted social content planner (recommendation + week planner)
+type: application
+version: 0.1.0
+appVersion: 0.1.0
+home: https://github.com/fredericrous/social-planner
+sources:
+  - https://github.com/fredericrous/social-planner
+maintainers:
+  - name: fredericrous
+    url: https://github.com/fredericrous
+keywords:
+  - social
+  - planner
+  - homelab
