@@ -3,7 +3,7 @@ entries:
   authelia-oidc-operator:
   - apiVersion: v2
     appVersion: 0.1.27
-    created: "2026-05-25T19:04:20.324714777Z"
+    created: "2026-05-25T19:34:21.212554809Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 27ce5901bf36a8d2c85bf5568656d4060bb02431864c152c5783568bb9da7c3d
@@ -27,7 +27,7 @@ entries:
     version: 0.1.27
   - apiVersion: v2
     appVersion: 0.1.26
-    created: "2026-05-25T19:04:20.324355275Z"
+    created: "2026-05-25T19:34:21.212061641Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 9b2a0b5998be0621608689b08d06ec2d9019c8b994a9edfffe371a62fb517bc8
@@ -51,7 +51,7 @@ entries:
     version: 0.1.26
   - apiVersion: v2
     appVersion: 0.1.25
-    created: "2026-05-25T19:04:20.324017226Z"
+    created: "2026-05-25T19:34:21.211620279Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 6283036a95e7594b8efc374cde33c413745090d7a1353191e33482507ee4eb5d
@@ -75,7 +75,7 @@ entries:
     version: 0.1.25
   - apiVersion: v2
     appVersion: 0.1.24
-    created: "2026-05-25T19:04:20.323669763Z"
+    created: "2026-05-25T19:34:21.211107284Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 4e1d74fa855ad9ebc9d82f5c668b01c5f57f2729337942161c5e2506cd4f4bc4
@@ -99,7 +99,7 @@ entries:
     version: 0.1.24
   - apiVersion: v2
     appVersion: 0.1.23
-    created: "2026-05-25T19:04:20.323293547Z"
+    created: "2026-05-25T19:34:21.209788913Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: a253b14041779923ea5a47b61f707aa41a4d365ec3bbfcd0f876519f34140cdd
@@ -123,7 +123,7 @@ entries:
     version: 0.1.23
   - apiVersion: v2
     appVersion: 0.1.22
-    created: "2026-05-25T19:04:20.3229105Z"
+    created: "2026-05-25T19:34:21.209286808Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 3b02dfa254a1b55a43dfa8dd4da3b5c0ce3d7d2411703696f6a42bdb62e334f7
@@ -147,7 +147,7 @@ entries:
     version: 0.1.22
   - apiVersion: v2
     appVersion: 0.1.21
-    created: "2026-05-25T19:04:20.322014481Z"
+    created: "2026-05-25T19:34:21.208845005Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 0aab6d0e459961407c4c95368036a3d022e162570d089447299d5ecf98f588a9
@@ -171,7 +171,7 @@ entries:
     version: 0.1.21
   - apiVersion: v2
     appVersion: 0.1.20
-    created: "2026-05-25T19:04:20.321691154Z"
+    created: "2026-05-25T19:34:21.208409935Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 0524ec98606a181248bc6d26a437b8ab34f4b7a918ec4a662191787e2ae2a9ce
@@ -195,7 +195,7 @@ entries:
     version: 0.1.20
   - apiVersion: v2
     appVersion: 0.1.19
-    created: "2026-05-25T19:04:20.321333596Z"
+    created: "2026-05-25T19:34:21.207946923Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 87ad3a378dd95808893073a14c5743bf1fefa70a24120eca62111515b67dea12
@@ -219,7 +219,7 @@ entries:
     version: 0.1.19
   - apiVersion: v2
     appVersion: 0.1.18
-    created: "2026-05-25T19:04:20.321006042Z"
+    created: "2026-05-25T19:34:21.207507866Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 5b9c2beafed940694777e2dfdcb1642e38cd5c0e5e9826293e80ec603f2e888d
@@ -243,7 +243,7 @@ entries:
     version: 0.1.18
   - apiVersion: v2
     appVersion: 0.1.17
-    created: "2026-05-25T19:04:20.32067888Z"
+    created: "2026-05-25T19:34:21.207039824Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: c529ac95f07a9a6ae5ab6b2c052a5aa560cf1e40f47e0a2feca04de1cae72de3
@@ -267,7 +267,7 @@ entries:
     version: 0.1.17
   - apiVersion: v2
     appVersion: 0.1.16
-    created: "2026-05-25T19:04:20.320364096Z"
+    created: "2026-05-25T19:34:21.206624241Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 8ea5e74a6bdde94ec57dfc15664289a4b03a486eb698b404688c39a45629a0b2
@@ -291,7 +291,7 @@ entries:
     version: 0.1.16
   - apiVersion: v2
     appVersion: 0.1.15
-    created: "2026-05-25T19:04:20.320052166Z"
+    created: "2026-05-25T19:34:21.206187167Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 2d7f88626d37dcbd1f58b70e9d9601d11289426127354174059e194d08bd75c2
@@ -315,7 +315,7 @@ entries:
     version: 0.1.12
   - apiVersion: v2
     appVersion: 0.1.13
-    created: "2026-05-25T19:04:20.31973618Z"
+    created: "2026-05-25T19:34:21.20577551Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: c734539b675e79ebef481e2f1ba3d9bcc891cce365e90b6e0073dc7d03ef96a4
@@ -339,7 +339,7 @@ entries:
     version: 0.1.11
   - apiVersion: v2
     appVersion: 0.1.12
-    created: "2026-05-25T19:04:20.319402718Z"
+    created: "2026-05-25T19:34:21.205301468Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 4eac80d573138f9b055916858e458ddaf36ebb2711444ff41a51a85dbb7fe5f0
@@ -363,7 +363,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: 0.1.12
-    created: "2026-05-25T19:04:20.326797342Z"
+    created: "2026-05-25T19:34:21.215273771Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: c0ed57d8c25b9f51b74f0e04bec906745d48a1587299b89043d7ec5606328443
@@ -387,7 +387,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: 0.1.9
-    created: "2026-05-25T19:04:20.326490581Z"
+    created: "2026-05-25T19:34:21.214895507Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 41c420085c1a91e85bf1898db53856f035902b98bafdcef41d132740389041b2
@@ -411,7 +411,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 0.1.8
-    created: "2026-05-25T19:04:20.326193774Z"
+    created: "2026-05-25T19:34:21.214506643Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 273e9beb0078a2d3a5332041180344da5fa65f117e4ab70c0b72e2002c2e7067
@@ -435,7 +435,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 0.1.7
-    created: "2026-05-25T19:04:20.325900192Z"
+    created: "2026-05-25T19:34:21.214108511Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 7032be6a5ff845effb8f4a0d4c0d100d0c863e1bb4007b659b7edc21339f2cd5
@@ -459,7 +459,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 0.1.6
-    created: "2026-05-25T19:04:20.325609314Z"
+    created: "2026-05-25T19:34:21.213736469Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 04b7161d198214bf33ea6ac5ff42afeccd63ddb56876185dde329d387fbfbecf
@@ -483,7 +483,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.5
-    created: "2026-05-25T19:04:20.325310774Z"
+    created: "2026-05-25T19:34:21.2133504Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 605943075cc703809a58c72ee15ece2a93b9b0d3fd0c2a692e3fffc8aa2c8fd5
@@ -507,7 +507,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2026-05-25T19:04:20.325016461Z"
+    created: "2026-05-25T19:34:21.212945867Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: 29eda77a614b8c3c43cf25aa0bb4acc4b98a9e00fd6e0178ad599b5001d740e8
@@ -531,7 +531,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-05-25T19:04:20.31905864Z"
+    created: "2026-05-25T19:34:21.204857331Z"
     description: A Kubernetes operator that manages OIDC client configurations for
       Authelia
     digest: e5a6fdebaafb12f2f43c3cb7e248beb754bd6068d1bce354cdaae5271388bd5e
@@ -556,7 +556,7 @@ entries:
   builder-api:
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2026-05-25T19:04:20.328760068Z"
+    created: "2026-05-25T19:34:21.216982582Z"
     description: website-builder backend API (createSite, listMySites, getSite, publishCanned)
     digest: 14e03c63dd00fc895676088deb04258d7f173e9a7986604b317c4b85c2765e35
     icon: https://github.githubassets.com/images/icons/emoji/electric_plug.png
@@ -569,7 +569,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2026-05-25T19:04:20.328516972Z"
+    created: "2026-05-25T19:34:21.216655694Z"
     description: website-builder backend API (createSite, listMySites, getSite, publishCanned)
     digest: 1ea51d847ffeaf27c770fa814957ec1a96fba6e52ab77605d326822f62554071
     icon: https://github.githubassets.com/images/icons/emoji/electric_plug.png
@@ -582,7 +582,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2026-05-25T19:04:20.328264161Z"
+    created: "2026-05-25T19:34:21.216334255Z"
     description: website-builder backend API (createSite, listMySites, getSite, publishCanned)
     digest: 43307e8e0afbb4ec759304ab7d53f9aec6e21c0bc035b6fb22a5bfae10c3f864
     icon: https://github.githubassets.com/images/icons/emoji/electric_plug.png
@@ -595,7 +595,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.3
-    created: "2026-05-25T19:04:20.327641624Z"
+    created: "2026-05-25T19:34:21.21603083Z"
     description: website-builder backend API (createSite, listMySites, getSite, publishCanned)
     digest: 117c50d950c0aa49d2c3dfa0cfaef9098f5f428f27b04acecba9084dc9dc126f
     icon: https://github.githubassets.com/images/icons/emoji/electric_plug.png
@@ -608,7 +608,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2026-05-25T19:04:20.327150304Z"
+    created: "2026-05-25T19:34:21.21579436Z"
     description: website-builder backend API (createSite, listMySites, getSite, publishCanned)
     digest: 32fb12205ad93906350fd8d18f1341e833c544b598d8804fa291f6d168bf59cf
     icon: https://github.githubassets.com/images/icons/emoji/electric_plug.png
@@ -621,7 +621,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2026-05-25T19:04:20.326975841Z"
+    created: "2026-05-25T19:34:21.215550516Z"
     description: website-builder backend API (createSite, listMySites, getSite, publishCanned)
     digest: ba9e0304b71a87162ac1ffa8bf1a69f26af07a689356d41c7ff23fe7caadd3c7
     icon: https://github.githubassets.com/images/icons/emoji/electric_plug.png
@@ -635,7 +635,7 @@ entries:
   builder-webapp:
   - apiVersion: v2
     appVersion: 0.0.24
-    created: "2026-05-25T19:04:20.331860887Z"
+    created: "2026-05-25T19:34:21.222193627Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 62ab308609736e80623ed5b508a92634491e72fb63f54411864846e15e5401bf
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -648,7 +648,7 @@ entries:
     version: 0.0.24
   - apiVersion: v2
     appVersion: 0.0.23
-    created: "2026-05-25T19:04:20.331684451Z"
+    created: "2026-05-25T19:34:21.221951997Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: e13327a5435832f834b721ba872304cd6d59a1b9e254f01bf5ab8e9a51f1b19d
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -661,7 +661,7 @@ entries:
     version: 0.0.23
   - apiVersion: v2
     appVersion: 0.0.22
-    created: "2026-05-25T19:04:20.331485431Z"
+    created: "2026-05-25T19:34:21.221714866Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 02621a7602e5659aa03d16eec05d2f9b70741c54df8b01007cb20931345c496e
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -674,7 +674,7 @@ entries:
     version: 0.0.22
   - apiVersion: v2
     appVersion: 0.0.21
-    created: "2026-05-25T19:04:20.331315766Z"
+    created: "2026-05-25T19:34:21.221472805Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: ff6aca4bd8d64cf2df98d15cdd77dee5be813c558fc59e8a5e360cfd5d2eb17b
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -687,7 +687,7 @@ entries:
     version: 0.0.21
   - apiVersion: v2
     appVersion: 0.0.20
-    created: "2026-05-25T19:04:20.331143607Z"
+    created: "2026-05-25T19:34:21.221195809Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: d176a666016399c43fca801ef829353395cf9a6ddc62c2ee61185f21938d67cb
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -700,7 +700,7 @@ entries:
     version: 0.0.20
   - apiVersion: v2
     appVersion: 0.0.19
-    created: "2026-05-25T19:04:20.330763484Z"
+    created: "2026-05-25T19:34:21.22072323Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 7e91914e8e0130d84a67d88bb4b21c6b8c27265f1e062211ee704bd8881ae771
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -713,7 +713,7 @@ entries:
     version: 0.0.19
   - apiVersion: v2
     appVersion: 0.0.18
-    created: "2026-05-25T19:04:20.330559097Z"
+    created: "2026-05-25T19:34:21.220468886Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 0c8674cef0f515ce78ce6ffd09d14c28c2ea4bfd1d26e49cd272f3a64624c499
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -726,7 +726,7 @@ entries:
     version: 0.0.18
   - apiVersion: v2
     appVersion: 0.0.17
-    created: "2026-05-25T19:04:20.330382841Z"
+    created: "2026-05-25T19:34:21.220189205Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 268a0b99980f1f8b88c25198046a78d968a79ba1673a364fe5fd2bb762488216
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -739,7 +739,7 @@ entries:
     version: 0.0.17
   - apiVersion: v2
     appVersion: 0.0.16
-    created: "2026-05-25T19:04:20.330201238Z"
+    created: "2026-05-25T19:34:21.21994472Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 33e952026012f4552257c889418e3f32418ae7033fe8b08bd8b3992b51beeb5b
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -752,7 +752,7 @@ entries:
     version: 0.0.16
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-05-25T19:04:20.33002344Z"
+    created: "2026-05-25T19:34:21.21969746Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 9cd9fecdc4c62d43a3522b38b177113cfc935849cb8b88644805ffcdc6fc4972
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -765,7 +765,7 @@ entries:
     version: 0.0.15
   - apiVersion: v2
     appVersion: 0.0.14
-    created: "2026-05-25T19:04:20.329851661Z"
+    created: "2026-05-25T19:34:21.219432947Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 5dc6f6a394db9c01158d9cc452078ee6c8dc2013bdc6d6b5fdfed943ee64bf60
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -778,7 +778,7 @@ entries:
     version: 0.0.14
   - apiVersion: v2
     appVersion: 0.0.13
-    created: "2026-05-25T19:04:20.329675837Z"
+    created: "2026-05-25T19:34:21.219140563Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 62a3a3f514b3d29ee828fd6743af5a2b32602c2ec5abda8040ddce4176afe027
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -791,7 +791,7 @@ entries:
     version: 0.0.13
   - apiVersion: v2
     appVersion: 0.0.12
-    created: "2026-05-25T19:04:20.329478019Z"
+    created: "2026-05-25T19:34:21.218877082Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 36ed2878731d4049db2c5267f7d644788b844e7d2b5a56b919e12cb0c342f3d2
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -804,7 +804,7 @@ entries:
     version: 0.0.12
   - apiVersion: v2
     appVersion: 0.0.11
-    created: "2026-05-25T19:04:20.329305128Z"
+    created: "2026-05-25T19:34:21.21860738Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 51e481b47e2c5f4ee5a77a556d932f750fdd580d0f8781557071e1efc124c1ee
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -817,7 +817,7 @@ entries:
     version: 0.0.11
   - apiVersion: v2
     appVersion: 0.0.10
-    created: "2026-05-25T19:04:20.329130926Z"
+    created: "2026-05-25T19:34:21.218143504Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 2c271c3ec6b9b3385bc4006422b2026820f94c0398d7843772dd850b520f115e
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -830,7 +830,7 @@ entries:
     version: 0.0.10
   - apiVersion: v2
     appVersion: 0.0.9
-    created: "2026-05-25T19:04:20.333909902Z"
+    created: "2026-05-25T19:34:21.223966468Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 563a4dffdbc37847d8bf2a17c2d180470fde0b399581735c19ff097b382e3453
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -843,7 +843,7 @@ entries:
     version: 0.0.9
   - apiVersion: v2
     appVersion: 0.0.8
-    created: "2026-05-25T19:04:20.333705895Z"
+    created: "2026-05-25T19:34:21.223730097Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: bb183e3dcae3121541c8cece342eb0c8b98c77806a2fd8373316258a5303329c
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -856,7 +856,7 @@ entries:
     version: 0.0.8
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2026-05-25T19:04:20.333440996Z"
+    created: "2026-05-25T19:34:21.223488748Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 2a707dc2f1f3ae2442fa845246a0865d006883692a9500be1018bf4bbdc1827c
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -869,7 +869,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2026-05-25T19:04:20.332995565Z"
+    created: "2026-05-25T19:34:21.223206923Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 4db4dde2914f37a964648730d99ff5bce7d9098aaf5adeb87aac3e1669d9ab12
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -882,7 +882,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2026-05-25T19:04:20.332425797Z"
+    created: "2026-05-25T19:34:21.222970113Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: ac9d52a9250a72bc9dfd76bd215f0c6f43126ec4e549a82c49ea6c64428a5776
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -895,7 +895,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2026-05-25T19:04:20.3321953Z"
+    created: "2026-05-25T19:34:21.222729144Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 5f6e6e39acd85fdf32c5bc23b6def15ca23aac3c4525fc1c42b6717e51d1187a
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -908,7 +908,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.3
-    created: "2026-05-25T19:04:20.33202911Z"
+    created: "2026-05-25T19:34:21.22247456Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 2ee2bfa51589c8617cd9e1f9d5bd1be008950050184503e89f86bde627a06b51
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -921,7 +921,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2026-05-25T19:04:20.330967822Z"
+    created: "2026-05-25T19:34:21.220962906Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 4589983153f9d391497aa327e4f17caf16bf22b4d0e2338bb0aada6fd6be21d7
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -934,7 +934,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2026-05-25T19:04:20.328950384Z"
+    created: "2026-05-25T19:34:21.217290365Z"
     description: website-builder SPA + auth backend (openauth client + session cookie)
     digest: 914989fcf79a188748533407ba34ae56dbdf903014bbe491210c926700846cfa
     icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
@@ -948,7 +948,7 @@ entries:
   cluster-vision:
   - apiVersion: v2
     appVersion: 0.20.1
-    created: "2026-05-25T19:04:20.339684917Z"
+    created: "2026-05-25T19:34:21.232749214Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 5ca8ae5ebbfa3864571f5af6346a9fda5bfc399198ce78f7e6b3c93e9c6c8273
     name: cluster-vision
@@ -957,7 +957,7 @@ entries:
     version: 0.20.1
   - apiVersion: v2
     appVersion: 0.20.0
-    created: "2026-05-25T19:04:20.3394874Z"
+    created: "2026-05-25T19:34:21.232445338Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: b53b29a361b0ba963cbf38d2623b2072d088d30bd0ecffc3525ea1f06d2371cd
     name: cluster-vision
@@ -966,7 +966,7 @@ entries:
     version: 0.20.0
   - apiVersion: v2
     appVersion: 0.19.0
-    created: "2026-05-25T19:04:20.338972955Z"
+    created: "2026-05-25T19:34:21.230872996Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: a13e5fa61478c76d95cc515fb2aa5fc7343cfc4203c10d1597fbb7531fd57696
     name: cluster-vision
@@ -975,7 +975,7 @@ entries:
     version: 0.19.0
   - apiVersion: v2
     appVersion: 0.18.7
-    created: "2026-05-25T19:04:20.338782579Z"
+    created: "2026-05-25T19:34:21.230544604Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 77476ba55ee8c171d2a09eddc3a3a36d8d5eb20d68127a00540e29a0819eadf3
     name: cluster-vision
@@ -984,7 +984,7 @@ entries:
     version: 0.18.7
   - apiVersion: v2
     appVersion: 0.18.6
-    created: "2026-05-25T19:04:20.338560665Z"
+    created: "2026-05-25T19:34:21.230242101Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 3c883f9f36c98ce6eecd6ee31c726a67f3fae71e78db67a001033115db532af9
     name: cluster-vision
@@ -993,7 +993,7 @@ entries:
     version: 0.18.6
   - apiVersion: v2
     appVersion: 0.18.5
-    created: "2026-05-25T19:04:20.338361875Z"
+    created: "2026-05-25T19:34:21.230000922Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: ff3bb08355cd640ff6c0f066cc541e103749fbc2cd09bf1a88590184f837df73
     name: cluster-vision
@@ -1002,7 +1002,7 @@ entries:
     version: 0.18.5
   - apiVersion: v2
     appVersion: 0.18.4
-    created: "2026-05-25T19:04:20.338137137Z"
+    created: "2026-05-25T19:34:21.229761857Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 401dc7891e83a720addb337c503e3b44add141af9a8ce0a9cbf2a6195c5faa52
     name: cluster-vision
@@ -1011,7 +1011,7 @@ entries:
     version: 0.18.4
   - apiVersion: v2
     appVersion: 0.18.3
-    created: "2026-05-25T19:04:20.337746729Z"
+    created: "2026-05-25T19:34:21.229516981Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: e1c28ee0fe27e7d104da413fc13f757e44a5a7eec3796493340f9fb3976b4d6a
     name: cluster-vision
@@ -1020,7 +1020,7 @@ entries:
     version: 0.18.3
   - apiVersion: v2
     appVersion: 0.18.2
-    created: "2026-05-25T19:04:20.337247627Z"
+    created: "2026-05-25T19:34:21.229233223Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 78cc8e9df52abc3e44c9e6e3283e472b3733baec97498fc5744a028d29e457fc
     name: cluster-vision
@@ -1029,7 +1029,7 @@ entries:
     version: 0.18.2
   - apiVersion: v2
     appVersion: 0.17.0
-    created: "2026-05-25T19:04:20.337064922Z"
+    created: "2026-05-25T19:34:21.228990762Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 31e32db71a22182e0c2076b4de7672817fed596118c62a0aaf847ac58205814d
     name: cluster-vision
@@ -1038,7 +1038,7 @@ entries:
     version: 0.17.0
   - apiVersion: v2
     appVersion: 0.16.0
-    created: "2026-05-25T19:04:20.336891521Z"
+    created: "2026-05-25T19:34:21.22875373Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 63761cc729f7ec213c032e18b9188751bf6d6cfdd49fbfaab506e896d8642dee
     name: cluster-vision
@@ -1047,7 +1047,7 @@ entries:
     version: 0.16.0
   - apiVersion: v2
     appVersion: 0.15.0
-    created: "2026-05-25T19:04:20.336713053Z"
+    created: "2026-05-25T19:34:21.22851745Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 395e8ccc2deb5fa700bc3127c88592a2238076744d1d0153cf171db59c7ba321
     name: cluster-vision
@@ -1056,7 +1056,7 @@ entries:
     version: 0.15.0
   - apiVersion: v2
     appVersion: 0.14.0
-    created: "2026-05-25T19:04:20.336519111Z"
+    created: "2026-05-25T19:34:21.228185623Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: b3d300e071cde5c9456eee433c786478266aab9cf58bea5e8ada173e4ecded18
     name: cluster-vision
@@ -1065,7 +1065,7 @@ entries:
     version: 0.14.0
   - apiVersion: v2
     appVersion: 0.13.0
-    created: "2026-05-25T19:04:20.336343817Z"
+    created: "2026-05-25T19:34:21.227948722Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: b9aa3317eb56874c64f35118942e33f28e478e4d5454cfffc1d22247be16e632
     name: cluster-vision
@@ -1074,7 +1074,7 @@ entries:
     version: 0.13.0
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2026-05-25T19:04:20.336170215Z"
+    created: "2026-05-25T19:34:21.227709095Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: a94f2379f005e2a67cf767f4c30ca34f775d58654b6a8c47a121457889bac6ea
     name: cluster-vision
@@ -1083,7 +1083,7 @@ entries:
     version: 0.12.1
   - apiVersion: v2
     appVersion: 0.12.0
-    created: "2026-05-25T19:04:20.335999688Z"
+    created: "2026-05-25T19:34:21.227471964Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 1f49f786d2f4e532c01b729bd0d6a44ff9a65cdb7dfbe74736bbc49ba7b1c682
     name: cluster-vision
@@ -1092,7 +1092,7 @@ entries:
     version: 0.12.0
   - apiVersion: v2
     appVersion: 0.11.2
-    created: "2026-05-25T19:04:20.335829853Z"
+    created: "2026-05-25T19:34:21.227195299Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 245b2049c269a8f2e809e7e41aae237880bdddb98ef9f94d1a2426a6c82ef375
     name: cluster-vision
@@ -1101,7 +1101,7 @@ entries:
     version: 0.11.2
   - apiVersion: v2
     appVersion: 0.11.1
-    created: "2026-05-25T19:04:20.33566187Z"
+    created: "2026-05-25T19:34:21.226966854Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: d4551fdf330e6b9422b3aae9b589406efa2d2ccda0bb2d2d0d9682e0e799d717
     name: cluster-vision
@@ -1110,7 +1110,7 @@ entries:
     version: 0.11.1
   - apiVersion: v2
     appVersion: 0.11.0
-    created: "2026-05-25T19:04:20.335482219Z"
+    created: "2026-05-25T19:34:21.226724382Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 1143c4f1458c960e3f3ce7ba993d0cdad0e0023322b01a4d501304f3e1cd2deb
     name: cluster-vision
@@ -1119,7 +1119,7 @@ entries:
     version: 0.11.0
   - apiVersion: v2
     appVersion: 0.10.0
-    created: "2026-05-25T19:04:20.335317221Z"
+    created: "2026-05-25T19:34:21.226490637Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 12e4d3c55f3781bf6e2826f6ab01aef7c553a790412d83a26329cbade2437b88
     name: cluster-vision
@@ -1128,7 +1128,7 @@ entries:
     version: 0.10.0
   - apiVersion: v2
     appVersion: 0.9.2
-    created: "2026-05-25T19:04:20.344563423Z"
+    created: "2026-05-25T19:34:21.239658602Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 39d88dce4a85f8934df8a44e075b2a6d8fa19ad221b4a1e7a7c6c603e9d65b9d
     name: cluster-vision
@@ -1137,7 +1137,7 @@ entries:
     version: 0.9.2
   - apiVersion: v2
     appVersion: 0.9.1
-    created: "2026-05-25T19:04:20.344401649Z"
+    created: "2026-05-25T19:34:21.239411122Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 8ebd80c1fb0def170357f5cbb3a729c129abd03d15af8020b1d73510482e1ae2
     name: cluster-vision
@@ -1146,7 +1146,7 @@ entries:
     version: 0.9.1
   - apiVersion: v2
     appVersion: 0.9.0
-    created: "2026-05-25T19:04:20.34423632Z"
+    created: "2026-05-25T19:34:21.239122324Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 87995b922a9dcc77b4c4d764b78fa68f3d604ffdf59fb848cfa7e804e97380fe
     name: cluster-vision
@@ -1155,7 +1155,7 @@ entries:
     version: 0.9.0
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2026-05-25T19:04:20.344068958Z"
+    created: "2026-05-25T19:34:21.238857511Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: bb3c7d9798db2ef4cb8ff96e9dd8b95e2f6484cee2385b1d5bbb4193d34841ad
     name: cluster-vision
@@ -1164,7 +1164,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: 0.7.11
-    created: "2026-05-25T19:04:20.341914454Z"
+    created: "2026-05-25T19:34:21.235959651Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 579d3ac3f056abe3993d72dee1c521f5529c1a52883e0300ca3fe74326a66daa
     name: cluster-vision
@@ -1173,7 +1173,7 @@ entries:
     version: 0.7.11
   - apiVersion: v2
     appVersion: 0.7.10
-    created: "2026-05-25T19:04:20.341747693Z"
+    created: "2026-05-25T19:34:21.235725184Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 25cc6058bc04f5488297e819a32abe0d18f3b56289ff9ab8b7c88f959831e9e2
     name: cluster-vision
@@ -1182,7 +1182,7 @@ entries:
     version: 0.7.10
   - apiVersion: v2
     appVersion: 0.7.9
-    created: "2026-05-25T19:04:20.343903629Z"
+    created: "2026-05-25T19:34:21.23859933Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 370ad4e2feaf74a38c0d5c9f86d75d8b7f17d9a7b5b2b814739bfb3c159477cd
     name: cluster-vision
@@ -1191,7 +1191,7 @@ entries:
     version: 0.7.9
   - apiVersion: v2
     appVersion: 0.7.8
-    created: "2026-05-25T19:04:20.343727214Z"
+    created: "2026-05-25T19:34:21.238028052Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: d5dc7e14429bb09941b38195df65afd501b17e2faae06de6c9473f71c77e4505
     name: cluster-vision
@@ -1200,7 +1200,7 @@ entries:
     version: 0.7.8
   - apiVersion: v2
     appVersion: 0.7.7
-    created: "2026-05-25T19:04:20.343524649Z"
+    created: "2026-05-25T19:34:21.237424588Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 8b1950b7cbcb9a63a7beb6c0da19938f4553b6b74a265143d9cc324cc45bb83d
     name: cluster-vision
@@ -1209,7 +1209,7 @@ entries:
     version: 0.7.7
   - apiVersion: v2
     appVersion: 0.7.6
-    created: "2026-05-25T19:04:20.343355053Z"
+    created: "2026-05-25T19:34:21.237164794Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: af738a77423f1f397fbc65d3822d98a0ce8dbd96bb7ed32b2a2e3d72d39285f5
     name: cluster-vision
@@ -1218,7 +1218,7 @@ entries:
     version: 0.7.6
   - apiVersion: v2
     appVersion: 0.7.5
-    created: "2026-05-25T19:04:20.343183766Z"
+    created: "2026-05-25T19:34:21.236933574Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 0a0205d797c4623275fd141514198c21d0f633470f01b09de5ceb12aa80fb021
     name: cluster-vision
@@ -1227,7 +1227,7 @@ entries:
     version: 0.7.5
   - apiVersion: v2
     appVersion: 0.7.4
-    created: "2026-05-25T19:04:20.343004876Z"
+    created: "2026-05-25T19:34:21.236703736Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: f4c304e37895ef7ccf47bede0223d2a3327fc87f0192b03b8a320ce9af3e3735
     name: cluster-vision
@@ -1236,7 +1236,7 @@ entries:
     version: 0.7.4
   - apiVersion: v2
     appVersion: 0.7.3
-    created: "2026-05-25T19:04:20.342812997Z"
+    created: "2026-05-25T19:34:21.236469911Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: fc617999477d708b6d8205a8c2a95112f8f53508efaf78942d3e3f4f46926888
     name: cluster-vision
@@ -1245,7 +1245,7 @@ entries:
     version: 0.7.3
   - apiVersion: v2
     appVersion: 0.7.2
-    created: "2026-05-25T19:04:20.342463551Z"
+    created: "2026-05-25T19:34:21.236192885Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 9288f8e7cec9b4dbf6c8950a4ef96d67c4c64cee69a937ae3871ae9417e96ed5
     name: cluster-vision
@@ -1254,7 +1254,7 @@ entries:
     version: 0.7.2
   - apiVersion: v2
     appVersion: 0.7.1
-    created: "2026-05-25T19:04:20.341558819Z"
+    created: "2026-05-25T19:34:21.235494785Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: b95ac8fc45f61189d59d34f81cef4dd82b5546aa4064c1d650415c7335a0f35e
     name: cluster-vision
@@ -1263,7 +1263,7 @@ entries:
     version: 0.7.1
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2026-05-25T19:04:20.341388613Z"
+    created: "2026-05-25T19:34:21.235217509Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: e708cc232f0809e2d234642c17e7789fbb0818960f645271eb0b6556f253cd50
     name: cluster-vision
@@ -1272,7 +1272,7 @@ entries:
     version: 0.7.0
   - apiVersion: v2
     appVersion: 0.6.0
-    created: "2026-05-25T19:04:20.341220239Z"
+    created: "2026-05-25T19:34:21.234978624Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 883f093dc78e14bc61b11b38d9f89fa92a5e05889bfd9ed89238ef0e0f51a12c
     name: cluster-vision
@@ -1281,7 +1281,7 @@ entries:
     version: 0.6.0
   - apiVersion: v2
     appVersion: 0.5.4
-    created: "2026-05-25T19:04:20.341053358Z"
+    created: "2026-05-25T19:34:21.234743627Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 609d8d38ef105e17b69890a22f0225c5a0ee44581b8dae1980dea28d4f47d771
     name: cluster-vision
@@ -1290,7 +1290,7 @@ entries:
     version: 0.5.4
   - apiVersion: v2
     appVersion: 0.5.3
-    created: "2026-05-25T19:04:20.340880067Z"
+    created: "2026-05-25T19:34:21.234497829Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: c7074263d6ae57fd6b3b4088119426f1c8538464fb7128a1b0569043d9936fd2
     name: cluster-vision
@@ -1299,7 +1299,7 @@ entries:
     version: 0.5.3
   - apiVersion: v2
     appVersion: 0.5.2
-    created: "2026-05-25T19:04:20.34068946Z"
+    created: "2026-05-25T19:34:21.234207559Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 5ea55d332c2dffb92f0d0d79f938249be2f714f2dd8c2ff26c0cc72742a89015
     name: cluster-vision
@@ -1308,7 +1308,7 @@ entries:
     version: 0.5.2
   - apiVersion: v2
     appVersion: 0.5.1
-    created: "2026-05-25T19:04:20.340505413Z"
+    created: "2026-05-25T19:34:21.233958114Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 9d081bc856566aeafd2ceba7d035876122dfefd8503bc51c6b926b8baf347a21
     name: cluster-vision
@@ -1317,7 +1317,7 @@ entries:
     version: 0.5.1
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2026-05-25T19:04:20.340339443Z"
+    created: "2026-05-25T19:34:21.233723337Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 49529706342b6624a34b039c93068563c9a0eb817cb37232f9450ff018a29ffc
     name: cluster-vision
@@ -1326,7 +1326,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-05-25T19:04:20.340172431Z"
+    created: "2026-05-25T19:34:21.23348865Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 8ce9324a1561eef248f1ca4a1994813ff45e057741007c6e2dac78ff406f014e
     name: cluster-vision
@@ -1335,7 +1335,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.1
-    created: "2026-05-25T19:04:20.340012491Z"
+    created: "2026-05-25T19:34:21.233219649Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 6efb2429f12a0c9878b6e1579092a8c32bbbf415288b63b4bec9788d1dd04e40
     name: cluster-vision
@@ -1344,7 +1344,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-05-25T19:04:20.339848964Z"
+    created: "2026-05-25T19:34:21.232987557Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 2e5e45759788f57d6d139914d3ccb8129ad46d48e8b10a1218d016b426b63266
     name: cluster-vision
@@ -1353,7 +1353,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.1
-    created: "2026-05-25T19:04:20.33930789Z"
+    created: "2026-05-25T19:34:21.232109733Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: cc5c3af851abbd71eaa4d8fcd820564fe05b34083b29318ff3136a3aa81ff209
     name: cluster-vision
@@ -1362,7 +1362,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-05-25T19:04:20.33914222Z"
+    created: "2026-05-25T19:34:21.231551659Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 93d0daa3cb2bb6f5d37eb759bf38967dac3e61bc4e04650f11f49ef472089a87
     name: cluster-vision
@@ -1371,7 +1371,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-05-25T19:04:20.335146304Z"
+    created: "2026-05-25T19:34:21.226219101Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 3cd24c1a123128fa014ac3be1732131c4977653271347f652604b6f43f715125
     name: cluster-vision
@@ -1380,7 +1380,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: 0.1.8
-    created: "2026-05-25T19:04:20.334985391Z"
+    created: "2026-05-25T19:34:21.225992319Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 2bddacbeab9ae8571e6c4164a962baf794d0aa67b24325b6cacebf8b9902d5ff
     name: cluster-vision
@@ -1389,7 +1389,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 0.1.7
-    created: "2026-05-25T19:04:20.334822075Z"
+    created: "2026-05-25T19:34:21.225764004Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: dca355bc8f3e43c3bda34913542b549b76e162d2aebda165387907e0461816a6
     name: cluster-vision
@@ -1398,7 +1398,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 0.1.6
-    created: "2026-05-25T19:04:20.334648083Z"
+    created: "2026-05-25T19:34:21.225535639Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 422ca143711b71a73a58a45571da989117e1d8a20d33aee23711ec6ff4276fcf
     name: cluster-vision
@@ -1407,7 +1407,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 0.1.5
-    created: "2026-05-25T19:04:20.334448783Z"
+    created: "2026-05-25T19:34:21.225257241Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 274a5fd13bade1b4cf27bd79c232da002b27ec7552918dc8a0c899408040f5aa
     name: cluster-vision
@@ -1416,7 +1416,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.4
-    created: "2026-05-25T19:04:20.334264065Z"
+    created: "2026-05-25T19:34:21.224873506Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: 48b000cd61856e7b20b0c2f9f26ca2456ec593fc0dd738c86e3894f7d2cda8cb
     name: cluster-vision
@@ -1425,7 +1425,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2026-05-25T19:04:20.334092787Z"
+    created: "2026-05-25T19:34:21.22437049Z"
     description: Auto-generated infrastructure diagrams from live Kubernetes state
     digest: ba2627c291f3f227b2f533e9416b12679568d32cfdbde1ff1badc685dd127f16
     name: cluster-vision
@@ -1435,7 +1435,7 @@ entries:
   ddns-updater-operator:
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2026-05-25T19:04:20.345739123Z"
+    created: "2026-05-25T19:34:21.241212175Z"
     description: A Kubernetes operator that manages DDNS records for ddns-updater
     digest: 095b3df6c784cc735c97b405fdef4a8bafe4eb6bbd52d4ae8bfbd534049450d6
     home: https://github.com/fredericrous/ddns-updater-operator
@@ -1458,7 +1458,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-05-25T19:04:20.345419121Z"
+    created: "2026-05-25T19:34:21.24081212Z"
     description: A Kubernetes operator that manages DDNS records for ddns-updater
     digest: c7f6c071213b005d5442814906a1e58d992a4c0688de9c409f030f2fa8c68b07
     home: https://github.com/fredericrous/ddns-updater-operator
@@ -1481,7 +1481,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-05-25T19:04:20.345143036Z"
+    created: "2026-05-25T19:34:21.240437593Z"
     description: A Kubernetes operator that manages DDNS records for ddns-updater
     digest: d71ae48c6efe3e5b158b394dc4af326a9edd83a5ca6efc80d934a205eafafa34
     home: https://github.com/fredericrous/ddns-updater-operator
@@ -1504,7 +1504,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-05-25T19:04:20.344864206Z"
+    created: "2026-05-25T19:34:21.240039381Z"
     description: A Kubernetes operator that manages DDNS records for ddns-updater
     digest: 0962758eb9a9a20c3a724133401e578200af3e16d66d32ae7f9b0fcdcd491c93
     home: https://github.com/fredericrous/ddns-updater-operator
@@ -1528,7 +1528,7 @@ entries:
   duro-app:
   - apiVersion: v2
     appVersion: 1.41.10
-    created: "2026-05-25T19:04:20.369381842Z"
+    created: "2026-05-25T19:34:21.273367084Z"
     description: A household management dashboard with invite system
     digest: ebfc72e7f0b34c1918435f2a7a96b12517dfb502acd0f2f4eb5e69c24eb40bc2
     home: https://github.com/fredericrous/duro-app
@@ -1549,7 +1549,7 @@ entries:
     version: 1.41.10
   - apiVersion: v2
     appVersion: 1.41.8
-    created: "2026-05-25T19:04:20.372522251Z"
+    created: "2026-05-25T19:34:21.277504779Z"
     description: A household management dashboard with invite system
     digest: 1e6efd1eb9f3bb0a8fbcd8e74673fe43eebd45f9d4057e615a1ecd38db6a8c75
     home: https://github.com/fredericrous/duro-app
@@ -1570,7 +1570,7 @@ entries:
     version: 1.41.8
   - apiVersion: v2
     appVersion: 1.41.7
-    created: "2026-05-25T19:04:20.372177932Z"
+    created: "2026-05-25T19:34:21.276194548Z"
     description: A household management dashboard with invite system
     digest: 21dd0fbde717b690d7bb963f2e2b40d21f83d04d19c72724d3998274b3ed846e
     home: https://github.com/fredericrous/duro-app
@@ -1591,7 +1591,7 @@ entries:
     version: 1.41.7
   - apiVersion: v2
     appVersion: 1.41.6
-    created: "2026-05-25T19:04:20.371825141Z"
+    created: "2026-05-25T19:34:21.275734882Z"
     description: A household management dashboard with invite system
     digest: 607ce5ccef4883b436f821919d3fdfcc1c4dba81b86c27a6de1d22e3a482f3f2
     home: https://github.com/fredericrous/duro-app
@@ -1612,7 +1612,7 @@ entries:
     version: 1.41.6
   - apiVersion: v2
     appVersion: 1.41.5
-    created: "2026-05-25T19:04:20.371463807Z"
+    created: "2026-05-25T19:34:21.275251212Z"
     description: A household management dashboard with invite system
     digest: a68917924d4e0dc5216a606117dcca032f95f054c0f190c88dee3c8dd037d762
     home: https://github.com/fredericrous/duro-app
@@ -1633,7 +1633,7 @@ entries:
     version: 1.41.5
   - apiVersion: v2
     appVersion: 1.41.4
-    created: "2026-05-25T19:04:20.371106048Z"
+    created: "2026-05-25T19:34:21.274795123Z"
     description: A household management dashboard with invite system
     digest: 01b826a9a1137b9b41500c358a308f8edb19cd1886bfd937ca418257ec9c13b6
     home: https://github.com/fredericrous/duro-app
@@ -1654,7 +1654,7 @@ entries:
     version: 1.41.4
   - apiVersion: v2
     appVersion: 1.41.3
-    created: "2026-05-25T19:04:20.370725365Z"
+    created: "2026-05-25T19:34:21.274293168Z"
     description: A household management dashboard with invite system
     digest: ac7130e44b598c2d56c13b7207cddbc86dcbd3a7d05a3fe552e71e3afa7fef3a
     home: https://github.com/fredericrous/duro-app
@@ -1675,7 +1675,7 @@ entries:
     version: 1.41.3
   - apiVersion: v2
     appVersion: 1.41.2
-    created: "2026-05-25T19:04:20.370305653Z"
+    created: "2026-05-25T19:34:21.273833392Z"
     description: A household management dashboard with invite system
     digest: 88b7aeec5f98fa9234b565118a9197eb81304035e55a35a199ae67c4a4e29d94
     home: https://github.com/fredericrous/duro-app
@@ -1696,7 +1696,7 @@ entries:
     version: 1.41.2
   - apiVersion: v2
     appVersion: 1.41.1
-    created: "2026-05-25T19:04:20.369040949Z"
+    created: "2026-05-25T19:34:21.272833571Z"
     description: A household management dashboard with invite system
     digest: ad83434a76e686d546ca5672e81594cf5391f40ac85360f771bfdc6f1d8344d2
     home: https://github.com/fredericrous/duro-app
@@ -1717,7 +1717,7 @@ entries:
     version: 1.41.1
   - apiVersion: v2
     appVersion: 1.40.0
-    created: "2026-05-25T19:04:20.368697822Z"
+    created: "2026-05-25T19:34:21.272372412Z"
     description: A household management dashboard with invite system
     digest: 660702763b7b599d0c900cdec47d06febf7b70646c106526f4400ee62c7e5e09
     home: https://github.com/fredericrous/duro-app
@@ -1738,7 +1738,7 @@ entries:
     version: 1.40.0
   - apiVersion: v2
     appVersion: 1.39.1
-    created: "2026-05-25T19:04:20.368348126Z"
+    created: "2026-05-25T19:34:21.271889683Z"
     description: A household management dashboard with invite system
     digest: 3971c4511893bd89c616562f99421fe21dbd204f36dfe453ebf633b69a653d08
     home: https://github.com/fredericrous/duro-app
@@ -1759,7 +1759,7 @@ entries:
     version: 1.39.1
   - apiVersion: v2
     appVersion: 1.39.0
-    created: "2026-05-25T19:04:20.368006842Z"
+    created: "2026-05-25T19:34:21.271423014Z"
     description: A household management dashboard with invite system
     digest: 0d4c9dccb016dba2bc479443e8c6a21b7521bba6b53442f9a5f753c7a2714857
     home: https://github.com/fredericrous/duro-app
@@ -1780,7 +1780,7 @@ entries:
     version: 1.39.0
   - apiVersion: v2
     appVersion: 1.38.1
-    created: "2026-05-25T19:04:20.367664536Z"
+    created: "2026-05-25T19:34:21.270936088Z"
     description: A household management dashboard with invite system
     digest: d919c439bf44a3a2e718cfc11e8aae58ad30e35f40093945424591bc5775ad6f
     home: https://github.com/fredericrous/duro-app
@@ -1801,7 +1801,7 @@ entries:
     version: 1.38.1
   - apiVersion: v2
     appVersion: 1.38.0
-    created: "2026-05-25T19:04:20.367312656Z"
+    created: "2026-05-25T19:34:21.270462056Z"
     description: A household management dashboard with invite system
     digest: 3e18fd95f93dc7c590c7437f58c0f73b1c205c5c5fd94c90dc2c2f4a311e1f78
     home: https://github.com/fredericrous/duro-app
@@ -1822,7 +1822,7 @@ entries:
     version: 1.38.0
   - apiVersion: v2
     appVersion: 1.37.3
-    created: "2026-05-25T19:04:20.366967196Z"
+    created: "2026-05-25T19:34:21.269961323Z"
     description: A household management dashboard with invite system
     digest: bee139445c90eda35c3c4f9b5e12ce71d129879d079c54dd61ffc055cc496c84
     home: https://github.com/fredericrous/duro-app
@@ -1843,7 +1843,7 @@ entries:
     version: 1.37.3
   - apiVersion: v2
     appVersion: 1.37.2
-    created: "2026-05-25T19:04:20.366619473Z"
+    created: "2026-05-25T19:34:21.269429984Z"
     description: A household management dashboard with invite system
     digest: 52ae98818c50c6bef33fa22d207c3b7892429b625f6ff6426d4929be400b8065
     home: https://github.com/fredericrous/duro-app
@@ -1864,7 +1864,7 @@ entries:
     version: 1.37.2
   - apiVersion: v2
     appVersion: 1.37.1
-    created: "2026-05-25T19:04:20.366259751Z"
+    created: "2026-05-25T19:34:21.268363611Z"
     description: A household management dashboard with invite system
     digest: 9a750cc08e87fd4e9971bddd45fece6207c427ec8335bad4fec20bb074e9bf1e
     home: https://github.com/fredericrous/duro-app
@@ -1885,7 +1885,7 @@ entries:
     version: 1.37.1
   - apiVersion: v2
     appVersion: 1.37.0
-    created: "2026-05-25T19:04:20.365898327Z"
+    created: "2026-05-25T19:34:21.267653118Z"
     description: A household management dashboard with invite system
     digest: c32100f2ba4fe7fa5f62ad7434505f72c95f948b7999761cfaf9b71f5b1ddab5
     home: https://github.com/fredericrous/duro-app
@@ -1906,7 +1906,7 @@ entries:
     version: 1.37.0
   - apiVersion: v2
     appVersion: 1.36.3
-    created: "2026-05-25T19:04:20.365518365Z"
+    created: "2026-05-25T19:34:21.267160411Z"
     description: A household management dashboard with invite system
     digest: d49347b99a58294e41ae670d9aeb2fa00e1835a6431469b49540086824ca9552
     home: https://github.com/fredericrous/duro-app
@@ -1927,7 +1927,7 @@ entries:
     version: 1.36.3
   - apiVersion: v2
     appVersion: 1.36.1
-    created: "2026-05-25T19:04:20.365140436Z"
+    created: "2026-05-25T19:34:21.266688693Z"
     description: A household management dashboard with invite system
     digest: e50c1cea8d009dd904dab4c0220e3ab6f6bd69f254bb5ebdc61e02674203c202
     home: https://github.com/fredericrous/duro-app
@@ -1948,7 +1948,7 @@ entries:
     version: 1.36.1
   - apiVersion: v2
     appVersion: 1.36.0
-    created: "2026-05-25T19:04:20.364740624Z"
+    created: "2026-05-25T19:34:21.266177931Z"
     description: A household management dashboard with invite system
     digest: 1a0a8b4c018979fa1a96f42a8ed8c53325377585bc71e8310499c56c7f87397e
     home: https://github.com/fredericrous/duro-app
@@ -1969,7 +1969,7 @@ entries:
     version: 1.36.0
   - apiVersion: v2
     appVersion: 1.35.1
-    created: "2026-05-25T19:04:20.364125878Z"
+    created: "2026-05-25T19:34:21.265715501Z"
     description: A household management dashboard with invite system
     digest: a5ef7279a981341e4b414cd27ce24197d5aac489f8898ff6174be59d5a058da9
     home: https://github.com/fredericrous/duro-app
@@ -1990,7 +1990,7 @@ entries:
     version: 1.35.1
   - apiVersion: v2
     appVersion: 1.34.1
-    created: "2026-05-25T19:04:20.363461748Z"
+    created: "2026-05-25T19:34:21.265201824Z"
     description: A household management dashboard with invite system
     digest: 93e135c227ae3834de700ab7174807652b497a01763290211cb5f72819a29a0f
     home: https://github.com/fredericrous/duro-app
@@ -2011,7 +2011,7 @@ entries:
     version: 1.34.1
   - apiVersion: v2
     appVersion: 1.34.0
-    created: "2026-05-25T19:04:20.363120014Z"
+    created: "2026-05-25T19:34:21.264738622Z"
     description: A household management dashboard with invite system
     digest: 3d59a6cd4770f51bc39671360ba641cc32e86671f6697a8e366a880e58296f1c
     home: https://github.com/fredericrous/duro-app
@@ -2032,7 +2032,7 @@ entries:
     version: 1.34.0
   - apiVersion: v2
     appVersion: 1.33.5
-    created: "2026-05-25T19:04:20.362774203Z"
+    created: "2026-05-25T19:34:21.264257456Z"
     description: A household management dashboard with invite system
     digest: 00a4238b3e032e95e9bfbff9b2cb95e50b1b39008e3a5d4aa58899616774e667
     home: https://github.com/fredericrous/duro-app
@@ -2053,7 +2053,7 @@ entries:
     version: 1.33.5
   - apiVersion: v2
     appVersion: 1.33.4
-    created: "2026-05-25T19:04:20.362445438Z"
+    created: "2026-05-25T19:34:21.263837585Z"
     description: A household management dashboard with invite system
     digest: f7b79a5892f40f8335caf55dff3fcaf8f7448002bb8171bf05c53d22dffb8682
     home: https://github.com/fredericrous/duro-app
@@ -2074,7 +2074,7 @@ entries:
     version: 1.33.4
   - apiVersion: v2
     appVersion: 1.25.1
-    created: "2026-05-25T19:04:20.362131706Z"
+    created: "2026-05-25T19:34:21.263409788Z"
     description: A household management dashboard with invite system
     digest: 28e2b856fce4d626680be8fb6ddedc10255bc873abd7bf9383b33edca95b7654
     home: https://github.com/fredericrous/duro-app
@@ -2095,7 +2095,7 @@ entries:
     version: 1.25.1
   - apiVersion: v2
     appVersion: 1.25.0
-    created: "2026-05-25T19:04:20.361816992Z"
+    created: "2026-05-25T19:34:21.262960582Z"
     description: A household management dashboard with invite system
     digest: fdbad6ae5ab67b6af9393eec8465186865244166e7d9f03c282703e36299d205
     home: https://github.com/fredericrous/duro-app
@@ -2116,7 +2116,7 @@ entries:
     version: 1.25.0
   - apiVersion: v2
     appVersion: 1.24.0
-    created: "2026-05-25T19:04:20.361482979Z"
+    created: "2026-05-25T19:34:21.262526674Z"
     description: A household management dashboard with invite system
     digest: 05b86f6959ecba2df6e42d79fc6fb3cdf86ccf2ddcf1834a7165503ab1aa1342
     home: https://github.com/fredericrous/duro-app
@@ -2137,7 +2137,7 @@ entries:
     version: 1.24.0
   - apiVersion: v2
     appVersion: 1.23.0
-    created: "2026-05-25T19:04:20.361154073Z"
+    created: "2026-05-25T19:34:21.262067379Z"
     description: A household management dashboard with invite system
     digest: e64c1b849358e52a7c9ad0a6f2651ad45920e0f8505ba54e9e7b5bb107f9de35
     home: https://github.com/fredericrous/duro-app
@@ -2158,7 +2158,7 @@ entries:
     version: 1.23.0
   - apiVersion: v2
     appVersion: 1.22.0
-    created: "2026-05-25T19:04:20.360795213Z"
+    created: "2026-05-25T19:34:21.261625446Z"
     description: A household management dashboard with invite system
     digest: 4b9ba11f4c0d1b07e0621c83d5e26fdf8e76b17d8bee0184b5da4e7c4d790903
     home: https://github.com/fredericrous/duro-app
@@ -2179,7 +2179,7 @@ entries:
     version: 1.22.0
   - apiVersion: v2
     appVersion: 1.21.0
-    created: "2026-05-25T19:04:20.360460549Z"
+    created: "2026-05-25T19:34:21.261127018Z"
     description: A household management dashboard with invite system
     digest: e65296a3e8f5dca8c9626851df85a5d08209a82e033d330fd61f9e900ac22600
     home: https://github.com/fredericrous/duro-app
@@ -2200,7 +2200,7 @@ entries:
     version: 1.21.0
   - apiVersion: v2
     appVersion: 1.20.0
-    created: "2026-05-25T19:04:20.360143772Z"
+    created: "2026-05-25T19:34:21.260062657Z"
     description: A household management dashboard with invite system
     digest: 79f107915a0396d7ed6b52c8ae59110f3399389d5044ee137b7f239b331b8020
     home: https://github.com/fredericrous/duro-app
@@ -2221,7 +2221,7 @@ entries:
     version: 1.20.0
   - apiVersion: v2
     appVersion: 1.18.4
-    created: "2026-05-25T19:04:20.359824451Z"
+    created: "2026-05-25T19:34:21.259477227Z"
     description: A household management dashboard with invite system
     digest: 5c6345d55ba73861034d36ba3cdc9aa07517ec6178114d926e203b330d28f5c7
     home: https://github.com/fredericrous/duro-app
@@ -2242,7 +2242,7 @@ entries:
     version: 1.18.4
   - apiVersion: v2
     appVersion: 1.18.3
-    created: "2026-05-25T19:04:20.359479732Z"
+    created: "2026-05-25T19:34:21.259035444Z"
     description: A household management dashboard with invite system
     digest: e2fd46b12812891fb881a5f4198e9c11675a6d763ab87b01b0b93bd7c0f628b2
     home: https://github.com/fredericrous/duro-app
@@ -2263,7 +2263,7 @@ entries:
     version: 1.18.3
   - apiVersion: v2
     appVersion: 1.18.2
-    created: "2026-05-25T19:04:20.359144618Z"
+    created: "2026-05-25T19:34:21.258612657Z"
     description: A household management dashboard with invite system
     digest: 834024ed4ff12f746e97004b4a86cb4452eeb53c9e1331b9fcd80b8548efdb87
     home: https://github.com/fredericrous/duro-app
@@ -2284,7 +2284,7 @@ entries:
     version: 1.18.2
   - apiVersion: v2
     appVersion: 1.18.1
-    created: "2026-05-25T19:04:20.358689272Z"
+    created: "2026-05-25T19:34:21.258169031Z"
     description: A household management dashboard with invite system
     digest: b2f1b976c9ac7fb7497fe9e4246a5656972f3406727a9bd153ed4e6d702750d8
     home: https://github.com/fredericrous/duro-app
@@ -2305,7 +2305,7 @@ entries:
     version: 1.18.1
   - apiVersion: v2
     appVersion: 1.18.0
-    created: "2026-05-25T19:04:20.357851841Z"
+    created: "2026-05-25T19:34:21.257746454Z"
     description: A household management dashboard with invite system
     digest: 860c28918aa1ce19e9a189633201f7f6a6442d79f594a619665f211286d0c006
     home: https://github.com/fredericrous/duro-app
@@ -2326,7 +2326,7 @@ entries:
     version: 1.18.0
   - apiVersion: v2
     appVersion: 1.17.11
-    created: "2026-05-25T19:04:20.354962952Z"
+    created: "2026-05-25T19:34:21.253758119Z"
     description: A household management dashboard with invite system
     digest: d93f0e2ef44ed7f2aad137ee9c90bd4c09f258db3bfabbdabb25b84e76fe5735
     home: https://github.com/fredericrous/duro-app
@@ -2347,7 +2347,7 @@ entries:
     version: 1.17.11
   - apiVersion: v2
     appVersion: 1.17.10
-    created: "2026-05-25T19:04:20.354637932Z"
+    created: "2026-05-25T19:34:21.253257557Z"
     description: A household management dashboard with invite system
     digest: 7cf2bf1693a1b3a2147695ac6ac29a768a3ef3e22009d7900e874412fef24ec9
     home: https://github.com/fredericrous/duro-app
@@ -2368,7 +2368,7 @@ entries:
     version: 1.17.10
   - apiVersion: v2
     appVersion: 1.17.9
-    created: "2026-05-25T19:04:20.357522976Z"
+    created: "2026-05-25T19:34:21.257298781Z"
     description: A household management dashboard with invite system
     digest: 1b012d4fcf83df6ef779ec2ed469c6b8dd490f2db431f582182cf55fb1768142
     home: https://github.com/fredericrous/duro-app
@@ -2389,7 +2389,7 @@ entries:
     version: 1.17.9
   - apiVersion: v2
     appVersion: 1.17.8
-    created: "2026-05-25T19:04:20.357207551Z"
+    created: "2026-05-25T19:34:21.256876014Z"
     description: A household management dashboard with invite system
     digest: 265372392c1bc2dcf9cfb5862e24c33dad987cc38ff7714db4c38f2651d8a8d3
     home: https://github.com/fredericrous/duro-app
@@ -2410,7 +2410,7 @@ entries:
     version: 1.17.8
   - apiVersion: v2
     appVersion: 1.17.7
-    created: "2026-05-25T19:04:20.356884465Z"
+    created: "2026-05-25T19:34:21.256450772Z"
     description: A household management dashboard with invite system
     digest: 6b68465c2974d83f612d8ffe62b69847e8bbc38aa7efc9662034a79e358aa632
     home: https://github.com/fredericrous/duro-app
@@ -2431,7 +2431,7 @@ entries:
     version: 1.17.7
   - apiVersion: v2
     appVersion: 1.17.6
-    created: "2026-05-25T19:04:20.356551023Z"
+    created: "2026-05-25T19:34:21.255999011Z"
     description: A household management dashboard with invite system
     digest: a516fef2c21424df8d2bef9affb0f9a7d080cf3b9a1f5c0d99e6b22b0ab17866
     home: https://github.com/fredericrous/duro-app
@@ -2452,7 +2452,7 @@ entries:
     version: 1.17.6
   - apiVersion: v2
     appVersion: 1.17.5
-    created: "2026-05-25T19:04:20.356241607Z"
+    created: "2026-05-25T19:34:21.255573078Z"
     description: A household management dashboard with invite system
     digest: b77d9024c58470fce8e9455616194262ebc1ad7b651186c0a67a9ab96dd2be4a
     home: https://github.com/fredericrous/duro-app
@@ -2473,7 +2473,7 @@ entries:
     version: 1.17.5
   - apiVersion: v2
     appVersion: 1.17.4
-    created: "2026-05-25T19:04:20.355930338Z"
+    created: "2026-05-25T19:34:21.25510696Z"
     description: A household management dashboard with invite system
     digest: dff4f96b03e6f5c5f3c9f536f7bf207dc4884ec5523fbf415162473d393fc737
     home: https://github.com/fredericrous/duro-app
@@ -2494,7 +2494,7 @@ entries:
     version: 1.17.4
   - apiVersion: v2
     appVersion: 1.17.3
-    created: "2026-05-25T19:04:20.355608984Z"
+    created: "2026-05-25T19:34:21.254670578Z"
     description: A household management dashboard with invite system
     digest: f9ad0be64a2de4a9044babc11532c90363ad48fe7de287eb35324ffbf75194bd
     home: https://github.com/fredericrous/duro-app
@@ -2515,7 +2515,7 @@ entries:
     version: 1.17.3
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2026-05-25T19:04:20.355281291Z"
+    created: "2026-05-25T19:34:21.254211243Z"
     description: A household management dashboard with invite system
     digest: 8accf6ec1b484a548e9e35304260eaa222f959aa9fe730e042fd54e8abdb2b5f
     home: https://github.com/fredericrous/duro-app
@@ -2536,7 +2536,7 @@ entries:
     version: 1.17.2
   - apiVersion: v2
     appVersion: 1.17.1
-    created: "2026-05-25T19:04:20.354300174Z"
+    created: "2026-05-25T19:34:21.252060504Z"
     description: A household management dashboard with invite system
     digest: 2fafc9a921a81c45ba97b28e780871cce1a966a69d6fc6da542766c201b0970d
     home: https://github.com/fredericrous/duro-app
@@ -2557,7 +2557,7 @@ entries:
     version: 1.17.1
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2026-05-25T19:04:20.353972961Z"
+    created: "2026-05-25T19:34:21.251630483Z"
     description: A household management dashboard with invite system
     digest: 28e66d0322665d345e27c902064cf05d9b2f7364003ed451112da5bbdeabdb6c
     home: https://github.com/fredericrous/duro-app
@@ -2578,7 +2578,7 @@ entries:
     version: 1.17.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-05-25T19:04:20.353632418Z"
+    created: "2026-05-25T19:34:21.25113991Z"
     description: A household management dashboard with invite system
     digest: 954b7346e354f97ce06d00330f0348682f0b20d7a858c1555eb8fb8746174a85
     home: https://github.com/fredericrous/duro-app
@@ -2599,7 +2599,7 @@ entries:
     version: 1.16.0
   - apiVersion: v2
     appVersion: 1.15.0
-    created: "2026-05-25T19:04:20.353244264Z"
+    created: "2026-05-25T19:34:21.250697135Z"
     description: A household management dashboard with invite system
     digest: 2f723861832ed99a2f71b42619c87ccb3e9c8b65f3bfe350bb2cce0289e5c90a
     home: https://github.com/fredericrous/duro-app
@@ -2620,7 +2620,7 @@ entries:
     version: 1.15.0
   - apiVersion: v2
     appVersion: 1.14.3
-    created: "2026-05-25T19:04:20.352373072Z"
+    created: "2026-05-25T19:34:21.249940968Z"
     description: A household management dashboard with invite system
     digest: 66325bddac9eb95bd125cc8d2c4a64dd76766ec479a386ddd07f8520a1914a1f
     home: https://github.com/fredericrous/duro-app
@@ -2641,7 +2641,7 @@ entries:
     version: 1.14.3
   - apiVersion: v2
     appVersion: 1.14.2
-    created: "2026-05-25T19:04:20.352054833Z"
+    created: "2026-05-25T19:34:21.249504926Z"
     description: A household management dashboard with invite system
     digest: db463c55a249b5a74a27c2807ba4d3ba94a3f1ded8d44b37e284d225c86a91ad
     home: https://github.com/fredericrous/duro-app
@@ -2662,7 +2662,7 @@ entries:
     version: 1.14.2
   - apiVersion: v2
     appVersion: 1.14.1
-    created: "2026-05-25T19:04:20.351735101Z"
+    created: "2026-05-25T19:34:21.249066099Z"
     description: A household management dashboard with invite system
     digest: 61a0ae78b618c8991a7b6d1c6049fe618be54ea5954aa9a91c411e5ea88cde6e
     home: https://github.com/fredericrous/duro-app
@@ -2683,7 +2683,7 @@ entries:
     version: 1.14.1
   - apiVersion: v2
     appVersion: 1.13.2
-    created: "2026-05-25T19:04:20.351397343Z"
+    created: "2026-05-25T19:34:21.248643492Z"
     description: A household management dashboard with invite system
     digest: d9c57cbb5ecc999a9a1645638df4f5b568c6fb04cc0a16ec619c62323ba2a3c3
     home: https://github.com/fredericrous/duro-app
@@ -2704,7 +2704,7 @@ entries:
     version: 1.13.2
   - apiVersion: v2
     appVersion: 1.12.9
-    created: "2026-05-25T19:04:20.351060165Z"
+    created: "2026-05-25T19:34:21.248199636Z"
     description: A household management dashboard with invite system
     digest: 06bc9a419cdd3cedda5849c20fa2539558194e5f6f1c81a26801d5b7fda07dcc
     home: https://github.com/fredericrous/duro-app
@@ -2725,7 +2725,7 @@ entries:
     version: 1.12.9
   - apiVersion: v2
     appVersion: 1.12.8
-    created: "2026-05-25T19:04:20.350686773Z"
+    created: "2026-05-25T19:34:21.247764616Z"
     description: A household management dashboard with invite system
     digest: 6a7a3af73cc96b870de76d0d557498c96dba7004a2f3a49501cdb5e134d842c1
     home: https://github.com/fredericrous/duro-app
@@ -2746,7 +2746,7 @@ entries:
     version: 1.12.8
   - apiVersion: v2
     appVersion: 1.12.7
-    created: "2026-05-25T19:04:20.350350987Z"
+    created: "2026-05-25T19:34:21.247336308Z"
     description: A household management dashboard with invite system
     digest: fa4ab2145589f0fa4533fe320ef5356785e4831b16a0da69e3a29947f0ff1f0f
     home: https://github.com/fredericrous/duro-app
@@ -2767,7 +2767,7 @@ entries:
     version: 1.12.7
   - apiVersion: v2
     appVersion: 1.12.6
-    created: "2026-05-25T19:04:20.350025838Z"
+    created: "2026-05-25T19:34:21.246892161Z"
     description: A household management dashboard with invite system
     digest: b66343c491cce01365373d3e4e7d5ece75cbbfb83787dfb6efb4176da56b1aa3
     home: https://github.com/fredericrous/duro-app
@@ -2788,7 +2788,7 @@ entries:
     version: 1.12.6
   - apiVersion: v2
     appVersion: 1.12.5
-    created: "2026-05-25T19:04:20.349705936Z"
+    created: "2026-05-25T19:34:21.24646139Z"
     description: A household management dashboard with invite system
     digest: 5d5385db2c017f88eff85e4f7ce6dc4cb92a98828359d2ae80dfd1d0d09fb24a
     home: https://github.com/fredericrous/duro-app
@@ -2809,7 +2809,7 @@ entries:
     version: 1.12.5
   - apiVersion: v2
     appVersion: 1.12.4
-    created: "2026-05-25T19:04:20.349367106Z"
+    created: "2026-05-25T19:34:21.245992837Z"
     description: A household management dashboard with invite system
     digest: f0ac4bc5892a44b37bfc6530429fb5dde0153b95fb9d194abda2c02357e67f98
     home: https://github.com/fredericrous/duro-app
@@ -2830,7 +2830,7 @@ entries:
     version: 1.12.4
   - apiVersion: v2
     appVersion: 1.12.3
-    created: "2026-05-25T19:04:20.349035687Z"
+    created: "2026-05-25T19:34:21.245530867Z"
     description: A household management dashboard with invite system
     digest: 5d634348e01ecdeaaabf34e5cf8f09015cb0a19dc6767ac98612552fd0142c20
     home: https://github.com/fredericrous/duro-app
@@ -2851,7 +2851,7 @@ entries:
     version: 1.12.3
   - apiVersion: v2
     appVersion: 1.12.2
-    created: "2026-05-25T19:04:20.348702034Z"
+    created: "2026-05-25T19:34:21.244279495Z"
     description: A household management dashboard with invite system
     digest: 265ffb0868cb7d010be127883a2e4bd2e4a1e7f5d4f1e007a701d547c52b852f
     home: https://github.com/fredericrous/duro-app
@@ -2872,7 +2872,7 @@ entries:
     version: 1.12.2
   - apiVersion: v2
     appVersion: 1.12.1
-    created: "2026-05-25T19:04:20.348334481Z"
+    created: "2026-05-25T19:34:21.243863841Z"
     description: A household management dashboard with invite system
     digest: ad4c2f23905ef7aa6c40134e190735bdd2f2a3145d5c873106089e026edca8e9
     home: https://github.com/fredericrous/duro-app
@@ -2893,7 +2893,7 @@ entries:
     version: 1.12.1
   - apiVersion: v2
     appVersion: 1.12.0
-    created: "2026-05-25T19:04:20.347989752Z"
+    created: "2026-05-25T19:34:21.243437748Z"
     description: A household management dashboard with invite system
     digest: 7efcf0c53861f44a1dfed4af5ee28e16bad4873ce40196f942abbc1157480821
     home: https://github.com/fredericrous/duro-app
@@ -2914,7 +2914,7 @@ entries:
     version: 1.12.0
   - apiVersion: v2
     appVersion: 1.11.3
-    created: "2026-05-25T19:04:20.347341296Z"
+    created: "2026-05-25T19:34:21.242989794Z"
     description: A household management dashboard with invite system
     digest: b8afdd78040d2cf3bc442003a3f14916d8a561e587d062aa07aebbb8c68f914a
     home: https://github.com/fredericrous/duro-app
@@ -2935,7 +2935,7 @@ entries:
     version: 1.11.3
   - apiVersion: v2
     appVersion: 1.11.2
-    created: "2026-05-25T19:04:20.346749024Z"
+    created: "2026-05-25T19:34:21.242542431Z"
     description: A household management dashboard with invite system
     digest: 90efcb22c3fd73844938c4ec0eeaf6ffe633df1430dec4da7018dd851b39381b
     home: https://github.com/fredericrous/duro-app
@@ -2956,7 +2956,7 @@ entries:
     version: 1.11.2
   - apiVersion: v2
     appVersion: 1.10.1
-    created: "2026-05-25T19:04:20.346393659Z"
+    created: "2026-05-25T19:34:21.242093045Z"
     description: A household management dashboard with invite system
     digest: 927725a0435fcab7b4bd4a12ac9cfe03bb9d9e82e6c6d660962797c3717c5e2f
     home: https://github.com/fredericrous/duro-app
@@ -2977,7 +2977,7 @@ entries:
     version: 1.10.1
   - apiVersion: v2
     appVersion: 1.10.0
-    created: "2026-05-25T19:04:20.346073216Z"
+    created: "2026-05-25T19:34:21.241671319Z"
     description: A household management dashboard with invite system
     digest: 199a07a4ee97b1bf9fd32bfba622f2a34bd7a3af4ae517446764ec6f37e080ef
     home: https://github.com/fredericrous/duro-app
@@ -2998,7 +2998,7 @@ entries:
     version: 1.10.0
   - apiVersion: v2
     appVersion: 1.9.4
-    created: "2026-05-25T19:04:20.380199761Z"
+    created: "2026-05-25T19:34:21.288052334Z"
     description: A household management dashboard with invite system
     digest: 9645578b7d579d51c00720058bf2c35daf72de69fdde6667ee1049ec2112a235
     home: https://github.com/fredericrous/duro-app
@@ -3019,7 +3019,7 @@ entries:
     version: 1.9.4
   - apiVersion: v2
     appVersion: 1.9.3
-    created: "2026-05-25T19:04:20.379893339Z"
+    created: "2026-05-25T19:34:21.287633574Z"
     description: A household management dashboard with invite system
     digest: 5220241d6cb242b20bce15a3483ec4af2026447d52208413f165c20aa2c9a2af
     home: https://github.com/fredericrous/duro-app
@@ -3040,7 +3040,7 @@ entries:
     version: 1.9.3
   - apiVersion: v2
     appVersion: 1.9.1
-    created: "2026-05-25T19:04:20.379570243Z"
+    created: "2026-05-25T19:34:21.287186482Z"
     description: A household management dashboard with invite system
     digest: 9372f2b305065c3c1975667daa252616c643a813b92be4ccbd4739694b71f23c
     home: https://github.com/fredericrous/duro-app
@@ -3061,7 +3061,7 @@ entries:
     version: 1.9.1
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2026-05-25T19:04:20.379260086Z"
+    created: "2026-05-25T19:34:21.286762242Z"
     description: A household management dashboard with invite system
     digest: 97a53bfdf17ef9e10d2e3f7be2ace17e1c0897813f02a966894ddc3217f7893b
     home: https://github.com/fredericrous/duro-app
@@ -3082,7 +3082,7 @@ entries:
     version: 1.9.0
   - apiVersion: v2
     appVersion: 1.8.2
-    created: "2026-05-25T19:04:20.378948106Z"
+    created: "2026-05-25T19:34:21.286327874Z"
     description: A household management dashboard with invite system
     digest: a4e6ebc909720e922b52e787445d1f39c76b8a05bd09840d3af56cd4674c0eb9
     home: https://github.com/fredericrous/duro-app
@@ -3103,7 +3103,7 @@ entries:
     version: 1.8.2
   - apiVersion: v2
     appVersion: 1.8.1
-    created: "2026-05-25T19:04:20.378623948Z"
+    created: "2026-05-25T19:34:21.285874319Z"
     description: A household management dashboard with invite system
     digest: 1bdd8c191387daa904a469b7ddda0d6e9cc582595f24a42484801ee8be9f4e73
     home: https://github.com/fredericrous/duro-app
@@ -3124,7 +3124,7 @@ entries:
     version: 1.8.1
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2026-05-25T19:04:20.378139519Z"
+    created: "2026-05-25T19:34:21.285182501Z"
     description: A household management dashboard with invite system
     digest: 0a759efd3cdc10f3beff6423a3dde6134a941bb265d00fffe1fada8d8d8d3630
     home: https://github.com/fredericrous/duro-app
@@ -3145,7 +3145,7 @@ entries:
     version: 1.8.0
   - apiVersion: v2
     appVersion: 1.7.4
-    created: "2026-05-25T19:04:20.377653927Z"
+    created: "2026-05-25T19:34:21.28376291Z"
     description: A household management dashboard with invite system
     digest: 47618c672ed98a5f8c379f6c32d4f91727db51d16eda0f4e0fb6cd38ded46b5f
     home: https://github.com/fredericrous/duro-app
@@ -3166,7 +3166,7 @@ entries:
     version: 1.7.4
   - apiVersion: v2
     appVersion: 1.7.3
-    created: "2026-05-25T19:04:20.377272513Z"
+    created: "2026-05-25T19:34:21.283375499Z"
     description: A household management dashboard with invite system
     digest: 6733f3a100af75d34f012868760730cd9acf475a9504fd4c6a28059eb42e92c9
     home: https://github.com/fredericrous/duro-app
@@ -3187,7 +3187,7 @@ entries:
     version: 1.7.3
   - apiVersion: v2
     appVersion: 1.7.2
-    created: "2026-05-25T19:04:20.376983778Z"
+    created: "2026-05-25T19:34:21.282958052Z"
     description: A household management dashboard with invite system
     digest: b9bc5bf918b2d3bc52742d85ca5216b5c0c6ec5da27e205b988b1dac18d87455
     home: https://github.com/fredericrous/duro-app
@@ -3208,7 +3208,7 @@ entries:
     version: 1.7.2
   - apiVersion: v2
     appVersion: 1.7.1
-    created: "2026-05-25T19:04:20.376682905Z"
+    created: "2026-05-25T19:34:21.282544963Z"
     description: A household management dashboard with invite system
     digest: 1d5aad52670a5ed295901b54cb8a4a65d2707925c7cfb31011b464bed35e0bad
     home: https://github.com/fredericrous/duro-app
@@ -3229,7 +3229,7 @@ entries:
     version: 1.7.1
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2026-05-25T19:04:20.376357846Z"
+    created: "2026-05-25T19:34:21.282112958Z"
     description: A household management dashboard with invite system
     digest: d524eb072ea630e53867b58e5fc06ee1559c9d2cd11ab6d2f0f9dccee751be7d
     home: https://github.com/fredericrous/duro-app
@@ -3250,7 +3250,7 @@ entries:
     version: 1.7.0
   - apiVersion: v2
     appVersion: 1.6.7
-    created: "2026-05-25T19:04:20.376044885Z"
+    created: "2026-05-25T19:34:21.28169495Z"
     description: A household management dashboard with invite system
     digest: 6136758290e5b103944d647a73423f7c9b2f84267c446016054c738ee0fcab6d
     home: https://github.com/fredericrous/duro-app
@@ -3271,7 +3271,7 @@ entries:
     version: 1.6.7
   - apiVersion: v2
     appVersion: 1.6.6
-    created: "2026-05-25T19:04:20.375567816Z"
+    created: "2026-05-25T19:34:21.281272874Z"
     description: A household management dashboard with invite system
     digest: a8f1c0b39825e5960fd9d716eeb50c2603f326d1fa2af37f9ab98f2f53133fe0
     home: https://github.com/fredericrous/duro-app
@@ -3292,7 +3292,7 @@ entries:
     version: 1.6.6
   - apiVersion: v2
     appVersion: 1.6.5
-    created: "2026-05-25T19:04:20.374870456Z"
+    created: "2026-05-25T19:34:21.280888289Z"
     description: A household management dashboard with invite system
     digest: 50a8a8cce51cb6c50e6ccb7f75d1cbc3be92067bd92be2bddb79988bbf795683
     home: https://github.com/fredericrous/duro-app
@@ -3313,7 +3313,7 @@ entries:
     version: 1.6.5
   - apiVersion: v2
     appVersion: 1.6.4
-    created: "2026-05-25T19:04:20.374565788Z"
+    created: "2026-05-25T19:34:21.280495126Z"
     description: A household management dashboard with invite system
     digest: cfb102b69ce8e437fe92ac0e779f66ccafe9d0ada81fa8c8fd43e447d65e1ac8
     home: https://github.com/fredericrous/duro-app
@@ -3334,7 +3334,7 @@ entries:
     version: 1.6.4
   - apiVersion: v2
     appVersion: 1.6.3
-    created: "2026-05-25T19:04:20.374282962Z"
+    created: "2026-05-25T19:34:21.280080545Z"
     description: A household management dashboard with invite system
     digest: bcfc92cd1fb942dd4022622764b4dc9d26022c0653d957a33adf3cce58ea8b34
     home: https://github.com/fredericrous/duro-app
@@ -3355,7 +3355,7 @@ entries:
     version: 1.6.3
   - apiVersion: v2
     appVersion: 1.6.2
-    created: "2026-05-25T19:04:20.373987527Z"
+    created: "2026-05-25T19:34:21.279683836Z"
     description: A household management dashboard with invite system
     digest: e52e9c9d4238186d41d03b70f732ab10e59049dea9b9a52c1c3941ea2e3e8586
     home: https://github.com/fredericrous/duro-app
@@ -3376,7 +3376,7 @@ entries:
     version: 1.6.2
   - apiVersion: v2
     appVersion: 1.6.1
-    created: "2026-05-25T19:04:20.373702327Z"
+    created: "2026-05-25T19:34:21.279250219Z"
     description: A household management dashboard with invite system
     digest: 66d634166839580348a604b973284958fc0c80e5d7b6941e48afe8b502736c37
     home: https://github.com/fredericrous/duro-app
@@ -3397,7 +3397,7 @@ entries:
     version: 1.6.1
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2026-05-25T19:04:20.3734054Z"
+    created: "2026-05-25T19:34:21.278790223Z"
     description: A household management dashboard with invite system
     digest: 1263ae989d6a82318e73215b8728aa6f78e33d4d98b52552f6454039073574e3
     home: https://github.com/fredericrous/duro-app
@@ -3418,7 +3418,7 @@ entries:
     version: 1.6.0
   - apiVersion: v2
     appVersion: 1.5.2
-    created: "2026-05-25T19:04:20.373122494Z"
+    created: "2026-05-25T19:34:21.278379498Z"
     description: A household management dashboard with invite system
     digest: 22ef51fff967f18d3eaec4173efcfc0b5f972e44db658306fafa4d60bb3f0699
     home: https://github.com/fredericrous/duro-app
@@ -3439,7 +3439,7 @@ entries:
     version: 1.5.2
   - apiVersion: v2
     appVersion: 1.5.0
-    created: "2026-05-25T19:04:20.372831386Z"
+    created: "2026-05-25T19:34:21.277939358Z"
     description: A household management dashboard with invite system
     digest: 7abdc161ab7d7cde919957a37a9e786445ca6cc2df32ec75ecbbdf55d3bd517f
     home: https://github.com/fredericrous/duro-app
@@ -3461,7 +3461,7 @@ entries:
   duro-operator:
   - apiVersion: v2
     appVersion: 0.1.5
-    created: "2026-05-25T19:04:20.382456178Z"
+    created: "2026-05-25T19:34:21.290267699Z"
     description: A Kubernetes operator that manages DashboardApp resources for the
       Duro dashboard
     digest: 2be3b1bf3629c2678f8be06396cd3b65c15785a5b7668cbb068304560a42d91d
@@ -3484,7 +3484,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.4
-    created: "2026-05-25T19:04:20.38217215Z"
+    created: "2026-05-25T19:34:21.289900445Z"
     description: A Kubernetes operator that manages DashboardApp resources for the
       Duro dashboard
     digest: 572ce762d7f94cd1fb5a766dd049603bf0269f1f6af49b1ab8a086c1e69f6d10
@@ -3507,7 +3507,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2026-05-25T19:04:20.381887732Z"
+    created: "2026-05-25T19:34:21.289548139Z"
     description: A Kubernetes operator that manages DashboardApp resources for the
       Duro dashboard
     digest: ba1865b501cade9a834d9fb88fb92ed9bbe3af31442b4deda853297feb8ee613
@@ -3530,7 +3530,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2026-05-25T19:04:20.381542282Z"
+    created: "2026-05-25T19:34:21.289153023Z"
     description: A Kubernetes operator that manages DashboardApp resources for the
       Duro dashboard
     digest: 9fbc6350f6ff114f0811822d20250e49a1ccd46e5bb5ffc416ad036932d6ed99
@@ -3553,7 +3553,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-05-25T19:04:20.380751231Z"
+    created: "2026-05-25T19:34:21.288802781Z"
     description: A Kubernetes operator that manages DashboardApp resources for the
       Duro dashboard
     digest: 7b4e7fff29f8df0546c87dcecacc5a66acac7ba63f2c2439f437b482c2f32f88
@@ -3576,7 +3576,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-05-25T19:04:20.380470468Z"
+    created: "2026-05-25T19:34:21.288443442Z"
     description: A Kubernetes operator that manages DashboardApp resources for the
       Duro dashboard
     digest: 5b02991b3a35fbc60cc7f25a97738df9ca7c44938465c5100eb0e3b93a33d965
@@ -3600,7 +3600,7 @@ entries:
   homelab-preview-operator:
   - apiVersion: v2
     appVersion: 0.5.15
-    created: "2026-05-25T19:04:20.386024641Z"
+    created: "2026-05-25T19:34:21.296004008Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 31cd7433927d3f4245b8a7ec24b72e705edd97b1636fa777d0c34106f6aaf9f9
@@ -3624,7 +3624,7 @@ entries:
     version: 0.5.15
   - apiVersion: v2
     appVersion: 0.5.14
-    created: "2026-05-25T19:04:20.385739462Z"
+    created: "2026-05-25T19:34:21.295637396Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 228d23c4f87b98f925cca8d9b87a3289fe6e88fc259828c88de614a6d2062925
@@ -3648,7 +3648,7 @@ entries:
     version: 0.5.14
   - apiVersion: v2
     appVersion: 0.5.13
-    created: "2026-05-25T19:04:20.385446551Z"
+    created: "2026-05-25T19:34:21.295243562Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 60695b9403c4c3cb612fd620d89b499c16630490174e77d8340bfb62d4bd3b65
@@ -3672,7 +3672,7 @@ entries:
     version: 0.5.13
   - apiVersion: v2
     appVersion: 0.5.12
-    created: "2026-05-25T19:04:20.385185337Z"
+    created: "2026-05-25T19:34:21.294878453Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 2741c682517edc37126b95a2caded52f329bc1507925ef1a1632ebf0c5ab1f96
@@ -3696,7 +3696,7 @@ entries:
     version: 0.5.12
   - apiVersion: v2
     appVersion: 0.5.11
-    created: "2026-05-25T19:04:20.384916122Z"
+    created: "2026-05-25T19:34:21.294509916Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: f0f48af9b0a2ac84a795863f455c3af3b36af7226e26cb744a5963a911dcc022
@@ -3720,7 +3720,7 @@ entries:
     version: 0.5.11
   - apiVersion: v2
     appVersion: 0.5.10
-    created: "2026-05-25T19:04:20.38464895Z"
+    created: "2026-05-25T19:34:21.294116604Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: d95bb19ba76a02c4b665a5f118024e04a4a0c5a8712cb3d924fbab1772f94808
@@ -3744,7 +3744,7 @@ entries:
     version: 0.5.10
   - apiVersion: v2
     appVersion: 0.5.9
-    created: "2026-05-25T19:04:20.388596363Z"
+    created: "2026-05-25T19:34:21.298602746Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 276dc2634ff5a4be4057e8bbefa812c17a9bf2aa4dd162544d1dc04600734457
@@ -3768,7 +3768,7 @@ entries:
     version: 0.5.9
   - apiVersion: v2
     appVersion: 0.5.8
-    created: "2026-05-25T19:04:20.388310333Z"
+    created: "2026-05-25T19:34:21.298215816Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: cb2f7ccf6d7e92db29ccb82fecc84aa38c4b98d1e2ed62e84954fb5300b56770
@@ -3792,7 +3792,7 @@ entries:
     version: 0.5.8
   - apiVersion: v2
     appVersion: 0.5.7
-    created: "2026-05-25T19:04:20.388033887Z"
+    created: "2026-05-25T19:34:21.297859853Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: d13abcc5d9fd2068868fd11c79e7b739e2c564d5f254d89134c897f8ac9c8ff0
@@ -3816,7 +3816,7 @@ entries:
     version: 0.5.7
   - apiVersion: v2
     appVersion: 0.5.6
-    created: "2026-05-25T19:04:20.387754426Z"
+    created: "2026-05-25T19:34:21.297499953Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: a77c5872cbc7c41b7d5b1a9bf2e7d63fc57b65e6b70379909880dfe9594321dc
@@ -3840,7 +3840,7 @@ entries:
     version: 0.5.6
   - apiVersion: v2
     appVersion: 0.5.4
-    created: "2026-05-25T19:04:20.38743877Z"
+    created: "2026-05-25T19:34:21.297116579Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 2ca9a48338fe7ecc2b93c756cbfda5a0626601314ce6f4cf691185bf72c04bbc
@@ -3864,7 +3864,7 @@ entries:
     version: 0.5.4
   - apiVersion: v2
     appVersion: 0.5.3
-    created: "2026-05-25T19:04:20.387131968Z"
+    created: "2026-05-25T19:34:21.29675698Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 917f0bddd0eec5720e3b43c7bbe127975633779c0d9148600f464002c5b947c3
@@ -3888,7 +3888,7 @@ entries:
     version: 0.5.3
   - apiVersion: v2
     appVersion: 0.5.2
-    created: "2026-05-25T19:04:20.386437923Z"
+    created: "2026-05-25T19:34:21.296386861Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 6f8ea6c896d6e0c1c34f1e58416e13cf66f82c3a3ee084c36e2b60e40a84f019
@@ -3912,7 +3912,7 @@ entries:
     version: 0.5.2
   - apiVersion: v2
     appVersion: 0.5.1
-    created: "2026-05-25T19:04:20.384369629Z"
+    created: "2026-05-25T19:34:21.293739442Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: eeb90b0c49b02a5e9d76ca61e6d9905511c37eb86a91efa890db9c39c6e8ca47
@@ -3936,7 +3936,7 @@ entries:
     version: 0.5.1
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2026-05-25T19:04:20.384102297Z"
+    created: "2026-05-25T19:34:21.293344938Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 0251664002b29c9327707c098a153c76b17f3062b61cbd83b18ce4e039489a58
@@ -3960,7 +3960,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.3
-    created: "2026-05-25T19:04:20.383838229Z"
+    created: "2026-05-25T19:34:21.292687794Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: b68397a58814b0e5583cac0671b2a83cbd62154dbb655aeb4d7563552048f362
@@ -3984,7 +3984,7 @@ entries:
     version: 0.4.3
   - apiVersion: v2
     appVersion: 0.4.2
-    created: "2026-05-25T19:04:20.383556265Z"
+    created: "2026-05-25T19:34:21.291765016Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 9d4df27de86383881aeb696bfc25a3b3c3a4c789878edf9ed7dd8194025dab71
@@ -4008,7 +4008,7 @@ entries:
     version: 0.4.2
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2026-05-25T19:04:20.38329398Z"
+    created: "2026-05-25T19:34:21.291402802Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: e89379cd0deba254362fc6cd60617fd19b16a4265dbaaf2d16282a3496db014b
@@ -4032,7 +4032,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-05-25T19:04:20.383023853Z"
+    created: "2026-05-25T19:34:21.291019097Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: e54abb4ea98725e17e9f1bf710739ae1f7f6c427c344554a3ff2107848164fa4
@@ -4056,7 +4056,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-05-25T19:04:20.382752304Z"
+    created: "2026-05-25T19:34:21.290657103Z"
     description: A Kubernetes operator that automatically configures preview environments
       for applications
     digest: 0583d9d4df607d92458ae3d1ce1f83dce7e8cd6ddc226c48ab5de36a0047c51a
@@ -4081,7 +4081,7 @@ entries:
   kb-vision:
   - apiVersion: v2
     appVersion: 0.11.0
-    created: "2026-05-25T19:04:20.392113519Z"
+    created: "2026-05-25T19:34:21.3037011Z"
     description: Knowledge Base for Homelab
     digest: 8f0be8c6b0b751797083e8424194141ccca9c816cf723deeb285af5ae776447f
     name: kb-vision
@@ -4091,7 +4091,7 @@ entries:
     version: 0.11.0
   - apiVersion: v2
     appVersion: 0.10.13
-    created: "2026-05-25T19:04:20.390159938Z"
+    created: "2026-05-25T19:34:21.301680648Z"
     description: Knowledge Base for Homelab
     digest: f12ca64ddc2d2496f033590430d5c592b190431ab1f60181ee5731c2292cb490
     name: kb-vision
@@ -4101,7 +4101,7 @@ entries:
     version: 0.10.13
   - apiVersion: v2
     appVersion: 0.10.12
-    created: "2026-05-25T19:04:20.390002411Z"
+    created: "2026-05-25T19:34:21.301449849Z"
     description: Knowledge Base for Homelab
     digest: 5c176482d8e743fe1aefc9dc505d7d5e730e74e3d57457226a2bc016d14f2a1b
     name: kb-vision
@@ -4111,7 +4111,7 @@ entries:
     version: 0.10.12
   - apiVersion: v2
     appVersion: 0.10.11
-    created: "2026-05-25T19:04:20.389844453Z"
+    created: "2026-05-25T19:34:21.301172402Z"
     description: Knowledge Base for Homelab
     digest: f6ab360f28b81dc3281d5742bb2cb4835dffd0e4375fbbb932318e8082aee6e6
     name: kb-vision
@@ -4121,7 +4121,7 @@ entries:
     version: 0.10.11
   - apiVersion: v2
     appVersion: 0.10.10
-    created: "2026-05-25T19:04:20.389691863Z"
+    created: "2026-05-25T19:34:21.300933367Z"
     description: Knowledge Base for Homelab
     digest: 52cd78d1397a8e120229ae8f78a963b4ec3b0f93ea1e6165ed24820952d1793c
     name: kb-vision
@@ -4131,7 +4131,7 @@ entries:
     version: 0.10.10
   - apiVersion: v2
     appVersion: 0.10.9
-    created: "2026-05-25T19:04:20.391781469Z"
+    created: "2026-05-25T19:34:21.303471442Z"
     description: Knowledge Base for Homelab
     digest: 1d813bd57c9945ef0233212c6635a48514a386f42bccbe2e6ef98df101820477
     name: kb-vision
@@ -4141,7 +4141,7 @@ entries:
     version: 0.10.9
   - apiVersion: v2
     appVersion: 0.10.8
-    created: "2026-05-25T19:04:20.391375027Z"
+    created: "2026-05-25T19:34:21.303205287Z"
     description: Knowledge Base for Homelab
     digest: dc6b8b7e1dd14ca22456547bf46181a26d304fe09b655598c19e6d35aec2ca82
     name: kb-vision
@@ -4151,7 +4151,7 @@ entries:
     version: 0.10.8
   - apiVersion: v2
     appVersion: 0.10.7
-    created: "2026-05-25T19:04:20.391085862Z"
+    created: "2026-05-25T19:34:21.302993122Z"
     description: Knowledge Base for Homelab
     digest: cc5d032e09fc25169eef9ebf8f10eeea37175cd8f15019c638b84d5b2ed33b03
     name: kb-vision
@@ -4161,7 +4161,7 @@ entries:
     version: 0.10.7
   - apiVersion: v2
     appVersion: 0.10.6
-    created: "2026-05-25T19:04:20.390936948Z"
+    created: "2026-05-25T19:34:21.302780416Z"
     description: Knowledge Base for Homelab
     digest: 211751802d88542c345095af04023070686b2efd36b4ce07e2360d6ef5ef7a88
     name: kb-vision
@@ -4171,7 +4171,7 @@ entries:
     version: 0.10.6
   - apiVersion: v2
     appVersion: 0.10.5
-    created: "2026-05-25T19:04:20.390789496Z"
+    created: "2026-05-25T19:34:21.302568722Z"
     description: Knowledge Base for Homelab
     digest: 69402c0bd6042f001ff5ee39973f3a8ac913500f01a49c8a83e04d53c1a7a0d9
     name: kb-vision
@@ -4181,7 +4181,7 @@ entries:
     version: 0.10.5
   - apiVersion: v2
     appVersion: 0.10.4
-    created: "2026-05-25T19:04:20.390631798Z"
+    created: "2026-05-25T19:34:21.302341459Z"
     description: Knowledge Base for Homelab
     digest: 4d503114240d6340f3ceb54789983820f35b9b212d07eed4026185c8687d0aeb
     name: kb-vision
@@ -4191,7 +4191,7 @@ entries:
     version: 0.10.4
   - apiVersion: v2
     appVersion: 0.10.3
-    created: "2026-05-25T19:04:20.390464606Z"
+    created: "2026-05-25T19:34:21.302109948Z"
     description: Knowledge Base for Homelab
     digest: 03de95fb45fd1584c8b70ac56d667d0254466fe9bb3250768cf17f3d4d767dd5
     name: kb-vision
@@ -4201,7 +4201,7 @@ entries:
     version: 0.10.3
   - apiVersion: v2
     appVersion: 0.10.2
-    created: "2026-05-25T19:04:20.390313279Z"
+    created: "2026-05-25T19:34:21.301897432Z"
     description: Knowledge Base for Homelab
     digest: ea515073b28c16367b112ca8e8f7c7abb081fe7cf8454a1f9996885da2315cc1
     name: kb-vision
@@ -4211,7 +4211,7 @@ entries:
     version: 0.10.2
   - apiVersion: v2
     appVersion: 0.10.1
-    created: "2026-05-25T19:04:20.38952378Z"
+    created: "2026-05-25T19:34:21.30048455Z"
     description: Knowledge Base for Homelab
     digest: 09394d72058dbd28735ffd7b64309f4148632a9337751b2af1886069b9a96d50
     name: kb-vision
@@ -4221,7 +4221,7 @@ entries:
     version: 0.10.1
   - apiVersion: v2
     appVersion: 0.10.0
-    created: "2026-05-25T19:04:20.389374465Z"
+    created: "2026-05-25T19:34:21.299886356Z"
     description: Knowledge Base for Homelab
     digest: a3c0fff6d2e3c32e69a672516f26a510cc7760eb4162641b9f95c9c33d9d7d08
     name: kb-vision
@@ -4231,7 +4231,7 @@ entries:
     version: 0.10.0
   - apiVersion: v2
     appVersion: 0.9.0
-    created: "2026-05-25T19:04:20.394599663Z"
+    created: "2026-05-25T19:34:21.3080531Z"
     description: Knowledge Base for Homelab
     digest: f09970e2fbfee2f3e332ac91fc188692b0ea41c5d29de4a11cd86717deed60c9
     name: kb-vision
@@ -4241,7 +4241,7 @@ entries:
     version: 0.9.0
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2026-05-25T19:04:20.394436857Z"
+    created: "2026-05-25T19:34:21.307835685Z"
     description: Knowledge Base for Homelab
     digest: e79bec75de7f45c2d98dda95166c96da279003ec4ebc67eae4a563aa9403e733
     name: kb-vision
@@ -4251,7 +4251,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: 0.7.2
-    created: "2026-05-25T19:04:20.394286301Z"
+    created: "2026-05-25T19:34:21.307582835Z"
     description: Knowledge Base for Homelab
     digest: 12a116af1b3a02c00385151c0bc6d03db86ce76cc69eec493f1d206ed9258505
     name: kb-vision
@@ -4261,7 +4261,7 @@ entries:
     version: 0.7.2
   - apiVersion: v2
     appVersion: 0.7.1
-    created: "2026-05-25T19:04:20.394141943Z"
+    created: "2026-05-25T19:34:21.307338099Z"
     description: Knowledge Base for Homelab
     digest: 6070c487e092ba56af38ec08a628dd728954d3b75f7379d86129c20d27c87201
     name: kb-vision
@@ -4271,7 +4271,7 @@ entries:
     version: 0.7.1
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2026-05-25T19:04:20.393999239Z"
+    created: "2026-05-25T19:34:21.306795341Z"
     description: Knowledge Base for Homelab
     digest: 92ec73ef3a78f15c7afdd64acb07d45fe96e176ceaa1bfc21da0b8f2301b4828
     name: kb-vision
@@ -4281,7 +4281,7 @@ entries:
     version: 0.7.0
   - apiVersion: v2
     appVersion: 0.6.2
-    created: "2026-05-25T19:04:20.393849603Z"
+    created: "2026-05-25T19:34:21.30609657Z"
     description: Knowledge Base for Homelab
     digest: 47b15953953562de6779a5e001dd00a476685e0a6c675169f7742e054a0a72e8
     name: kb-vision
@@ -4291,7 +4291,7 @@ entries:
     version: 0.6.2
   - apiVersion: v2
     appVersion: 0.6.1
-    created: "2026-05-25T19:04:20.393702832Z"
+    created: "2026-05-25T19:34:21.305858497Z"
     description: Knowledge Base for Homelab
     digest: de668c4295fc7c72abbff6f83311c5ae1f750a782e63b3d7ef1c711d262bdfed
     name: kb-vision
@@ -4301,7 +4301,7 @@ entries:
     version: 0.6.1
   - apiVersion: v2
     appVersion: 0.6.0
-    created: "2026-05-25T19:04:20.393539977Z"
+    created: "2026-05-25T19:34:21.305646251Z"
     description: Knowledge Base for Homelab
     digest: 19583eafaa026a6465f007a2e4fe84abf631681dd657ba5a41a0938ba0b4d0e3
     name: kb-vision
@@ -4311,7 +4311,7 @@ entries:
     version: 0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2026-05-25T19:04:20.393393386Z"
+    created: "2026-05-25T19:34:21.305428196Z"
     description: Knowledge Base for Homelab
     digest: 34a5a401950236b3eaeed063a6b15f8dbd790b39fc3be9c05f931b42816fce4d
     name: kb-vision
@@ -4321,7 +4321,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-05-25T19:04:20.393244332Z"
+    created: "2026-05-25T19:34:21.305191845Z"
     description: Knowledge Base for Homelab
     digest: 18e061c7cd770d854063f43078cf907b18a6743d337612089542a775e8a8f43d
     name: kb-vision
@@ -4331,7 +4331,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.3
-    created: "2026-05-25T19:04:20.393093915Z"
+    created: "2026-05-25T19:34:21.304980732Z"
     description: Knowledge Base for Homelab
     digest: 5a6e8fc0dc8446455fabc8566857c81328c023784b87b46594ab225fdb8f9460
     name: kb-vision
@@ -4341,7 +4341,7 @@ entries:
     version: 0.3.3
   - apiVersion: v2
     appVersion: 0.3.1
-    created: "2026-05-25T19:04:20.392942477Z"
+    created: "2026-05-25T19:34:21.304770681Z"
     description: Knowledge Base for Homelab
     digest: fc04238f1aec670249713ca51acd9ff9a3f832ea4bc2d5de058a5369f02246cc
     name: kb-vision
@@ -4351,7 +4351,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-05-25T19:04:20.392790989Z"
+    created: "2026-05-25T19:34:21.304562874Z"
     description: Knowledge Base for Homelab
     digest: a5d40d27b73ee70538e7c014cafa553846b0006e04649b9cb9fc6eee3705b309
     name: kb-vision
@@ -4361,7 +4361,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.3
-    created: "2026-05-25T19:04:20.392629546Z"
+    created: "2026-05-25T19:34:21.304348926Z"
     description: Knowledge Base for Homelab
     digest: 471b7eaaf2ac2e081cde2691e7ac4dfaab6a4af0663979b50966405c8c032e05
     name: kb-vision
@@ -4371,7 +4371,7 @@ entries:
     version: 0.2.3
   - apiVersion: v2
     appVersion: 0.2.2
-    created: "2026-05-25T19:04:20.392448183Z"
+    created: "2026-05-25T19:34:21.30412Z"
     description: Knowledge Base for Homelab
     digest: d8ee82ce5147a09cc90214d871614c37c514b744070bc61c61fa41993c55ce3c
     name: kb-vision
@@ -4381,7 +4381,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 0.2.1
-    created: "2026-05-25T19:04:20.392288282Z"
+    created: "2026-05-25T19:34:21.30391041Z"
     description: Knowledge Base for Homelab
     digest: f9c6a267a5e82ebf06534d6d8fc74da8636c84f32aaa6c00e12985107aa29e3f
     name: kb-vision
@@ -4391,7 +4391,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2026-05-25T19:04:20.389221725Z"
+    created: "2026-05-25T19:34:21.299477905Z"
     description: Knowledge Base for Homelab
     digest: e0df1c87d8ac496fed5b19163b8fd5b43d0fe240962b66c3c7836d9c12ced001
     name: kb-vision
@@ -4401,7 +4401,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2026-05-25T19:04:20.389067473Z"
+    created: "2026-05-25T19:34:21.299236135Z"
     description: Knowledge Base for Homelab
     digest: 6620571743fa7d3c9eb8dd13c4b763c1fa14c683310258738ba308d3a52378e9
     name: kb-vision
@@ -4411,7 +4411,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-05-25T19:04:20.388918919Z"
+    created: "2026-05-25T19:34:21.299028038Z"
     description: Knowledge Base for Homelab
     digest: d0ffe3f652ea392e6ec8a92a0f0bd7e557950464529e3838975baf0a6ecb0626
     name: kb-vision
@@ -4421,7 +4421,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-05-25T19:04:20.388764366Z"
+    created: "2026-05-25T19:34:21.298817877Z"
     description: Knowledge Base for Homelab
     digest: 14c3aaa08729bd92336b99d9f8fe18d42189d86c642758726bb4b8a853904632
     name: kb-vision
@@ -4432,7 +4432,7 @@ entries:
   openauth:
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2026-05-25T19:04:20.395210102Z"
+    created: "2026-05-25T19:34:21.308913011Z"
     description: OIDC issuer for the website-builder (wraps @openauthjs/openauth)
     digest: 471d1b26e53b5fe0cea969bfa86ef1bf5382de131e3246dec4db22ad0a21739b
     icon: https://github.githubassets.com/images/icons/emoji/lock_with_ink_pen.png
@@ -4445,7 +4445,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.3
-    created: "2026-05-25T19:04:20.395014818Z"
+    created: "2026-05-25T19:34:21.308641496Z"
     description: OIDC issuer for the website-builder (wraps @openauthjs/openauth)
     digest: 0cf156d0d31d188d92828fe234bb1712d963c45b3745eaad37f9978543828d0a
     icon: https://github.githubassets.com/images/icons/emoji/lock_with_ink_pen.png
@@ -4458,7 +4458,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2026-05-25T19:04:20.394811762Z"
+    created: "2026-05-25T19:34:21.308359631Z"
     description: OIDC issuer for the website-builder (wraps @openauthjs/openauth)
     digest: 869fd14e67dd2e7e5a03443ef76cca66d9a67666f06844704095a7f598e48e10
     icon: https://github.githubassets.com/images/icons/emoji/lock_with_ink_pen.png
@@ -4469,10 +4469,31 @@ entries:
     urls:
     - https://fredericrous.github.io/charts/packages/openauth-0.0.2.tgz
     version: 0.0.2
+  social-planner:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-05-25T19:34:21.309206387Z"
+    description: Self-hosted social content planner (recommendation + week planner)
+    digest: f1a1c6dc9937844c31d303bbf78c20847ce3875fc66f5ec377b05be82e6ad421
+    home: https://github.com/fredericrous/social-planner
+    keywords:
+    - social
+    - planner
+    - homelab
+    maintainers:
+    - name: fredericrous
+      url: https://github.com/fredericrous
+    name: social-planner
+    sources:
+    - https://github.com/fredericrous/social-planner
+    type: application
+    urls:
+    - https://fredericrous.github.io/charts/packages/social-planner-0.1.0.tgz
+    version: 0.1.0
   sync-bridge:
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2026-05-25T19:04:20.396119151Z"
+    created: "2026-05-25T19:34:21.310473376Z"
     description: 'Node service that bridges browser WebSocket clients to Hyperswarm
       for Yjs document sync in the website-builder.  Single-pod for v1 (per PLAN.md
       "v1 scaling posture"). The Hyperswarm DHT layer requires UDP egress for hole-punching,
@@ -4489,7 +4510,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2026-05-25T19:04:20.395900511Z"
+    created: "2026-05-25T19:34:21.310150856Z"
     description: 'Node service that bridges browser WebSocket clients to Hyperswarm
       for Yjs document sync in the website-builder.  Single-pod for v1 (per PLAN.md
       "v1 scaling posture"). The Hyperswarm DHT layer requires UDP egress for hole-punching,
@@ -4506,7 +4527,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2026-05-25T19:04:20.395678838Z"
+    created: "2026-05-25T19:34:21.309850657Z"
     description: 'Node service that bridges browser WebSocket clients to Hyperswarm
       for Yjs document sync in the website-builder.  Single-pod for v1 (per PLAN.md
       "v1 scaling posture"). The Hyperswarm DHT layer requires UDP egress for hole-punching,
@@ -4523,7 +4544,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2026-05-25T19:04:20.395440579Z"
+    created: "2026-05-25T19:34:21.309542864Z"
     description: 'Node service that bridges browser WebSocket clients to Hyperswarm
       for Yjs document sync in the website-builder.  Single-pod for v1 (per PLAN.md
       "v1 scaling posture"). The Hyperswarm DHT layer requires UDP egress for hole-punching,
@@ -4541,7 +4562,7 @@ entries:
   ticket-vision:
   - apiVersion: v2
     appVersion: 0.7.2
-    created: "2026-05-25T19:04:20.399299359Z"
+    created: "2026-05-25T19:34:21.315069094Z"
     description: Fully automated ITSM for homelab
     digest: 78913d6b8e3e43bc89ddd00ff4db8363a5718c225567bbe9dcbd15047e9365f1
     name: ticket-vision
@@ -4551,7 +4572,7 @@ entries:
     version: 0.7.2
   - apiVersion: v2
     appVersion: 0.7.1
-    created: "2026-05-25T19:04:20.399117505Z"
+    created: "2026-05-25T19:34:21.314584262Z"
     description: Fully automated ITSM for homelab
     digest: e0d09ee998f1019959c7bd29d97bee02f09995628271eb37b4d4a8105e936c51
     name: ticket-vision
@@ -4561,7 +4582,7 @@ entries:
     version: 0.7.1
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2026-05-25T19:04:20.39893475Z"
+    created: "2026-05-25T19:34:21.314273954Z"
     description: Fully automated ITSM for homelab
     digest: e514f83964ae38d45959035fd3b943154e36702cf3eba6cd20798738c0cac494
     name: ticket-vision
@@ -4571,7 +4592,7 @@ entries:
     version: 0.7.0
   - apiVersion: v2
     appVersion: 0.6.0
-    created: "2026-05-25T19:04:20.398749912Z"
+    created: "2026-05-25T19:34:21.313989815Z"
     description: Fully automated ITSM for homelab
     digest: 3aae2fe93703be1bb5f278660523bcf91353883ae76711199ab0e05fcd33592a
     name: ticket-vision
@@ -4581,7 +4602,7 @@ entries:
     version: 0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2026-05-25T19:04:20.398544813Z"
+    created: "2026-05-25T19:34:21.313387902Z"
     description: Fully automated ITSM for homelab
     digest: 5727efa5934476b5e98b472e2ddb6a515e99e138dce8a7dfc270183f0eaef44d
     name: ticket-vision
@@ -4591,7 +4612,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2026-05-25T19:04:20.398362338Z"
+    created: "2026-05-25T19:34:21.312696796Z"
     description: Fully automated ITSM for homelab
     digest: 8b319f8825ca063079fe8ee1d29e6935003a2a9e8bf8c50d206f7ffa980851c4
     name: ticket-vision
@@ -4601,7 +4622,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-05-25T19:04:20.398186954Z"
+    created: "2026-05-25T19:34:21.312461648Z"
     description: Fully automated ITSM for homelab
     digest: d3b100ed63026f83438afa996dec22bbb7013ac8ff62ca4f458935fe61794fb0
     name: ticket-vision
@@ -4611,7 +4632,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.8
-    created: "2026-05-25T19:04:20.398000924Z"
+    created: "2026-05-25T19:34:21.312195893Z"
     description: Fully automated ITSM for homelab
     digest: 7df4c05d804ab675aa746ceef3054856b51e078dc7269081a92281fba5367010
     name: ticket-vision
@@ -4621,7 +4642,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 0.1.7
-    created: "2026-05-25T19:04:20.397824338Z"
+    created: "2026-05-25T19:34:21.311961978Z"
     description: Fully automated ITSM for homelab
     digest: 41cfc36aaff1a0a8059e4fb5ebd91291e873d760a73cc1b3dd217b1f40d0b246
     name: ticket-vision
@@ -4631,7 +4652,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 0.1.6
-    created: "2026-05-25T19:04:20.397642354Z"
+    created: "2026-05-25T19:34:21.311717683Z"
     description: Fully automated ITSM for homelab
     digest: ef206c335f1ab100fa6a6e2ae8a7cc96a5d898f814d7a1c4a9b2231f62e0b2e2
     name: ticket-vision
@@ -4641,7 +4662,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 0.1.5
-    created: "2026-05-25T19:04:20.397445588Z"
+    created: "2026-05-25T19:34:21.311476804Z"
     description: Fully automated ITSM for homelab
     digest: 9415fa803c23db0dddb845591a7e830d56dd532ff1e92e33002aec02fb4ba819
     name: ticket-vision
@@ -4651,7 +4672,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.4
-    created: "2026-05-25T19:04:20.397259568Z"
+    created: "2026-05-25T19:34:21.311213845Z"
     description: Fully automated ITSM for homelab
     digest: 225d2bad39d1a57a7e2a5705952e10bd8a342c3261ae8430488bc0c52182d1a1
     name: ticket-vision
@@ -4661,7 +4682,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2026-05-25T19:04:20.397046196Z"
+    created: "2026-05-25T19:34:21.31096977Z"
     description: Fully automated ITSM for homelab
     digest: 0dcf26a1f23483548ffddfaefe0782344bf4449c638e38846dc90587ce1ffc6d
     name: ticket-vision
@@ -4671,7 +4692,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-05-25T19:04:20.396640435Z"
+    created: "2026-05-25T19:34:21.31072796Z"
     description: Fully automated ITSM for homelab
     digest: 1457a90b3e2c43a6b631539cf31ea867493d3081230a562fb177b0247606f8e2
     name: ticket-vision
@@ -4682,7 +4703,7 @@ entries:
   vault-transit-unseal-operator:
   - apiVersion: v2
     appVersion: 2.1.9
-    created: "2026-05-25T19:04:20.418539178Z"
+    created: "2026-05-25T19:34:21.340147031Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: bf2ca86e94de025c09d2997c1be4cfb4cd998c26f6be976ef9ee03e1acd78733
@@ -4705,7 +4726,7 @@ entries:
     version: 2.1.9
   - apiVersion: v2
     appVersion: 2.1.8
-    created: "2026-05-25T19:04:20.417892445Z"
+    created: "2026-05-25T19:34:21.339392235Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: eeca88cc9320ca3766fe9f8da0f06c7b03be7d003f3cacd8e7999d4525976061
@@ -4728,7 +4749,7 @@ entries:
     version: 2.1.8
   - apiVersion: v2
     appVersion: 2.1.7
-    created: "2026-05-25T19:04:20.41715869Z"
+    created: "2026-05-25T19:34:21.338627602Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 0a4ba2bfc5731910a76c59f1b404ec7e3c4889112d7ef619556371b0500eb9b6
@@ -4751,7 +4772,7 @@ entries:
     version: 2.1.7
   - apiVersion: v2
     appVersion: 2.1.6
-    created: "2026-05-25T19:04:20.416256571Z"
+    created: "2026-05-25T19:34:21.33788502Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 17e6c45c3ad57e65048256a0bc4701ce27015e1f1bb5d07f86c6eb32237a5da3
@@ -4774,7 +4795,7 @@ entries:
     version: 2.1.6
   - apiVersion: v2
     appVersion: 2.1.5
-    created: "2026-05-25T19:04:20.415415966Z"
+    created: "2026-05-25T19:34:21.33713894Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: cfb61fb2fbcbd04f2fda48ef97c23b21f80ea1eb06966538a111a87b84d61ecc
@@ -4797,7 +4818,7 @@ entries:
     version: 2.1.5
   - apiVersion: v2
     appVersion: 2.1.4
-    created: "2026-05-25T19:04:20.414838977Z"
+    created: "2026-05-25T19:34:21.336409993Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 135595e74845baeb8affc46d996f495f96e3c5d52ce005e0f92f282b959ff579
@@ -4820,7 +4841,7 @@ entries:
     version: 2.1.4
   - apiVersion: v2
     appVersion: 2.1.3
-    created: "2026-05-25T19:04:20.414259965Z"
+    created: "2026-05-25T19:34:21.335664896Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 58847ca8042a2addc31e9f3644e638a3ba6984d5ab8a7690ff7f645fe5cb7aa4
@@ -4843,7 +4864,7 @@ entries:
     version: 2.1.3
   - apiVersion: v2
     appVersion: 2.1.2
-    created: "2026-05-25T19:04:20.413683137Z"
+    created: "2026-05-25T19:34:21.334913948Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: f049db121b4aaedb54e1748a3f15b4858ef5b59e1d73f283d7a8557f08e310ae
@@ -4866,7 +4887,7 @@ entries:
     version: 2.1.2
   - apiVersion: v2
     appVersion: 2.1.1
-    created: "2026-05-25T19:04:20.413097976Z"
+    created: "2026-05-25T19:34:21.334142101Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 8a801c4cf5e34c99873224b87ea7f158d010827c2b1ff66e935773047de22886
@@ -4889,7 +4910,7 @@ entries:
     version: 2.1.1
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2026-05-25T19:04:20.412506565Z"
+    created: "2026-05-25T19:34:21.333377978Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 2ee84eb4d2c770879f915c14dd4352ec65eab55f805aefc7c14b7a174d653065
@@ -4912,7 +4933,7 @@ entries:
     version: 2.1.0
   - apiVersion: v2
     appVersion: 2.0.2
-    created: "2026-05-25T19:04:20.411941044Z"
+    created: "2026-05-25T19:34:21.33190844Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: ddf0da0661585af9449c9f5e8c6c2670714391f6f2828c5b109f71186bf7f8c9
@@ -4935,7 +4956,7 @@ entries:
     version: 2.0.2
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2026-05-25T19:04:20.41134763Z"
+    created: "2026-05-25T19:34:21.331158153Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 7377011dea53c47fdfec078210c3ed5619263ab7ad7c0bdf4b2e3edb5bb0b8dc
@@ -4958,7 +4979,7 @@ entries:
     version: 2.0.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2026-05-25T19:04:20.410728468Z"
+    created: "2026-05-25T19:34:21.33042642Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: de14eb3846eb2f4d1d06da45babbc224a87763de365630930711130dfc79543b
@@ -4981,7 +5002,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2026-05-25T19:04:20.410037147Z"
+    created: "2026-05-25T19:34:21.32966323Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: fb479af7cf00cfc9732c6ac674f62420a5088b3bfab6a7df036c78199834c6d6
@@ -5004,7 +5025,7 @@ entries:
     version: 1.6.0
   - apiVersion: v2
     appVersion: 1.5.4
-    created: "2026-05-25T19:04:20.409047106Z"
+    created: "2026-05-25T19:34:21.328868099Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: f4a451d528cc24a3a6ad6107ba2e6cd46c36afb6e0efade5ec4462a74d2b82a3
@@ -5027,7 +5048,7 @@ entries:
     version: 1.5.4
   - apiVersion: v2
     appVersion: 1.5.3
-    created: "2026-05-25T19:04:20.408350277Z"
+    created: "2026-05-25T19:34:21.328105029Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 5c427c5c3cd343235ae0c0ca2f88074319a8ab2ed73c75d8677b71964c17bd89
@@ -5050,7 +5071,7 @@ entries:
     version: 1.5.3
   - apiVersion: v2
     appVersion: 1.5.2
-    created: "2026-05-25T19:04:20.407768821Z"
+    created: "2026-05-25T19:34:21.327373156Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: c07a5105f0ecd34e611645b0b7e425e8b4cdb19e49e0f144c1b9cad18c5d02cf
@@ -5073,7 +5094,7 @@ entries:
     version: 1.5.2
   - apiVersion: v2
     appVersion: 1.5.1
-    created: "2026-05-25T19:04:20.407188347Z"
+    created: "2026-05-25T19:34:21.326624953Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: bb4f6a6f910120c8bb3b313d16a08cbdcc1eb8a7906886ba0d8899a31761aee5
@@ -5096,7 +5117,7 @@ entries:
     version: 1.5.1
   - apiVersion: v2
     appVersion: 1.5.0
-    created: "2026-05-25T19:04:20.406617518Z"
+    created: "2026-05-25T19:34:21.325870629Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: bc6fdab72d287838cda05d2d9caa8a87fc4638a13d57ae71ce3eb336afdb843f
@@ -5119,7 +5140,7 @@ entries:
     version: 1.5.0
   - apiVersion: v2
     appVersion: 1.4.0
-    created: "2026-05-25T19:04:20.406064105Z"
+    created: "2026-05-25T19:34:21.325136943Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 4feba50e8e8495287b3caecc91593914450ad80b77c161f0987afb96d11f2133
@@ -5142,7 +5163,7 @@ entries:
     version: 1.4.0
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2026-05-25T19:04:20.405494267Z"
+    created: "2026-05-25T19:34:21.324391575Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: e21a6b1edc32346bd6eb3ecf7f79619917150ce2f18b53fa1f96a6607cf60f68
@@ -5165,7 +5186,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2026-05-25T19:04:20.404946462Z"
+    created: "2026-05-25T19:34:21.322601057Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 1d8f805a466a3dadfcb3d398de33de6031aaf4d50a38c31c05d6929d538583fb
@@ -5188,7 +5209,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 1.1.1
-    created: "2026-05-25T19:04:20.404379809Z"
+    created: "2026-05-25T19:34:21.321678349Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 3299682fb02cd11dd48d0b60d1b308bce8fd069275286c9824b5923b3b0e5adc
@@ -5211,7 +5232,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2026-05-25T19:04:20.403825564Z"
+    created: "2026-05-25T19:34:21.320522818Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 0a949fa2d60d06cadcd0bcd4a71947ed849fba9f0aa35397f59b7f6fff4c5953
@@ -5234,7 +5255,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.0.10
-    created: "2026-05-25T19:04:20.403229286Z"
+    created: "2026-05-25T19:34:21.319780536Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 860a9157ee71f7ff4b8b674392eae50a7885d6d333f8710e160db9ab6ec408dc
@@ -5257,7 +5278,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 1.0.9
-    created: "2026-05-25T19:04:20.402352546Z"
+    created: "2026-05-25T19:34:21.319033846Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 60d8f8222875ed7c57c82a772734905e02fbe5268fa86056a66b0a121c75bc53
@@ -5280,7 +5301,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.0.9
-    created: "2026-05-25T19:04:20.401605151Z"
+    created: "2026-05-25T19:34:21.318296373Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: bf618379ac3696bf2126269022ccbaa42d0215b20b6aa336058472966d0ed5e5
@@ -5303,7 +5324,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2026-05-25T19:04:20.401030616Z"
+    created: "2026-05-25T19:34:21.317599555Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 30d91179ef7281d961be994981124ce8380eeaddf2a322b37c4d39f35c905b2d
@@ -5326,7 +5347,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2026-05-25T19:04:20.400470823Z"
+    created: "2026-05-25T19:34:21.316856762Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: db6d3aa0a1ebe4bf60db3a4551f63f613547fe5a4f94e16c4f73a024fe863256
@@ -5349,7 +5370,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-05-25T19:04:20.399909728Z"
+    created: "2026-05-25T19:34:21.31608736Z"
     description: A Kubernetes operator that automatically manages HashiCorp Vault
       initialization and unsealing using transit unseal
     digest: 9970d6603a7e1c7dcaed8821bee32f20602cf7b5984d6ca18f2b642e9c371168
@@ -5373,7 +5394,7 @@ entries:
   workerd-runtime:
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2026-05-25T19:04:20.419460976Z"
+    created: "2026-05-25T19:34:21.342305778Z"
     description: serves materialised HTML from garage, slug→site_id from Postgres
     digest: 2c8a1045d86111fad8696aeae6836d8f8fcf5a045611ecc24de555d87cb3ffa0
     icon: https://github.githubassets.com/images/icons/emoji/satellite_antenna.png
@@ -5386,7 +5407,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2026-05-25T19:04:20.419287525Z"
+    created: "2026-05-25T19:34:21.342043309Z"
     description: serves materialised HTML from garage, slug→site_id from Postgres
     digest: 3747605a0ed2a1a10324db6e5eaa9cc650fc19f76e7c416b6c34adf2954d56ba
     icon: https://github.githubassets.com/images/icons/emoji/satellite_antenna.png
@@ -5399,7 +5420,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.3
-    created: "2026-05-25T19:04:20.419113353Z"
+    created: "2026-05-25T19:34:21.341769048Z"
     description: serves materialised HTML from garage, slug→site_id from Postgres
     digest: ab372e9b8c79196584507b986ebc33b394fc8ae69654f1aaf70f3d8fdc57acd7
     icon: https://github.githubassets.com/images/icons/emoji/satellite_antenna.png
@@ -5412,7 +5433,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2026-05-25T19:04:20.418930477Z"
+    created: "2026-05-25T19:34:21.34121567Z"
     description: serves materialised HTML from garage, slug→site_id from Postgres
     digest: 5f1e91cd2e935ff8615376d983594064c4dea402269fc3379f0885302414225d
     icon: https://github.githubassets.com/images/icons/emoji/satellite_antenna.png
@@ -5425,7 +5446,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2026-05-25T19:04:20.418741894Z"
+    created: "2026-05-25T19:34:21.340627134Z"
     description: serves materialised HTML from garage, slug→site_id from Postgres
     digest: 3145fffd04b6ec6052fb145c9a364a7f08853d8b0f5138a7acff095cd71b272b
     icon: https://github.githubassets.com/images/icons/emoji/satellite_antenna.png
@@ -5436,4 +5457,4 @@ entries:
     urls:
     - https://fredericrous.github.io/charts/packages/workerd-runtime-0.0.1.tgz
     version: 0.0.1
-generated: "2026-05-25T19:04:20.318562974Z"
+generated: "2026-05-25T19:34:21.203623351Z"
