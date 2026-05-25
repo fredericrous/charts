@@ -21,16 +21,19 @@ service:
   type: ClusterIP
   port: 3000
 
-# Non-secret env (public config). Secret env (DATABASE_URL, ANTHROPIC_API_KEY) is supplied
+# Non-secret env (public config). Secret env (DATABASE_URL, LITELLM_API_KEY) is supplied
 # via `envFromSecret` — a Secret created by the homelab ExternalSecret.
+# AI uses the homelab LiteLLM proxy (OpenAI-compatible) fronting local models.
 env:
   NODE_ENV: "production"
   APP_NAME: "Social Planner"
   ALLOWED_ORIGIN_SUFFIX: "daddyshome.fr"
   TZ: "Europe/Paris"
   OTEL_EXPORTER_OTLP_ENDPOINT: "http://alloy.monitoring.svc.cluster.local.:4318"
+  LITELLM_BASE_URL: "http://litellm.litellm.svc.cluster.local.:4000"
+  COMPLETION_MODEL: "qwen3.5:27b"
 
-# Name of a Secret whose keys (DATABASE_URL, ANTHROPIC_API_KEY, …) are loaded via envFrom.
+# Name of a Secret whose keys (DATABASE_URL, LITELLM_API_KEY, …) are loaded via envFrom.
 # Empty string disables envFrom (e.g. local `helm template`).
 envFromSecret: "social-planner-secrets"
 
