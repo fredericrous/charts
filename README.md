@@ -13,6 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.3.0 | 2.3.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [builder-webapp](charts/builder-webapp/) | 0.0.27 | 0.0.27 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [social-planner](charts/social-planner/) | 0.1.4 | 0.1.4 | Self-hosted social content planner (recommendation + week planner) |
 | [builder-api](charts/builder-api/) | 0.0.7 | 0.0.7 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
@@ -26,7 +27,6 @@ helm repo update
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.27 | 0.1.27 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [duro-operator](charts/duro-operator/) | 0.1.5 | 0.1.5 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
 | [ddns-updater-operator](charts/ddns-updater-operator/) | 0.4.1 | 0.4.1 | A Kubernetes operator that manages DDNS records for ddns-updater |
-| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.3.0 | 2.3.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.5.15 | 0.5.15 | A Kubernetes operator that automatically configures preview environments for applications |
 
 ## Installing a Chart
