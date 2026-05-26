@@ -20,6 +20,16 @@ env:
   # This repository URL
   CHARTS_URL: https://fredericrous.github.io/charts
 
+# Serialize releases. release-chart commits+pushes to main and creates a
+# GitHub Release; when several chart tags land close together (e.g. a batch
+# of update-helm-chart merges) the parallel runs both race the `git push`
+# and hammer the releases API hard enough to trip GitHub's secondary rate
+# limit (seen 2026-05-26: "Create GitHub Release" failing across charts even
+# though the release was actually created). One-at-a-time avoids both.
+concurrency:
+  group: helm-release
+  cancel-in-progress: false
+
 jobs:
   prepare:
     name: Prepare Release
@@ -163,11 +173,19 @@ jobs:
       - name: Test chart installation
         if: steps.check_crds.outputs.has_crds == 'true'
         run: |
+          # No --wait: operator/CRD charts (e.g. vault-transit-unseal-operator)
+          # need external dependencies — Vault, a transit backend — to reach
+          # Ready, which a bare kind cluster can't provide. --wait therefore
+          # always hit "context deadline exceeded" and skipped the release
+          # (the OCI push lives in the downstream release-chart job). This
+          # validates the chart INSTALLS cleanly (templates, CRDs, RBAC,
+          # workload manifests apply); runtime readiness isn't assertable here.
           helm install ${{ env.CHART_NAME }}-test ./charts/${{ env.CHART_NAME }} \
             --namespace test-namespace \
             --create-namespace \
-            --wait \
             --timeout 5m
+          echo "Installed (workloads may not reach Ready without their deps):"
+          kubectl get pods -n test-namespace -o wide || true
 
   release-chart:
     name: Package and Publish Chart
