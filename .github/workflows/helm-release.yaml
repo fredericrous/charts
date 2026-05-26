@@ -297,6 +297,11 @@ jobs:
           git push origin main
 
       - name: Create GitHub Release
+        # Non-critical + last: the chart is already fully published by the
+        # steps above (OCI push + github-pages index commit). This only adds
+        # a GitHub Releases entry, so a transient GitHub API hiccup /
+        # secondary-rate-limit here must NOT mark the whole release failed.
+        continue-on-error: true
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.CHART_NAME }}-${{ env.VERSION }}
