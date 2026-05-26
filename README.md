@@ -13,10 +13,10 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [social-planner](charts/social-planner/) | 0.1.2 | 0.1.2 | Self-hosted social content planner (recommendation + week planner) |
 | [builder-webapp](charts/builder-webapp/) | 0.0.25 | 0.0.25 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [builder-api](charts/builder-api/) | 0.0.7 | 0.0.7 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
 | [workerd-runtime](charts/workerd-runtime/) | 0.0.6 | 0.0.6 | serves materialised HTML from garage, slug→site_id from Postgres |
-| [social-planner](charts/social-planner/) | 0.1.1 | 0.1.1 | Self-hosted social content planner (recommendation + week planner) |
 | [kb-vision](charts/kb-vision/) | 0.11.0 | 0.11.0 | Knowledge Base for Homelab |
 | [sync-bridge](charts/sync-bridge/) | 0.0.6 | 0.0.6 | Node service that bridges browser WebSocket clients to Hyperswarm for Yjs document sync in the website-builder. Single-pod for v1 (per PLAN.md "v1 scaling posture"). The Hyperswarm DHT layer requires UDP egress for hole-punching, so production deployments use `hostNetwork: true` or a NodePort with UDP forwarding — see values.yaml. |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
