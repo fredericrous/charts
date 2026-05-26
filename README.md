@@ -13,8 +13,8 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [builder-webapp](charts/builder-webapp/) | 0.0.26 | 0.0.26 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [social-planner](charts/social-planner/) | 0.1.3 | 0.1.3 | Self-hosted social content planner (recommendation + week planner) |
-| [builder-webapp](charts/builder-webapp/) | 0.0.25 | 0.0.25 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [builder-api](charts/builder-api/) | 0.0.7 | 0.0.7 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
 | [workerd-runtime](charts/workerd-runtime/) | 0.0.6 | 0.0.6 | serves materialised HTML from garage, slug→site_id from Postgres |
 | [kb-vision](charts/kb-vision/) | 0.11.0 | 0.11.0 | Knowledge Base for Homelab |
