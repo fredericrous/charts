@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [social-planner](charts/social-planner/) | 0.1.6 | 0.1.6 | Self-hosted social content planner (recommendation + week planner) |
+| [social-planner](charts/social-planner/) | 0.1.7 | 0.1.7 | Self-hosted social content planner (recommendation + week planner) |
 | [builder-webapp](charts/builder-webapp/) | 0.0.28 | 0.0.28 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.3.0 | 2.3.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [builder-api](charts/builder-api/) | 0.0.7 | 0.0.7 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
