@@ -2,8 +2,8 @@ apiVersion: v2
 name: builder-webapp
 description: website-builder SPA + auth backend (openauth client + session cookie)
 type: application
-version: 0.0.32
-appVersion: 0.0.32
+version: 0.0.33
+appVersion: 0.0.33
 maintainers:
   - name: frederic.rous
 icon: https://github.githubassets.com/images/icons/emoji/sparkles.png
