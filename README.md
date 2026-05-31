@@ -13,8 +13,8 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [workerd-runtime](charts/workerd-runtime/) | 0.0.8 | 0.0.8 | serves materialised HTML from garage, slug→site_id from Postgres |
 | [builder-webapp](charts/builder-webapp/) | 0.0.34 | 0.0.34 | website-builder SPA + auth backend (openauth client + session cookie) |
-| [workerd-runtime](charts/workerd-runtime/) | 0.0.7 | 0.0.7 | serves materialised HTML from garage, slug→site_id from Postgres |
 | [duro-app](charts/duro-app/) | 1.42.2 | 1.42.2 | A household management dashboard with invite system |
 | [social-planner](charts/social-planner/) | 0.1.8 | 0.1.8 | Self-hosted social content planner (recommendation + week planner) |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.3.0 | 2.3.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
