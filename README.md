@@ -13,11 +13,11 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [builder-webapp](charts/builder-webapp/) | 0.0.35 | 0.0.35 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [builder-admin](charts/builder-admin/) | 0.0.1 | 0.0.1 | website-builder internal ops console (Authelia-gated admin BFF + SPA) |
 | [builder-api](charts/builder-api/) | 0.0.8 | 0.0.8 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
 | [duro-app](charts/duro-app/) | 1.43.0 | 1.43.0 | A household management dashboard with invite system |
 | [workerd-runtime](charts/workerd-runtime/) | 0.0.8 | 0.0.8 | serves materialised HTML from garage, slug→site_id from Postgres |
-| [builder-webapp](charts/builder-webapp/) | 0.0.34 | 0.0.34 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [social-planner](charts/social-planner/) | 0.1.8 | 0.1.8 | Self-hosted social content planner (recommendation + week planner) |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.3.0 | 2.3.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [kb-vision](charts/kb-vision/) | 0.11.0 | 0.11.0 | Knowledge Base for Homelab |
