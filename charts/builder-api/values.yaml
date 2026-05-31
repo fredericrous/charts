@@ -8,8 +8,14 @@ replicaCount: 1
 http:
   port: 4000
 
+# Prometheus /metrics on a dedicated port (M5/S4). Scraped in-cluster by
+# the ServiceMonitor; never on the public api HTTPRoute.
+metrics:
+  port: 9090
+
 env:
   BUILDER_API_PORT: "4000"
+  METRICS_PORT: "9090"
   # DATABASE_URL, OIDC_*, S3_*, BUILDER_PUBLIC_HOST come from the
   # HelmRelease postRenderer in homelab (Vault + reflected secrets +
   # inline configs). SMTP_HOST/PORT/USER/FROM also come from the
