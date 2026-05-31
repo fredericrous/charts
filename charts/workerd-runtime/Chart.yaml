@@ -2,8 +2,8 @@ apiVersion: v2
 name: workerd-runtime
 description: serves materialised HTML from garage, slug→site_id from Postgres
 type: application
-version: 0.0.7
-appVersion: 0.0.7
+version: 0.0.8
+appVersion: 0.0.8
 maintainers:
   - name: frederic.rous
 icon: https://github.githubassets.com/images/icons/emoji/satellite_antenna.png
