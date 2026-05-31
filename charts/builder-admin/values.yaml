@@ -1,0 +1,55 @@
+image:
+  repository: ghcr.io/fredericrous/builder-admin
+  # Set by the release workflow / values override.
+  tag: ""
+  pullPolicy: IfNotPresent
+
+# Stateless read-mostly BFF + SPA. Single replica is plenty for an
+# internal console; the trust boundary is the gateway ext-auth + the
+# app's group check, not replica count.
+replicaCount: 1
+
+http:
+  # Must match httproute-admin.yaml's backendRef port (the Service
+  # exposes this; the container listens on PORT below).
+  port: 3000
+
+env:
+  PORT: "3000"
+  # ADMIN_GROUP + DATABASE_URL come from the HelmRelease (postRenderer)
+  # in homelab so the DB password isn't in values.yaml.
+
+resources:
+  requests:
+    cpu: 25m
+    memory: 96Mi
+  limits:
+    cpu: 300m
+    memory: 384Mi
+
+livenessProbe:
+  httpGet:
+    path: /healthz
+    port: http
+  initialDelaySeconds: 5
+  periodSeconds: 30
+readinessProbe:
+  httpGet:
+    path: /healthz
+    port: http
+  initialDelaySeconds: 2
+  periodSeconds: 10
+
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 1000
+  fsGroup: 1000
+securityContext:
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop: ["ALL"]
+  readOnlyRootFilesystem: false
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
