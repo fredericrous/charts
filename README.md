@@ -13,6 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [builder-admin](charts/builder-admin/) | 0.0.1 | 0.0.1 | website-builder internal ops console (Authelia-gated admin BFF + SPA) |
 | [builder-api](charts/builder-api/) | 0.0.8 | 0.0.8 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
 | [duro-app](charts/duro-app/) | 1.43.0 | 1.43.0 | A household management dashboard with invite system |
 | [workerd-runtime](charts/workerd-runtime/) | 0.0.8 | 0.0.8 | serves materialised HTML from garage, slug→site_id from Postgres |
