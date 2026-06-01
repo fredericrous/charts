@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [builder-webapp](charts/builder-webapp/) | 0.0.35 | 0.0.35 | website-builder SPA + auth backend (openauth client + session cookie) |
+| [builder-webapp](charts/builder-webapp/) | 0.0.36 | 0.0.36 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [builder-admin](charts/builder-admin/) | 0.0.1 | 0.0.1 | website-builder internal ops console (Authelia-gated admin BFF + SPA) |
 | [builder-api](charts/builder-api/) | 0.0.8 | 0.0.8 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
 | [duro-app](charts/duro-app/) | 1.43.0 | 1.43.0 | A household management dashboard with invite system |
