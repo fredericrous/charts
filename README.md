@@ -19,7 +19,7 @@ helm repo update
 | [duro-app](charts/duro-app/) | 1.43.0 | 1.43.0 | A household management dashboard with invite system |
 | [workerd-runtime](charts/workerd-runtime/) | 0.0.8 | 0.0.8 | serves materialised HTML from garage, slug→site_id from Postgres |
 | [social-planner](charts/social-planner/) | 0.1.8 | 0.1.8 | Self-hosted social content planner (recommendation + week planner) |
-| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.3.0 | 2.3.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
+| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.4.0 | 2.4.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [kb-vision](charts/kb-vision/) | 0.11.0 | 0.11.0 | Knowledge Base for Homelab |
 | [sync-bridge](charts/sync-bridge/) | 0.0.6 | 0.0.6 | Node service that bridges browser WebSocket clients to Hyperswarm for Yjs document sync in the website-builder. Single-pod for v1 (per PLAN.md "v1 scaling posture"). The Hyperswarm DHT layer requires UDP egress for hole-punching, so production deployments use `hostNetwork: true` or a NodePort with UDP forwarding — see values.yaml. |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
