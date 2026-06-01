@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.4.0 | 2.4.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
+| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.5.0 | 2.5.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [builder-webapp](charts/builder-webapp/) | 0.0.39 | 0.0.39 | website-builder SPA + auth backend (openauth client + session cookie) |
 | [builder-admin](charts/builder-admin/) | 0.0.1 | 0.0.1 | website-builder internal ops console (Authelia-gated admin BFF + SPA) |
 | [builder-api](charts/builder-api/) | 0.0.8 | 0.0.8 | website-builder backend API (createSite, listMySites, getSite, publishCanned) |
