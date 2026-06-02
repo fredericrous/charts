@@ -1,9 +1,0 @@
-apiVersion: v2
-name: builder-admin
-description: website-builder internal ops console (Authelia-gated admin BFF + SPA)
-type: application
-version: 0.0.1
-appVersion: 0.0.1
-maintainers:
-  - name: frederic.rous
-icon: https://github.githubassets.com/images/icons/emoji/gear.png
