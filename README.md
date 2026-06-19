@@ -17,7 +17,7 @@ helm repo update
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.6.2 | 2.6.2 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [kb-vision](charts/kb-vision/) | 0.11.0 | 0.11.0 | Knowledge Base for Homelab |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
-| [ticket-vision](charts/ticket-vision/) | 0.7.2 | 0.7.2 | Fully automated ITSM for homelab |
+| [ticket-vision](charts/ticket-vision/) | 0.7.3 | 0.7.3 | Fully automated ITSM for homelab |
 | [cluster-vision](charts/cluster-vision/) | 0.20.1 | 0.20.1 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.27 | 0.1.27 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [duro-operator](charts/duro-operator/) | 0.1.5 | 0.1.5 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
