@@ -14,7 +14,7 @@ helm repo update
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
 | [ticket-vision](charts/ticket-vision/) | 0.7.3 | 0.7.3 | Fully automated ITSM for homelab |
-| [duro-app](charts/duro-app/) | 1.45.0 | 1.45.0 | A household management dashboard with invite system |
+| [duro-app](charts/duro-app/) | 1.45.1 | 1.45.1 | A household management dashboard with invite system |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.6.2 | 2.6.2 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [kb-vision](charts/kb-vision/) | 0.11.0 | 0.11.0 | Knowledge Base for Homelab |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
