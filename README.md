@@ -13,6 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [homelab-preview-operator](charts/homelab-preview-operator/) | 0.6.0 | 0.6.0 | A Kubernetes operator that automatically configures preview environments for applications |
 | [duro-app](charts/duro-app/) | 1.50.5 | 1.50.5 | A household management dashboard with invite system |
 | [ticket-vision](charts/ticket-vision/) | 0.7.3 | 0.7.3 | Fully automated ITSM for homelab |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.6.2 | 2.6.2 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
@@ -22,7 +23,6 @@ helm repo update
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.27 | 0.1.27 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [duro-operator](charts/duro-operator/) | 0.1.5 | 0.1.5 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
 | [ddns-updater-operator](charts/ddns-updater-operator/) | 0.4.1 | 0.4.1 | A Kubernetes operator that manages DDNS records for ddns-updater |
-| [homelab-preview-operator](charts/homelab-preview-operator/) | 0.6.0 | 0.6.0 | A Kubernetes operator that automatically configures preview environments for applications |
 
 ## Installing a Chart
 
