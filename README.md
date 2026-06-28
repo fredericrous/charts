@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [homelab-preview-operator](charts/homelab-preview-operator/) | 0.6.0 | 0.6.0 | A Kubernetes operator that automatically configures preview environments for applications |
+| [homelab-preview-operator](charts/homelab-preview-operator/) | 0.6.2 | 0.6.2 | A Kubernetes operator that automatically configures preview environments for applications |
 | [duro-app](charts/duro-app/) | 1.50.5 | 1.50.5 | A household management dashboard with invite system |
 | [ticket-vision](charts/ticket-vision/) | 0.7.3 | 0.7.3 | Fully automated ITSM for homelab |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.6.2 | 2.6.2 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
