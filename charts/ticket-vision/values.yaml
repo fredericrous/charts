@@ -30,6 +30,9 @@ persistence:
   size: 1Gi
   storageClass: ""
 
+# Documents the keys expected in the externally-managed `<release>-env`
+# secret (the deployments consume it via envFrom; templates do not render
+# this block).
 env:
   SESSION_SECRET: ""
   OIDC_ISSUER_URL: ""
@@ -38,6 +41,10 @@ env:
   OIDC_REDIRECT_URI: ""
   OTEL_EXPORTER_OTLP_ENDPOINT: "http://alloy.monitoring.svc.cluster.local.:4318"
   KNATIVE_BROKER_URL: ""
+  # Optional: cluster-vision CI resolver used to auto-link alert tickets to
+  # configuration items. Defaults in-app to the in-cluster service URL below;
+  # set only to override.
+  # CLUSTER_VISION_URL: "http://cluster-vision.cluster-vision.svc.cluster.local:8080"
 
 ingress:
   enabled: false
