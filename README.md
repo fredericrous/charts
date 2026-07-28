@@ -13,10 +13,10 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [duro-app](charts/duro-app/) | 1.50.52 | 1.50.52 | A household management dashboard with invite system |
 | [cluster-vision](charts/cluster-vision/) | 0.22.0 | 0.22.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [ticket-vision](charts/ticket-vision/) | 0.8.0 | 0.8.0 | Fully automated ITSM for homelab |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.7.5 | 0.7.5 | A Kubernetes operator that automatically configures preview environments for applications |
-| [duro-app](charts/duro-app/) | 1.50.52 | 1.50.52 | A household management dashboard with invite system |
 | [kb-vision](charts/kb-vision/) | 0.12.5 | 0.12.5 | Knowledge Base for Homelab |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.6.2 | 2.6.2 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
