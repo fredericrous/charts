@@ -13,10 +13,10 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [customer-vision](charts/customer-vision/) | 0.1.0 | 0.1.0 | CRM for the intelligent-enterprise suite — accounts, contacts, deals |
 | [kb-vision](charts/kb-vision/) | 0.12.6 | 0.12.6 | Knowledge Base for Homelab |
 | [duro-app](charts/duro-app/) | 1.50.52 | 1.50.52 | A household management dashboard with invite system |
 | [cluster-vision](charts/cluster-vision/) | 0.22.0 | 0.22.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
-| [customer-vision](charts/customer-vision/) | 0.1.0 | 0.1.0 | CRM for the intelligent-enterprise suite — accounts, contacts, deals |
 | [ticket-vision](charts/ticket-vision/) | 0.8.0 | 0.8.0 | Fully automated ITSM for homelab |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.7.5 | 0.7.5 | A Kubernetes operator that automatically configures preview environments for applications |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.6.2 | 2.6.2 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
