@@ -1,6 +1,0 @@
-apiVersion: v2
-name: customer-vision
-description: CRM for the intelligent-enterprise suite — accounts, contacts, deals
-type: application
-version: 0.1.2
-appVersion: 0.1.2
