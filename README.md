@@ -13,7 +13,6 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [customer-vision](charts/customer-vision/) | 0.1.2 | 0.1.2 | CRM for the intelligent-enterprise suite — accounts, contacts, deals |
 | [kb-vision](charts/kb-vision/) | 0.12.6 | 0.12.6 | Knowledge Base for Homelab |
 | [duro-app](charts/duro-app/) | 1.50.52 | 1.50.52 | A household management dashboard with invite system |
 | [cluster-vision](charts/cluster-vision/) | 0.22.0 | 0.22.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
