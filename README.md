@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.29 | 0.1.29 | A Kubernetes operator that manages OIDC client configurations for Authelia |
+| [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.30 | 0.1.30 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [kb-vision](charts/kb-vision/) | 0.12.6 | 0.12.6 | Knowledge Base for Homelab |
 | [duro-app](charts/duro-app/) | 1.50.52 | 1.50.52 | A household management dashboard with invite system |
 | [cluster-vision](charts/cluster-vision/) | 0.22.0 | 0.22.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
