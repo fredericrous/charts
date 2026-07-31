@@ -13,6 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
+| [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.29 | 0.1.29 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [kb-vision](charts/kb-vision/) | 0.12.6 | 0.12.6 | Knowledge Base for Homelab |
 | [duro-app](charts/duro-app/) | 1.50.52 | 1.50.52 | A household management dashboard with invite system |
 | [cluster-vision](charts/cluster-vision/) | 0.22.0 | 0.22.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
@@ -20,7 +21,6 @@ helm repo update
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.7.5 | 0.7.5 | A Kubernetes operator that automatically configures preview environments for applications |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.6.2 | 2.6.2 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
-| [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.29 | 0.1.29 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [duro-operator](charts/duro-operator/) | 0.1.5 | 0.1.5 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
 | [ddns-updater-operator](charts/ddns-updater-operator/) | 0.4.1 | 0.4.1 | A Kubernetes operator that manages DDNS records for ddns-updater |
 
