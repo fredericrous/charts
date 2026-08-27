@@ -13,8 +13,8 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.7.0 | 2.7.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [duro-app](charts/duro-app/) | 1.59.0 | 1.59.0 | A household management dashboard with invite system |
+| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.7.0 | 2.7.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.8.0 | 0.8.0 | A Kubernetes operator that automatically configures preview environments for applications |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.30 | 0.1.30 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [kb-vision](charts/kb-vision/) | 0.12.6 | 0.12.6 | Knowledge Base for Homelab |
