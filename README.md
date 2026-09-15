@@ -18,7 +18,7 @@ helm repo update
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.8.0 | 0.8.0 | A Kubernetes operator that automatically configures preview environments for applications |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.30 | 0.1.30 | A Kubernetes operator that manages OIDC client configurations for Authelia |
 | [kb-vision](charts/kb-vision/) | 0.12.6 | 0.12.6 | Knowledge Base for Homelab |
-| [cluster-vision](charts/cluster-vision/) | 0.22.0 | 0.22.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
+| [cluster-vision](charts/cluster-vision/) | 0.23.0 | 0.23.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [ticket-vision](charts/ticket-vision/) | 0.8.0 | 0.8.0 | Fully automated ITSM for homelab |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
 | [duro-operator](charts/duro-operator/) | 0.1.5 | 0.1.5 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
