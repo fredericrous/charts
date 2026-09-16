@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [duro-app](charts/duro-app/) | 1.60.0 | 1.60.0 | A household management dashboard with invite system |
+| [duro-app](charts/duro-app/) | 1.61.0 | 1.61.0 | A household management dashboard with invite system |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.9.2 | 0.9.2 | A Kubernetes operator that automatically configures preview environments for applications |
 | [cluster-vision](charts/cluster-vision/) | 0.23.0 | 0.23.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.7.0 | 2.7.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
