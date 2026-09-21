@@ -9,7 +9,6 @@ rules:
       - ""
     resources:
       - configmaps
-      - secrets
       - services
     verbs:
       - create
@@ -39,6 +38,7 @@ rules:
     resources:
       - namespaces
       - persistentvolumeclaims
+      - secrets
     verbs:
       - create
       - delete
