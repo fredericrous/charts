@@ -21,7 +21,7 @@ helm repo update
 | [kb-vision](charts/kb-vision/) | 0.12.6 | 0.12.6 | Knowledge Base for Homelab |
 | [ticket-vision](charts/ticket-vision/) | 0.8.0 | 0.8.0 | Fully automated ITSM for homelab |
 | [openauth](charts/openauth/) | 0.0.4 | 0.0.4 | OIDC issuer for the website-builder (wraps @openauthjs/openauth) |
-| [duro-operator](charts/duro-operator/) | 0.1.5 | 0.1.5 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
+| [duro-operator](charts/duro-operator/) | 0.2.1 | 0.2.1 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
 | [ddns-updater-operator](charts/ddns-updater-operator/) | 0.4.1 | 0.4.1 | A Kubernetes operator that manages DDNS records for ddns-updater |
 
 ## Installing a Chart
