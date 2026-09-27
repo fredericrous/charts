@@ -13,7 +13,7 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [cluster-vision](charts/cluster-vision/) | 0.25.3 | 0.25.3 | Auto-generated infrastructure diagrams from live Kubernetes state |
+| [cluster-vision](charts/cluster-vision/) | 0.25.4 | 0.25.4 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [duro-app](charts/duro-app/) | 1.62.0 | 1.62.0 | A household management dashboard with invite system |
 | [duro-operator](charts/duro-operator/) | 0.2.1 | 0.2.1 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.10.4 | 0.10.4 | A Kubernetes operator that automatically configures preview environments for applications |
