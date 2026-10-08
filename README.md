@@ -13,8 +13,8 @@ helm repo update
 
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
-| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.8.0 | 2.8.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [duro-app](charts/duro-app/) | 1.63.0 | 1.63.0 | A household management dashboard with invite system |
+| [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.8.0 | 2.8.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [cluster-vision](charts/cluster-vision/) | 0.25.5 | 0.25.5 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [duro-operator](charts/duro-operator/) | 0.2.1 | 0.2.1 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.10.4 | 0.10.4 | A Kubernetes operator that automatically configures preview environments for applications |
