@@ -33,6 +33,8 @@ jobs:
 
       - name: Check for image updates
         id: check-updates
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           UPDATES_NEEDED=false
           UPDATE_SUMMARY=""
@@ -58,8 +60,11 @@ jobs:
             if grep -q "kubeRbacProxy:" "$chart_path/values.yaml"; then
               CURRENT_VERSION=$(yq '.kubeRbacProxy.image.tag // ""' "$chart_path/values.yaml")
               if [ -n "$CURRENT_VERSION" ]; then
-                # Check latest release from GitHub
-                LATEST_VERSION=$(curl -s https://api.github.com/repos/brancz/kube-rbac-proxy/releases/latest | jq -r .tag_name)
+                # Latest release, through the authenticated API: the anonymous
+                # call is rate-limited per IP, and its error JSON made jq print
+                # "null", which the test below would have written as the tag.
+                # A failed lookup is empty and skips the bump.
+                LATEST_VERSION=$(timeout 60 gh release view --repo brancz/kube-rbac-proxy --json tagName -q .tagName || true)
                 
                 if [[ "$CURRENT_VERSION" != "$LATEST_VERSION" && -n "$LATEST_VERSION" ]]; then
                   CHART_UPDATES="${CHART_UPDATES}\n  - kube-rbac-proxy: $CURRENT_VERSION → $LATEST_VERSION"
