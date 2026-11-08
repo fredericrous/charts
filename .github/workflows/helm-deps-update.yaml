@@ -63,10 +63,15 @@ jobs:
                 # Latest release, through the authenticated API: the anonymous
                 # call is rate-limited per IP, and its error JSON made jq print
                 # "null", which the test below would have written as the tag.
-                # A failed lookup is empty and skips the bump.
-                LATEST_VERSION=$(timeout 60 gh release view --repo brancz/kube-rbac-proxy --json tagName -q .tagName || true)
-                
-                if [[ "$CURRENT_VERSION" != "$LATEST_VERSION" && -n "$LATEST_VERSION" ]]; then
+                # A failed lookup skips the bump, with a warning so a green
+                # run cannot hide that it never checked.
+                if ! LATEST_VERSION=$(timeout 60 gh release view --repo brancz/kube-rbac-proxy --json tagName -q .tagName); then
+                  echo "::warning::kube-rbac-proxy latest-release lookup failed; bump skipped for $chart_path"
+                  LATEST_VERSION=""
+                fi
+                echo "kube-rbac-proxy: current $CURRENT_VERSION, latest ${LATEST_VERSION:-unknown}"
+
+                if [[ "$CURRENT_VERSION" != "$LATEST_VERSION" && "$LATEST_VERSION" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
                   CHART_UPDATES="${CHART_UPDATES}\n  - kube-rbac-proxy: $CURRENT_VERSION → $LATEST_VERSION"
                   yq -i ".kubeRbacProxy.image.tag = \"$LATEST_VERSION\"" "$chart_path/values.yaml"
                 fi
