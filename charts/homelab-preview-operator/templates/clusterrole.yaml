@@ -21,6 +21,7 @@ rules:
       - ""
     resources:
       - endpoints
+      - persistentvolumes
       - pods
     verbs:
       - get
@@ -117,6 +118,15 @@ rules:
       - patch
       - update
       - watch
+  - apiGroups:
+      - networking.k8s.io
+    resources:
+      - networkpolicies
+    verbs:
+      - create
+      - delete
+      - get
+      - update
   - apiGroups:
       - postgresql.cnpg.io
     resources:
