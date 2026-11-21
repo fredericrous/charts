@@ -15,7 +15,7 @@ helm repo update
 |-------|---------|-------------|-------------|
 | [cluster-vision](charts/cluster-vision/) | 0.26.0 | 0.26.0 | Auto-generated infrastructure diagrams from live Kubernetes state |
 | [homelab-preview-operator](charts/homelab-preview-operator/) | 0.11.1 | 0.11.1 | A Kubernetes operator that automatically configures preview environments for applications |
-| [duro-app](charts/duro-app/) | 1.63.0 | 1.63.0 | A household management dashboard with invite system |
+| [duro-app](charts/duro-app/) | 1.64.0 | 1.64.0 | A household management dashboard with invite system |
 | [vault-transit-unseal-operator](charts/vault-transit-unseal-operator/) | 2.8.0 | 2.8.0 | A Kubernetes operator that automatically manages HashiCorp Vault initialization and unsealing using transit unseal |
 | [duro-operator](charts/duro-operator/) | 0.2.1 | 0.2.1 | A Kubernetes operator that manages DashboardApp resources for the Duro dashboard |
 | [authelia-oidc-operator](charts/authelia-oidc-operator/) | 0.1.30 | 0.1.30 | A Kubernetes operator that manages OIDC client configurations for Authelia |
